@@ -1,0 +1,148 @@
+name: "main job"
+on:
+  pull_request:
+    branches:
+      - main
+  push:
+    branches:
+      - "*"
+  release:
+    types: [published]
+
+jobs:
+  install-connect-iq:
+    name: "Install ConnectIQ"
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: actions/setup-python@v2
+        with:
+          python-version: "3.x"
+
+      - uses: actions/cache@v2
+        id: ciq
+        with:
+          path: /opt/ciq
+          key: ciq-${{ hashFiles('manifest.xml') }}
+
+      - uses: actions/cache@v2
+        id: devices
+        with:
+          path: ~/.Garmin/ConnectIQ
+          key: devices-${{ hashFiles('manifest.xml') }}
+
+      - run: |
+          sudo apt-get install --reinstall unzip wget git ssh tar gzip ca-certificates
+          cd /opt;
+          wget -q https://developer.garmin.com/downloads/connect-iq/sdks/connectiq-sdk-lin-4.0.1-2021-04-21-1bb58d97e.zip -O ciq.zip;
+          unzip ciq.zip -d ciq;
+          rm -f ciq.zip;
+        if: steps.ciq.outputs.cache-hit != 'true'
+        name: Install ConnectIQ SDK
+
+      - run: |
+          pip install -r cicd/requirements.txt
+          python cicd/get_garmin_devices.py
+        if: steps.devices.outputs.cache-hit != 'true'
+        name: Install ConnectIQ Devices
+        env:
+          GARMIN_ACCESS_TOKEN: ${{ secrets.GARMIN_ACCESS_TOKEN }}
+          PYTHONUNBUFFERED: 1
+
+  build-ciq:
+    name: "Build CIQ"
+    runs-on: ubuntu-18.04
+    needs: "install-connect-iq"
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-java@v2
+        with:
+          distribution: "adopt" # See 'Supported distributions' for available options
+          java-version: "8"
+      - uses: actions/setup-python@v2
+        with:
+          python-version: "3.x"
+
+      - uses: actions/cache@v2
+        id: ciq
+        with:
+          path: /opt/ciq
+          key: ciq-${{ hashFiles('manifest.xml') }}
+
+      - uses: actions/cache@v2
+        id: devices
+        with:
+          path: ~/.Garmin/ConnectIQ
+          key: devices-${{ hashFiles('manifest.xml') }}
+
+      - run: |
+          echo "dev_id=a1a36384-b09e-4615-88e5-34dae6bc74b1" >> $GITHUB_ENV
+          sed -i "s/0.0.0/${{ github.event.release.tag_name }}/g" manifest.xml
+          if [[ "${{ github.event.release.tag_name }}" =~ "beta" ]]; then
+            sed -i "s/2bc544f929fe430e82a3605ba2fbcf19/732caf1f-b810-48b4-90ba-d49b003a9ded/g" manifest.xml
+            echo "app_id=732caf1f-b810-48b4-90ba-d49b003a9ded" >> $GITHUB_ENV
+            echo "store_id=f894d586-6e05-40ca-915e-23248d635c7f" >> $GITHUB_ENV
+            echo "beta_app=true" >> $GITHUB_ENV
+          else
+            echo "app_id=2bc544f9-29fe-430e-82a3-605ba2fbcf19" >> $GITHUB_ENV
+            echo "store_id=8c2fce29-0c7c-41f3-9a8f-5d3093c9cf2f" >> $GITHUB_ENV
+            echo "beta_app=false" >> $GITHUB_ENV
+          fi
+          echo "TAG_NAME=${GITHUB_REF##*/}" >> $GITHUB_ENV
+        if: github.event_name == 'release'
+        name: set the release version
+
+      - run: |
+          echo /opt/ciq/bin >> $GITHUB_PATH
+          echo "$CIQ_DEV_KEY" | base64 -d > /tmp/dev.key
+          for i in $(grep "product id=" manifest.xml | cut -d \" -f2); do
+            if [[ "$i" =~ ^(venu2|venu2s)$ ]]; then
+              export SDK=4.0.0
+            elif [[ "$i" =~ ^(approachs60)$ ]]; then
+              export SDK=2.4.0
+            elif [[ "$i" =~ ^(approachs62|d2charlie|descentmk1|vivoactive3d)$ ]]; then
+              export SDK=3.0.0
+            elif [[ "$i" =~ ^(venud|vivoactive3|vivoactive3mlte|fr645|fr935|d2delta|d2deltapx|d2deltas|descentmk2|fenix5|fenix5s|fenix5x)$ ]]; then
+              export SDK=3.1.0
+            else              
+              export SDK=3.2.0
+            fi
+            java -Dfile.encoding=UTF-8 -Dapple.awt.UIElement=true -jar /opt/ciq/bin/monkeybrains.jar -o /tmp/RunPowerWorkout-$i.prg -w -y /tmp/dev.key -d $i -c $SDK -f monkey.jungle
+          done
+          java -Dfile.encoding=UTF-8 -Dapple.awt.UIElement=true -jar /opt/ciq/bin/monkeybrains.jar -o /tmp/RunPowerWorkout.iq -e -w -y /tmp/dev.key -r -f monkey.jungle;
+        name: Build IQ file
+        env:
+          CIQ_DEV_KEY: ${{ secrets.CIQ_DEVELOPER_KEY }}
+
+      - uses: actions/upload-artifact@v2
+        with:
+          name: prg
+          path: /tmp/*.prg
+        if: github.event_name != 'release'
+
+      - uses: actions/upload-artifact@v2
+        with:
+          name: iq
+          path: /tmp/*.iq
+        if: github.event_name != 'release'
+
+      - name: Upload
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GARMIN_USERNAME: ${{ secrets.GARMIN_USERNAME }}
+          GARMIN_PASSWORD: ${{ secrets.GARMIN_PASSWORD }}
+          APP_ID: ${{ env.app_id }}
+          TAG_NAME: ${{ env.TAG_NAME }}
+          STORE_ID: ${{ env.store_id }}
+          DEV_ID: ${{ env.dev_id }}
+          BETA_APP: ${{ env.beta_app }}
+          DEV_EMAIL: ${{ secrets.DEV_EMAIL }}
+          PYTHONUNBUFFERED: 1
+        if: github.event_name == 'release'
+        run: |
+          for file in /tmp/*.prg; do mv "$file" "${file%.prg}-${TAG_NAME}.prg"; done
+          mv /tmp/RunPowerWorkout.iq /tmp/RunPowerWorkout-${TAG_NAME}.iq
+          hub release edit $(find /tmp/ -type f \( -name '*.prg' -o -name '*.iq' \) -printf "-a %p ") -m "" "$TAG_NAME"
+          pip install -r cicd/requirements.txt
+          python cicd/upload_to_garmin.py

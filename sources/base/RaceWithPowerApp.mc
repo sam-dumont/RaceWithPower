@@ -1,6 +1,6 @@
 using Toybox.Application;
 
-class RunPowerWorkoutApp extends Application.AppBase {
+class RaceWithPowerApp extends Application.AppBase {
 
   (:ant) hidden var sensor;
 

@@ -1,5 +1,1 @@
-<settings>
-    <setting propertyKey="@Properties.N" title="@Strings.FD" helpUrl="https://github.com/tommyvdz/RunPowerWorkout#features">
-        <settingConfig type="alphanumeric" />
-    </setting>
-</settings>
+<settings></settings>

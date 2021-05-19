@@ -21,38 +21,28 @@
 			<listEntry value="3">@Strings.SHOW_COLORS_3</listEntry>
 		</settingConfig>
 	</setting>
-	<setting propertyKey="@Properties.G" title="@Strings.ZONES">
-		<settingConfig type="list">
-			<listEntry value="1">@Strings.ZONES_1</listEntry>
-			<listEntry value="2">@Strings.ZONES_2</listEntry>
-			<listEntry value="3">@Strings.ZONES_3</listEntry>
-			<listEntry value="4">@Strings.ZONES_4</listEntry>
-			<listEntry value="5">@Strings.ZONES_5</listEntry>
-		</settingConfig>
+	<setting propertyKey="@Properties.G" title="@Strings.ALERT_DELAY">
+		<settingConfig type="numeric" />
 	</setting>
-	<setting propertyKey="@Properties.H" title="@Strings.SHOW_SMALL_DECIMALS">
-		<settingConfig type="boolean" />
+	<setting propertyKey="@Properties.H" title="@Strings.MAX_ALERTS">
+		<settingConfig type="numeric" />
 	</setting>
 	<setting propertyKey="@Properties.I" title="@Strings.USE_CUSTOM_FONTS">
 		<settingConfig type="boolean" />
 	</setting>
-	<setting propertyKey="@Properties.M" title="@Strings.LAYOUT" helpUrl="https://github.com/tommyvdz/RunPowerWorkout#features">
-		<settingConfig type="list">
-			<listEntry value="1">@Strings.L1</listEntry>
-			<listEntry value="2">@Strings.L2</listEntry>
-			<listEntry value="3">@Strings.L3</listEntry>
-		</settingConfig>
-	</setting>
-	<setting propertyKey="@Properties.V" title="@Strings.USE_SPEED">
-		<settingConfig type="boolean" />
-	</setting>
-	<setting propertyKey="@Properties.Z" title="@Strings.KEEP_LAST_STEP">
-		<settingConfig type="boolean" />
-	</setting>
-	<setting propertyKey="@Properties.AA" title="@Strings.ALERT_DELAY">
+	<setting propertyKey="@Properties.J" title="@Strings.TARGET_POWER">
 		<settingConfig type="numeric" />
 	</setting>
-	<setting propertyKey="@Properties.AB" title="@Strings.MAX_ALERTS">
+	<setting propertyKey="@Properties.K" title="@Strings.TARGET_DISTANCE">
+		<settingConfig type="numeric" />
+	</setting>
+	<setting propertyKey="@Properties.L" title="@Strings.TARGET_TIME">
+		<settingConfig type="numeric" />
+	</setting>
+	<setting propertyKey="@Properties.M" title="@Strings.WEIGHT">
+		<settingConfig type="numeric" />
+	</setting>
+	<setting propertyKey="@Properties.N" title="@Strings.TARGET_ELEVATION">
 		<settingConfig type="numeric" />
 	</setting>
 </settings>

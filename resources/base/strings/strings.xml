@@ -10,19 +10,11 @@
 	<string id="SHOW_COLORS_2">Text Only</string>
 	<string id="SHOW_COLORS_3">None</string>
 	<string id="USE_CUSTOM_FONTS">Use custom fonts ? (only for capability level 2 or 4)</string>
-	<string id="SHOW_SMALL_DECIMALS">Show smaller decimals for distance ?</string>
-	<string id="ZONES">Power zone calculation</string>
-	<string id="ZONES_1">Stryd</string>
-	<string id="ZONES_2">Jim Vance</string>
-	<string id="ZONES_3">Steve Palladino</string>
-	<string id="ZONES_4">80/20</string>
-	<string id="ZONES_5">Van Dijk and Van Megen</string>
-	<string id="LAYOUT">Layout</string>
-	<string id="L1">1 field</string>
-	<string id="L2">4 fields</string>
-	<string id="L3">6 fields</string>
-	<string id="USE_SPEED">Use speed instead of pace ?</string>
-	<string id="KEEP_LAST_STEP">Keep last step targets after a workout.</string>
 	<string id="ALERT_DELAY">Delay between alerts.</string>
 	<string id="MAX_ALERTS">Maximum amount of alerts.</string>
+	<string id="TARGET_POWER">Target power.</string>
+	<string id="TARGET_TIME">Target time (in seconds).</string>
+	<string id="TARGET_DISTANCE">Target distance (in meters).</string>
+	<string id="TARGET_ELEVATION">Course elevation (in meters).</string>
+	<string id="WEIGHT">Weight (as setup on Stryd !).</string>
 </strings>

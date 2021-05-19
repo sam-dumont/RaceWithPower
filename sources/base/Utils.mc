@@ -8,7 +8,7 @@ class Utils {
         }
     }
 
-    static function format_distance(distance, useMetric, showSmallDecimals) {
+    static function format_distance(distance, useMetric) {
         var factor = 1000;
         var smallunitfactor = 1000;
         var unit = "KM";
@@ -22,21 +22,10 @@ class Utils {
         }
 
         if ((distance / factor) >= 1) {
-            var formatted = ((distance * 1.0) / (factor * 1.0)).format("%.2f");
-            var index = formatted.find(".");
-            if (index != null && showSmallDecimals) {
-                return [
-                    formatted.substring(0, index), unit,
-                    formatted.substring(index, formatted.length())
-                ];
-            } else {
-                return [ formatted, unit, null ];
-            }
+            return [ ((distance * 1.0) / (factor * 1.0)).format("%0.2f"), unit];
         } else {
             return [
-                (distance / factor * smallunitfactor).toNumber() + "", smallunit,
-                null
-            ];
+                (distance / factor * smallunitfactor).toNumber() + "", smallunit];
         }
     }
 
