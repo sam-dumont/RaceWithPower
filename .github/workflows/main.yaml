@@ -108,9 +108,9 @@ jobs:
             else              
               export SDK=3.2.0
             fi
-            java -Dfile.encoding=UTF-8 -Dapple.awt.UIElement=true -jar /opt/ciq/bin/monkeybrains.jar -o /tmp/RunPowerWorkout-$i.prg -w -y /tmp/dev.key -d $i -c $SDK -f monkey.jungle
+            java -Dfile.encoding=UTF-8 -Dapple.awt.UIElement=true -jar /opt/ciq/bin/monkeybrains.jar -o /tmp/RaceWithPower-$i.prg -w -y /tmp/dev.key -d $i -c $SDK -f monkey.jungle
           done
-          java -Dfile.encoding=UTF-8 -Dapple.awt.UIElement=true -jar /opt/ciq/bin/monkeybrains.jar -o /tmp/RunPowerWorkout.iq -e -w -y /tmp/dev.key -r -f monkey.jungle;
+          java -Dfile.encoding=UTF-8 -Dapple.awt.UIElement=true -jar /opt/ciq/bin/monkeybrains.jar -o /tmp/RaceWithPower.iq -e -w -y /tmp/dev.key -r -f monkey.jungle;
         name: Build IQ file
         env:
           CIQ_DEV_KEY: ${{ secrets.CIQ_DEVELOPER_KEY }}
@@ -142,7 +142,7 @@ jobs:
         if: github.event_name == 'release'
         run: |
           for file in /tmp/*.prg; do mv "$file" "${file%.prg}-${TAG_NAME}.prg"; done
-          mv /tmp/RunPowerWorkout.iq /tmp/RunPowerWorkout-${TAG_NAME}.iq
+          mv /tmp/RaceWithPower.iq /tmp/RaceWithPower-${TAG_NAME}.iq
           hub release edit $(find /tmp/ -type f \( -name '*.prg' -o -name '*.iq' \) -printf "-a %p ") -m "" "$TAG_NAME"
           pip install -r cicd/requirements.txt
           python cicd/upload_to_garmin.py
