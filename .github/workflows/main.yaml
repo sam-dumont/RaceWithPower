@@ -35,7 +35,7 @@ jobs:
       - run: |
           sudo apt-get install --reinstall unzip wget git ssh tar gzip ca-certificates
           cd /opt;
-          wget -q https://developer.garmin.com/downloads/connect-iq/sdks/connectiq-sdk-lin-4.0.1-2021-04-21-1bb58d97e.zip -O ciq.zip;
+          wget -q https://developer.garmin.com/downloads/connect-iq/sdks/connectiq-sdk-lin-4.0.2-2021-05-13-9b3b7f19f.zip -O ciq.zip;
           unzip ciq.zip -d ciq;
           rm -f ciq.zip;
         if: steps.ciq.outputs.cache-hit != 'true'
@@ -82,11 +82,11 @@ jobs:
           if [[ "${{ github.event.release.tag_name }}" =~ "beta" ]]; then
             sed -i "s/2bc544f929fe430e82a3605ba2fbcf19/732caf1f-b810-48b4-90ba-d49b003a9ded/g" manifest.xml
             echo "app_id=732caf1f-b810-48b4-90ba-d49b003a9ded" >> $GITHUB_ENV
-            echo "store_id=f894d586-6e05-40ca-915e-23248d635c7f" >> $GITHUB_ENV
+            echo "store_id=f552963b-91d9-4c51-89ed-85c2e25830cd" >> $GITHUB_ENV
             echo "beta_app=true" >> $GITHUB_ENV
           else
             echo "app_id=2bc544f9-29fe-430e-82a3-605ba2fbcf19" >> $GITHUB_ENV
-            echo "store_id=8c2fce29-0c7c-41f3-9a8f-5d3093c9cf2f" >> $GITHUB_ENV
+            echo "store_id=23f7088a-4187-43ae-aa38-53b0160a541c" >> $GITHUB_ENV
             echo "beta_app=false" >> $GITHUB_ENV
           fi
           echo "TAG_NAME=${GITHUB_REF##*/}" >> $GITHUB_ENV

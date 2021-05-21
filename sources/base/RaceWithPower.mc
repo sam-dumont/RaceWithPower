@@ -238,7 +238,7 @@ class RaceWithPowerView extends WatchUi.DataField {
       lapPace = (lapDistance * 1.0) / (lapTime * 1.0);
     }
 
-    if(elapsedDistance != null && elapsedDistance > 0 && lapPace != 0){
+    if(elapsedDistance != null && elapsedDistance > 0 && lapPace != 0 && lapPace != null){
       etaPace = ((targetDistance * 1.0 - elapsedDistance * 1.0) / lapPace).toNumber();
     }
     if(elapsedDistance != null && elapsedDistance > 0 && lapPower != 0){
@@ -461,10 +461,31 @@ class RaceWithPowerView extends WatchUi.DataField {
     } else if (type == 9) {
       label = "LAP PWR";
       value = lapPower == null ? 0 : lapPower.toNumber();
+      if(lapPower != null){
+        if (showColors == 1) {
+          if (lapPower < targetLow) {
+            dc.setColor(0x0000FF, -1);
+          } else if (lapPower > targetHigh) {
+            dc.setColor(0xAA0000, -1);
+          } else {
+            dc.setColor(0x00AA00, -1);
+          }
+          dc.fillRectangle(x, y, width, height);
+          dc.setColor(0xFFFFFF, -1);
+        } else if (showColors == 2) {
+          if (lapPower < targetLow) {
+            dc.setColor(0x0000FF, -1);
+          } else if (lapPower > targetHigh) {
+            dc.setColor(0xAA0000, -1);
+          } else {
+            dc.setColor(0x00AA00, -1);
+          }
+        }
+      }
     } else if (type == 10) {
-      label = "LAP DIST";
       var distance = Utils.format_distance(lapDistance == null ? 0 : lapDistance, useMetric);
-      value = distance[0]+distance[1];
+      label = "LAP DIST "+distance[1];
+      value = distance[0];
     } else if (type == 11) {
       if(alternateMetric){
         label = "ETA PACE";
