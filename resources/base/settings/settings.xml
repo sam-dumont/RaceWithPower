@@ -1,0 +1,48 @@
+<settings>
+	<setting propertyKey="@Properties.A" title="@Strings.PERCENTAGE">
+		<settingConfig type="boolean" />
+	</setting>
+	<setting propertyKey="@Properties.B" title="@Strings.FTP">
+		<settingConfig type="numeric" />
+	</setting>
+	<setting propertyKey="@Properties.C" title="@Strings.ALERT">
+		<settingConfig type="boolean" />
+	</setting>
+	<setting propertyKey="@Properties.D" title="@Strings.VIBRATE">
+		<settingConfig type="boolean" />
+	</setting>
+	<setting propertyKey="@Properties.E" title="@Strings.POWER_AVERAGE">
+		<settingConfig type="numeric" min="1" max="30" />
+	</setting>
+	<setting propertyKey="@Properties.F" title="@Strings.SHOW_COLORS">
+		<settingConfig type="list">
+			<listEntry value="1">@Strings.SHOW_COLORS_1</listEntry>
+			<listEntry value="2">@Strings.SHOW_COLORS_2</listEntry>
+			<listEntry value="3">@Strings.SHOW_COLORS_3</listEntry>
+		</settingConfig>
+	</setting>
+	<setting propertyKey="@Properties.G" title="@Strings.ALERT_DELAY">
+		<settingConfig type="numeric" />
+	</setting>
+	<setting propertyKey="@Properties.H" title="@Strings.MAX_ALERTS">
+		<settingConfig type="numeric" />
+	</setting>
+	<setting propertyKey="@Properties.I" title="@Strings.USE_CUSTOM_FONTS">
+		<settingConfig type="boolean" />
+	</setting>
+	<setting propertyKey="@Properties.J" title="@Strings.TARGET_POWER">
+		<settingConfig type="numeric" />
+	</setting>
+	<setting propertyKey="@Properties.K" title="@Strings.TARGET_DISTANCE">
+		<settingConfig type="numeric" />
+	</setting>
+	<setting propertyKey="@Properties.L" title="@Strings.TARGET_TIME">
+		<settingConfig type="numeric" />
+	</setting>
+	<setting propertyKey="@Properties.M" title="@Strings.WEIGHT">
+		<settingConfig type="numeric" />
+	</setting>
+	<setting propertyKey="@Properties.N" title="@Strings.TARGET_ELEVATION">
+		<settingConfig type="numeric" />
+	</setting>
+</settings>
