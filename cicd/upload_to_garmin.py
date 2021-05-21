@@ -189,7 +189,7 @@ m = MultipartEncoder(
         ("localizedAppModel[0].appLocale", "en"),
         (
             "localizedAppModel[0].appTitle",
-            "RaceWithPower - beta" if BETA_APP == "true" else "RaceWithPower",
+            "Race With Power - beta" if BETA_APP == "true" else "Race With Power",
         ),
         ("localizedAppModel[0].appDescription", appDescription),
         ("localizedAppModel[0].appWhatsNew", release_notes),
