@@ -1,6 +1,8 @@
 # RunPowerWorkout
 
-RaceWithPower is a datafield designed to show you useful metrics while racing with power as main metric.
+RaceWithPower is a Garmin datafield designed to show you useful metrics while racing with power as main metric.
+
+It is available in the ConnectIQ store at this address : https://apps.garmin.com/en-US/apps/23f7088a-4187-43ae-aa38-53b0160a541c
 
 # Fields and features
 
