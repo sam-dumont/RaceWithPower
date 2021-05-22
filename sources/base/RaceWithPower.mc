@@ -229,7 +229,7 @@ class RaceWithPowerView extends WatchUi.DataField {
         timer = info.elapsedTime / 1000;
         lapTime = timer - lapStartTime;
 
-        if(info.elapsedDistance != null){
+        if(info.elapsedDistance != null && timer != 0){
           lapDistance = (info.elapsedDistance - lapStartDistance) + correction[0];
           elapsedDistance = info.elapsedDistance;
           avgPace = (info.elapsedDistance + correction[0]) / (timer * 1.0);
@@ -378,8 +378,16 @@ class RaceWithPowerView extends WatchUi.DataField {
     }
 
     if(type == 0) {
-      label = "CAD";
-      value = cadence == null ? 0 : cadence;
+      localOffset = -4;
+      textFont = fonts[1];
+      var delta = etaPace[0] - idealPace[0];
+      if(delta<0){
+        label = "AHEAD";
+        value = "-"+Utils.format_duration(delta * -1);
+      } else {
+        label = "BEHIND";
+        value = "+"+Utils.format_duration(delta);
+      }
     } else if (type == 1){
       label = "HR";
       value = hr == null ? 0 : hr;
@@ -439,27 +447,23 @@ class RaceWithPowerView extends WatchUi.DataField {
         }
       }
     } else if (type == 3) {
-      label = "TGT PWR";
-      value = targetPower == null ? 0 : targetPower;
-      if(currentPower != null){
-        if (showColors == 1) {
-          if (currentPower < targetLow) {
-            dc.setColor(0x0000FF, -1);
-          } else if (currentPower > targetHigh) {
-            dc.setColor(0xAA0000, -1);
-          } else {
-            dc.setColor(0x00AA00, -1);
-          }
-          dc.fillRectangle(x, y, width, height);
-          dc.setColor(0xFFFFFF, -1);
-        } else if (showColors == 2) {
-          if (currentPower < targetLow) {
-            dc.setColor(0x0000FF, -1);
-          } else if (currentPower > targetHigh) {
-            dc.setColor(0xAA0000, -1);
-          } else {
-            dc.setColor(0x00AA00, -1);
-          }
+      localOffset = -4;
+      textFont = fonts[1];
+      if(alternateMetric){
+        label = "PC DIFF";
+        var delta = etaPace[1] - idealPace[1];
+        if(delta<0){
+          value = "-"+Utils.format_duration(delta * -1);
+        } else {
+          value = "+"+Utils.format_duration(delta);
+        }
+      } else {
+        label = "PWR DIFF";
+        var delta = etaPower[1] - idealPower[1];
+        if(delta<0){
+          value = "-"+Utils.format_duration(delta * -1);
+        } else {
+          value = "+"+Utils.format_duration(delta);
         }
       }
     } else if (type == 4) {
@@ -533,34 +537,10 @@ class RaceWithPowerView extends WatchUi.DataField {
       value = distance[0];
     } else if (type == 11) {
       if(alternateMetric){
-        var delta = etaPace[0] - idealPace[0];
-        var delta2 = etaPace[1] - idealPace[1];
-        if(delta<0){
-          delta = "-"+Utils.format_duration(delta * -1);
-        } else {
-          delta = "+"+Utils.format_duration(delta);
-        }
-        if(delta2<0){
-          delta2 = "-"+Utils.format_duration(delta2 * -1);
-        } else {
-          delta2 = "+"+Utils.format_duration(delta2);
-        }
-        label = delta+" ETA PACE "+delta2;
+        label = "ETA PACE";
         value = Utils.format_duration(etaPace[1]);
       } else {
-        var delta = etaPower[0] - idealPower[0];
-        var delta2 = etaPower[1] - idealPower[1];
-        if(delta<0){
-          delta = "-"+Utils.format_duration(delta * -1);
-        } else {
-          delta = "+"+Utils.format_duration(delta);
-        }
-        if(delta2<0){
-          delta2 = "-"+Utils.format_duration(delta2 * -1);
-        } else {
-          delta2 = "+"+Utils.format_duration(delta2);
-        }
-        label = delta+" ETA PWR "+delta2;
+        label = "ETA POWER";
         value = Utils.format_duration(etaPower[1]);
       }
     }
