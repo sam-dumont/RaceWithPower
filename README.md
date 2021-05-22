@@ -28,8 +28,8 @@ Customization is possible :
 * Choose to use custom font (narrower) or standard.
 # Settings
 
-* Set up race parameters : distance, elevation, target power and target time.
 * Show power in raw value or percentage of FTP
+* Set up race parameters : distance, elevation, target power (percentage or raw value depending on preceding option) and target time.
 * Choose power averaging window (1-30 seconds)
 * Enable alerts outside of race power target
 

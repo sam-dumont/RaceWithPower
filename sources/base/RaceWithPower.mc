@@ -98,8 +98,17 @@ class RaceWithPowerView extends WatchUi.DataField {
     targetPower =
         Utils.replaceNull(Application.getApp().getProperty("J"), 350);
 
-    targetHigh = ((targetPower * 1.01) + 0.5).toNumber();
-    targetLow = ((targetPower * 0.99) + 0.5).toNumber();
+    if(usePercentage){
+      targetPower = ((targetPower / 100.0) * FTP);
+    }
+
+    if(usePercentage){
+      targetHigh = ((((targetPower * 1.01) / FTP) * 100 ) + 0.5).toNumber();
+      targetLow = ((((targetPower * 0.99) / FTP) * 100 ) + 0.5).toNumber();
+    } else {
+      targetHigh = ((targetPower * 1.01) + 0.5).toNumber();
+      targetLow = ((targetPower * 0.99) + 0.5).toNumber();
+    }
 
     targetDistance =
         Utils.replaceNull(Application.getApp().getProperty("K"), 5000);
@@ -294,7 +303,7 @@ class RaceWithPowerView extends WatchUi.DataField {
       var factor = 1.0;
 
       if(usePercentage){
-        factor = FTP * 1.0;
+        factor = FTP / 100.0;
       }
 
       // method from https://blog.stryd.com/2020/01/10/how-to-calculate-your-race-time-from-your-target-power/ + adding the elevation in
