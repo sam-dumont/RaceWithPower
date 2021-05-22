@@ -17,4 +17,6 @@
 	<string id="TARGET_DISTANCE">Target distance (in meters).</string>
 	<string id="TARGET_ELEVATION">Course elevation (in meters).</string>
 	<string id="WEIGHT">Weight (as setup on Stryd !).</string>
+	<string id="LAP_DISTANCE">Race lap distance.</string>
+	<string id="LAP_CORRECT">Correct the distance when pressing lap button ?</string>
 </strings>

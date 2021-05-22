@@ -37,440 +37,477 @@
         <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/Utils.mc" id="7" lineNum="52" pc="268435934" symbol="convert_speed_pace"/>
         <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/Utils.mc" id="7" lineNum="54" pc="268435963" symbol="convert_speed_pace"/>
         <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/Utils.mc" id="7" lineNum="57" pc="268435983" symbol="convert_speed_pace"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="9" lineNum="72" pc="268436006" symbol="initialize"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="9" lineNum="74" pc="268436010" symbol="initialize"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="9" lineNum="76" pc="268436068" symbol="initialize"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="9" lineNum="77" pc="268436129" symbol="initialize"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="9" lineNum="79" pc="268436187" symbol="initialize"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="9" lineNum="81" pc="268436245" symbol="initialize"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="9" lineNum="83" pc="268436306" symbol="initialize"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="9" lineNum="86" pc="268436367" symbol="initialize"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="9" lineNum="89" pc="268436428" symbol="initialize"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="9" lineNum="92" pc="268436489" symbol="initialize"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="9" lineNum="95" pc="268436550" symbol="initialize"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="9" lineNum="96" pc="268436587" symbol="initialize"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="9" lineNum="98" pc="268436624" symbol="initialize"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="9" lineNum="101" pc="268436685" symbol="initialize"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="9" lineNum="104" pc="268436746" symbol="initialize"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="9" lineNum="107" pc="268436807" symbol="initialize"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="9" lineNum="110" pc="268436868" symbol="initialize"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="9" lineNum="114" pc="268436924" symbol="initialize"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="9" lineNum="116" pc="268436936" symbol="initialize"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="9" lineNum="118" pc="268436954" symbol="initialize"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="9" lineNum="119" pc="268436989" symbol="initialize"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="9" lineNum="120" pc="268437006" symbol="initialize"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="10" lineNum="123" pc="268437017" symbol="onTimerStart"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="10" lineNum="123" pc="268437021" symbol="onTimerStart"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="11" lineNum="125" pc="268437032" symbol="onTimerStop"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="11" lineNum="125" pc="268437036" symbol="onTimerStop"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="12" lineNum="127" pc="268437047" symbol="onTimerResume"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="12" lineNum="127" pc="268437051" symbol="onTimerResume"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="13" lineNum="129" pc="268437062" symbol="onTimerPause"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="13" lineNum="129" pc="268437066" symbol="onTimerPause"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="14" lineNum="131" pc="268437077" symbol="onTimerLap"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="14" lineNum="132" pc="268437081" symbol="onTimerLap"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="14" lineNum="133" pc="268437094" symbol="onTimerLap"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="14" lineNum="134" pc="268437110" symbol="onTimerLap"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="14" lineNum="135" pc="268437141" symbol="onTimerLap"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="14" lineNum="136" pc="268437150" symbol="onTimerLap"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="15" lineNum="139" pc="268437160" symbol="onTimerReset"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="16" lineNum="142" pc="268437165" symbol="set_fonts"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="16" lineNum="143" pc="268437169" symbol="set_fonts"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="16" lineNum="144" pc="268437222" symbol="set_fonts"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="16" lineNum="145" pc="268437235" symbol="set_fonts"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="16" lineNum="151" pc="268437510" symbol="set_fonts"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="17" lineNum="162" pc="268437603" symbol="onLayout"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="17" lineNum="162" pc="268437607" symbol="onLayout"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="164" pc="268437611" symbol="compute"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="165" pc="268437615" symbol="compute"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="166" pc="268437626" symbol="compute"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="168" pc="268437645" symbol="compute"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="169" pc="268437656" symbol="compute"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="172" pc="268437675" symbol="compute"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="173" pc="268437686" symbol="compute"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="174" pc="268437705" symbol="compute"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="175" pc="268437718" symbol="compute"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="178" pc="268437743" symbol="compute"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="179" pc="268437754" symbol="compute"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="182" pc="268437773" symbol="compute"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="183" pc="268437784" symbol="compute"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="186" pc="268437824" symbol="compute"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="187" pc="268437851" symbol="compute"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="191" pc="268437900" symbol="compute"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="192" pc="268437914" symbol="compute"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="193" pc="268437921" symbol="compute"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="194" pc="268437943" symbol="compute"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="196" pc="268437968" symbol="compute"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="197" pc="268437981" symbol="compute"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="198" pc="268438006" symbol="compute"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="201" pc="268438025" symbol="compute"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="202" pc="268438038" symbol="compute"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="203" pc="268438065" symbol="compute"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="206" pc="268438106" symbol="compute"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="208" pc="268438128" symbol="compute"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="209" pc="268438141" symbol="compute"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="210" pc="268438160" symbol="compute"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="211" pc="268438177" symbol="compute"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="214" pc="268438235" symbol="compute"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="215" pc="268438248" symbol="compute"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="216" pc="268438267" symbol="compute"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="217" pc="268438284" symbol="compute"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="220" pc="268438342" symbol="compute"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="221" pc="268438349" symbol="compute"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="223" pc="268438359" symbol="compute"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="224" pc="268438380" symbol="compute"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="225" pc="268438396" symbol="compute"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="227" pc="268438415" symbol="compute"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="230" pc="268438438" symbol="compute"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="232" pc="268438481" symbol="compute"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="237" pc="268438500" symbol="compute"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="238" pc="268438537" symbol="compute"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="241" pc="268438577" symbol="compute"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="242" pc="268438646" symbol="compute"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="244" pc="268438704" symbol="compute"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="245" pc="268438757" symbol="compute"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="246" pc="268438776" symbol="compute"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="247" pc="268438795" symbol="compute"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="248" pc="268438820" symbol="compute"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="252" pc="268438836" symbol="compute"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="255" pc="268438900" symbol="compute"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="256" pc="268438941" symbol="compute"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="258" pc="268438982" symbol="compute"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="259" pc="268439021" symbol="compute"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="262" pc="268439041" symbol="compute"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="19" lineNum="265" pc="268439045" symbol="onUpdate"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="19" lineNum="266" pc="268439049" symbol="onUpdate"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="19" lineNum="267" pc="268439060" symbol="onUpdate"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="19" lineNum="270" pc="268439077" symbol="onUpdate"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="19" lineNum="272" pc="268439089" symbol="onUpdate"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="19" lineNum="273" pc="268439102" symbol="onUpdate"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="19" lineNum="275" pc="268439115" symbol="onUpdate"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="19" lineNum="276" pc="268439128" symbol="onUpdate"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="19" lineNum="278" pc="268439154" symbol="onUpdate"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="19" lineNum="283" pc="268439370" symbol="onUpdate"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="19" lineNum="284" pc="268439427" symbol="onUpdate"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="19" lineNum="285" pc="268439487" symbol="onUpdate"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="19" lineNum="286" pc="268439547" symbol="onUpdate"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="19" lineNum="287" pc="268439604" symbol="onUpdate"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="19" lineNum="288" pc="268439664" symbol="onUpdate"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="19" lineNum="289" pc="268439721" symbol="onUpdate"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="19" lineNum="290" pc="268439781" symbol="onUpdate"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="19" lineNum="291" pc="268439829" symbol="onUpdate"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="19" lineNum="292" pc="268439886" symbol="onUpdate"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="19" lineNum="293" pc="268439946" symbol="onUpdate"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="19" lineNum="294" pc="268440006" symbol="onUpdate"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="19" lineNum="296" pc="268440057" symbol="onUpdate"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="19" lineNum="298" pc="268440076" symbol="onUpdate"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="19" lineNum="299" pc="268440111" symbol="onUpdate"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="19" lineNum="300" pc="268440146" symbol="onUpdate"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="19" lineNum="301" pc="268440187" symbol="onUpdate"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="19" lineNum="302" pc="268440225" symbol="onUpdate"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="19" lineNum="304" pc="268440260" symbol="onUpdate"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="19" lineNum="305" pc="268440295" symbol="onUpdate"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="19" lineNum="306" pc="268440339" symbol="onUpdate"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="19" lineNum="307" pc="268440383" symbol="onUpdate"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="19" lineNum="308" pc="268440427" symbol="onUpdate"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="19" lineNum="309" pc="268440471" symbol="onUpdate"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="312" pc="268440516" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="313" pc="268440520" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="314" pc="268440536" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="315" pc="268440556" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="317" pc="268440575" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="318" pc="268440582" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="319" pc="268440589" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="320" pc="268440602" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="321" pc="268440606" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="322" pc="268440622" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="323" pc="268440638" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="324" pc="268440645" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="325" pc="268440652" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="327" pc="268440656" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="328" pc="268440667" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="329" pc="268440680" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="330" pc="268440687" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="331" pc="268440698" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="332" pc="268440708" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="335" pc="268440715" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="336" pc="268440726" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="337" pc="268440733" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="338" pc="268440767" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="339" pc="268440778" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="340" pc="268440785" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="341" pc="268440816" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="342" pc="268440829" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="343" pc="268440846" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="344" pc="268440872" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="345" pc="268440897" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="346" pc="268440923" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="347" pc="268440948" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="348" pc="268440974" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="349" pc="268440999" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="350" pc="268441025" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="352" pc="268441050" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="354" pc="268441072" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="355" pc="268441092" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="356" pc="268441117" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="357" pc="268441134" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="358" pc="268441160" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="359" pc="268441185" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="360" pc="268441211" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="361" pc="268441236" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="362" pc="268441262" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="363" pc="268441287" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="364" pc="268441313" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="366" pc="268441338" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="370" pc="268441369" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="371" pc="268441380" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="372" pc="268441402" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="373" pc="268441433" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="374" pc="268441449" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="375" pc="268441456" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="376" pc="268441469" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="377" pc="268441486" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="378" pc="268441506" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="379" pc="268441531" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="380" pc="268441551" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="382" pc="268441576" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="384" pc="268441598" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="385" pc="268441618" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="386" pc="268441643" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="387" pc="268441660" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="388" pc="268441680" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="389" pc="268441705" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="390" pc="268441725" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="392" pc="268441750" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="396" pc="268441781" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="397" pc="268441792" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="398" pc="268441799" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="399" pc="268441830" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="400" pc="268441843" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="401" pc="268441860" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="402" pc="268441880" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="403" pc="268441905" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="404" pc="268441925" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="406" pc="268441950" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="408" pc="268441972" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="409" pc="268441992" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="410" pc="268442017" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="411" pc="268442034" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="412" pc="268442054" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="413" pc="268442079" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="414" pc="268442099" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="416" pc="268442124" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="420" pc="268442155" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="421" pc="268442166" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="422" pc="268442173" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="423" pc="268442213" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="424" pc="268442226" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="425" pc="268442243" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="426" pc="268442263" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="427" pc="268442288" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="428" pc="268442308" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="430" pc="268442333" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="432" pc="268442355" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="433" pc="268442375" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="434" pc="268442400" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="435" pc="268442417" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="436" pc="268442437" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="437" pc="268442462" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="438" pc="268442482" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="440" pc="268442507" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="444" pc="268442538" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="445" pc="268442549" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="446" pc="268442620" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="447" pc="268442636" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="448" pc="268442643" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="449" pc="268442665" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="450" pc="268442676" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="451" pc="268442692" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="452" pc="268442699" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="453" pc="268442750" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="454" pc="268442761" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="455" pc="268442777" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="456" pc="268442784" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="457" pc="268442801" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="458" pc="268442857" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="459" pc="268442868" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="460" pc="268442875" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="461" pc="268442915" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="462" pc="268442926" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="463" pc="268442933" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="464" pc="268442973" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="465" pc="268442986" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="466" pc="268443003" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="467" pc="268443023" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="468" pc="268443048" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="469" pc="268443068" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="471" pc="268443093" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="473" pc="268443115" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="474" pc="268443135" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="475" pc="268443160" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="476" pc="268443177" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="477" pc="268443197" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="478" pc="268443222" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="479" pc="268443242" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="481" pc="268443267" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="485" pc="268443298" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="486" pc="268443309" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="487" pc="268443365" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="488" pc="268443381" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="489" pc="268443394" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="490" pc="268443405" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="491" pc="268443416" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="492" pc="268443423" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="494" pc="268443453" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="495" pc="268443460" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="499" pc="268443490" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="501" pc="268443530" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="502" pc="268443535" symbol="drawMetric"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="12" pc="268443795" symbol="&lt;init&gt;"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="59" pc="268443991" symbol="&lt;init&gt;"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPowerApp.mc" id="22" lineNum="7" pc="268443585" symbol="initialize"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPowerApp.mc" id="22" lineNum="7" pc="268443589" symbol="initialize"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPowerApp.mc" id="23" lineNum="11" pc="268443608" symbol="onStart"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPowerApp.mc" id="24" lineNum="14" pc="268443613" symbol="onStop"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPowerApp.mc" id="25" lineNum="41" pc="268443618" symbol="getInitialView"/>
-        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPowerApp.mc" id="25" lineNum="41" pc="268443622" symbol="getInitialView"/>
-        <entry filename="Rez" id="31" lineNum="40" pc="268443661" symbol="MainLayout"/>
-        <entry filename="Rez" id="32" lineNum="47" pc="268443674" symbol="AlertLayout"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="9" lineNum="76" pc="268436006" symbol="initialize"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="9" lineNum="78" pc="268436010" symbol="initialize"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="9" lineNum="80" pc="268436068" symbol="initialize"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="9" lineNum="81" pc="268436129" symbol="initialize"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="9" lineNum="83" pc="268436187" symbol="initialize"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="9" lineNum="85" pc="268436245" symbol="initialize"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="9" lineNum="87" pc="268436306" symbol="initialize"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="9" lineNum="90" pc="268436367" symbol="initialize"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="9" lineNum="93" pc="268436428" symbol="initialize"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="9" lineNum="96" pc="268436489" symbol="initialize"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="9" lineNum="99" pc="268436550" symbol="initialize"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="9" lineNum="100" pc="268436587" symbol="initialize"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="9" lineNum="102" pc="268436624" symbol="initialize"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="9" lineNum="105" pc="268436685" symbol="initialize"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="9" lineNum="108" pc="268436746" symbol="initialize"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="9" lineNum="111" pc="268436807" symbol="initialize"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="9" lineNum="114" pc="268436868" symbol="initialize"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="9" lineNum="117" pc="268436926" symbol="initialize"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="9" lineNum="120" pc="268436987" symbol="initialize"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="9" lineNum="124" pc="268437043" symbol="initialize"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="9" lineNum="126" pc="268437080" symbol="initialize"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="9" lineNum="128" pc="268437092" symbol="initialize"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="9" lineNum="130" pc="268437110" symbol="initialize"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="9" lineNum="131" pc="268437145" symbol="initialize"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="9" lineNum="132" pc="268437162" symbol="initialize"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="10" lineNum="135" pc="268437173" symbol="onTimerStart"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="10" lineNum="135" pc="268437177" symbol="onTimerStart"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="11" lineNum="137" pc="268437188" symbol="onTimerStop"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="11" lineNum="137" pc="268437192" symbol="onTimerStop"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="12" lineNum="139" pc="268437203" symbol="onTimerResume"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="12" lineNum="139" pc="268437207" symbol="onTimerResume"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="13" lineNum="141" pc="268437218" symbol="onTimerPause"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="13" lineNum="141" pc="268437222" symbol="onTimerPause"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="14" lineNum="143" pc="268437233" symbol="onTimerLap"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="14" lineNum="144" pc="268437237" symbol="onTimerLap"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="14" lineNum="146" pc="268437250" symbol="onTimerLap"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="14" lineNum="147" pc="268437261" symbol="onTimerLap"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="14" lineNum="148" pc="268437284" symbol="onTimerLap"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="14" lineNum="149" pc="268437300" symbol="onTimerLap"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="14" lineNum="150" pc="268437331" symbol="onTimerLap"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="14" lineNum="151" pc="268437368" symbol="onTimerLap"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="14" lineNum="152" pc="268437388" symbol="onTimerLap"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="14" lineNum="153" pc="268437416" symbol="onTimerLap"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="14" lineNum="154" pc="268437441" symbol="onTimerLap"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="14" lineNum="155" pc="268437461" symbol="onTimerLap"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="14" lineNum="156" pc="268437489" symbol="onTimerLap"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="14" lineNum="159" pc="268437520" symbol="onTimerLap"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="14" lineNum="162" pc="268437551" symbol="onTimerLap"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="14" lineNum="163" pc="268437567" symbol="onTimerLap"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="14" lineNum="166" pc="268437598" symbol="onTimerLap"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="14" lineNum="167" pc="268437607" symbol="onTimerLap"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="15" lineNum="170" pc="268437617" symbol="onTimerReset"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="16" lineNum="173" pc="268437622" symbol="set_fonts"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="16" lineNum="174" pc="268437626" symbol="set_fonts"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="16" lineNum="175" pc="268437679" symbol="set_fonts"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="16" lineNum="176" pc="268437692" symbol="set_fonts"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="16" lineNum="182" pc="268437967" symbol="set_fonts"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="17" lineNum="193" pc="268438060" symbol="onLayout"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="17" lineNum="193" pc="268438064" symbol="onLayout"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="195" pc="268438068" symbol="compute"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="197" pc="268438072" symbol="compute"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="198" pc="268438095" symbol="compute"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="201" pc="268438132" symbol="compute"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="202" pc="268438143" symbol="compute"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="204" pc="268438162" symbol="compute"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="205" pc="268438173" symbol="compute"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="208" pc="268438192" symbol="compute"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="209" pc="268438203" symbol="compute"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="210" pc="268438222" symbol="compute"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="211" pc="268438235" symbol="compute"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="214" pc="268438260" symbol="compute"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="215" pc="268438271" symbol="compute"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="218" pc="268438290" symbol="compute"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="219" pc="268438301" symbol="compute"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="222" pc="268438341" symbol="compute"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="223" pc="268438368" symbol="compute"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="227" pc="268438417" symbol="compute"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="228" pc="268438431" symbol="compute"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="229" pc="268438438" symbol="compute"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="230" pc="268438460" symbol="compute"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="232" pc="268438485" symbol="compute"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="233" pc="268438498" symbol="compute"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="234" pc="268438538" symbol="compute"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="235" pc="268438554" symbol="compute"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="238" pc="268438603" symbol="compute"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="239" pc="268438616" symbol="compute"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="240" pc="268438643" symbol="compute"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="243" pc="268438684" symbol="compute"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="245" pc="268438706" symbol="compute"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="246" pc="268438719" symbol="compute"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="247" pc="268438738" symbol="compute"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="248" pc="268438755" symbol="compute"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="251" pc="268438813" symbol="compute"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="252" pc="268438826" symbol="compute"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="253" pc="268438845" symbol="compute"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="254" pc="268438862" symbol="compute"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="257" pc="268438920" symbol="compute"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="258" pc="268438927" symbol="compute"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="260" pc="268438937" symbol="compute"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="261" pc="268438958" symbol="compute"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="262" pc="268438974" symbol="compute"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="264" pc="268438993" symbol="compute"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="267" pc="268439016" symbol="compute"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="269" pc="268439059" symbol="compute"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="274" pc="268439078" symbol="compute"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="275" pc="268439115" symbol="compute"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="278" pc="268439170" symbol="compute"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="279" pc="268439239" symbol="compute"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="280" pc="268439300" symbol="compute"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="281" pc="268439376" symbol="compute"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="282" pc="268439437" symbol="compute"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="284" pc="268439516" symbol="compute"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="285" pc="268439569" symbol="compute"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="286" pc="268439588" symbol="compute"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="287" pc="268439622" symbol="compute"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="288" pc="268439647" symbol="compute"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="292" pc="268439663" symbol="compute"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="293" pc="268439739" symbol="compute"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="294" pc="268439806" symbol="compute"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="295" pc="268439882" symbol="compute"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="298" pc="268439952" symbol="compute"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="299" pc="268440011" symbol="compute"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="300" pc="268440070" symbol="compute"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="301" pc="268440129" symbol="compute"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="303" pc="268440188" symbol="compute"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="304" pc="268440227" symbol="compute"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="18" lineNum="307" pc="268440247" symbol="compute"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="19" lineNum="310" pc="268440251" symbol="onUpdate"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="19" lineNum="311" pc="268440255" symbol="onUpdate"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="19" lineNum="312" pc="268440266" symbol="onUpdate"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="19" lineNum="315" pc="268440283" symbol="onUpdate"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="19" lineNum="317" pc="268440295" symbol="onUpdate"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="19" lineNum="318" pc="268440308" symbol="onUpdate"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="19" lineNum="320" pc="268440321" symbol="onUpdate"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="19" lineNum="321" pc="268440334" symbol="onUpdate"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="19" lineNum="323" pc="268440360" symbol="onUpdate"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="19" lineNum="328" pc="268440576" symbol="onUpdate"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="19" lineNum="329" pc="268440633" symbol="onUpdate"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="19" lineNum="330" pc="268440693" symbol="onUpdate"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="19" lineNum="331" pc="268440753" symbol="onUpdate"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="19" lineNum="332" pc="268440810" symbol="onUpdate"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="19" lineNum="333" pc="268440870" symbol="onUpdate"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="19" lineNum="334" pc="268440927" symbol="onUpdate"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="19" lineNum="335" pc="268440987" symbol="onUpdate"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="19" lineNum="336" pc="268441035" symbol="onUpdate"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="19" lineNum="337" pc="268441092" symbol="onUpdate"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="19" lineNum="338" pc="268441152" symbol="onUpdate"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="19" lineNum="339" pc="268441212" symbol="onUpdate"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="19" lineNum="341" pc="268441263" symbol="onUpdate"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="19" lineNum="343" pc="268441282" symbol="onUpdate"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="19" lineNum="344" pc="268441317" symbol="onUpdate"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="19" lineNum="345" pc="268441352" symbol="onUpdate"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="19" lineNum="346" pc="268441393" symbol="onUpdate"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="19" lineNum="347" pc="268441431" symbol="onUpdate"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="19" lineNum="349" pc="268441466" symbol="onUpdate"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="19" lineNum="350" pc="268441501" symbol="onUpdate"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="19" lineNum="351" pc="268441545" symbol="onUpdate"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="19" lineNum="352" pc="268441589" symbol="onUpdate"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="19" lineNum="353" pc="268441633" symbol="onUpdate"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="19" lineNum="354" pc="268441677" symbol="onUpdate"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="357" pc="268441722" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="358" pc="268441726" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="359" pc="268441742" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="360" pc="268441762" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="362" pc="268441781" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="363" pc="268441788" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="364" pc="268441795" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="365" pc="268441808" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="366" pc="268441812" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="367" pc="268441828" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="368" pc="268441844" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="369" pc="268441851" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="370" pc="268441858" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="372" pc="268441862" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="373" pc="268441873" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="374" pc="268441886" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="375" pc="268441893" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="376" pc="268441904" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="377" pc="268441914" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="380" pc="268441921" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="381" pc="268441932" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="382" pc="268441939" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="383" pc="268441973" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="384" pc="268441984" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="385" pc="268441991" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="386" pc="268442022" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="387" pc="268442035" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="388" pc="268442052" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="389" pc="268442078" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="390" pc="268442103" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="391" pc="268442129" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="392" pc="268442154" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="393" pc="268442180" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="394" pc="268442205" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="395" pc="268442231" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="397" pc="268442256" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="399" pc="268442278" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="400" pc="268442298" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="401" pc="268442323" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="402" pc="268442340" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="403" pc="268442366" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="404" pc="268442391" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="405" pc="268442417" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="406" pc="268442442" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="407" pc="268442468" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="408" pc="268442493" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="409" pc="268442519" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="411" pc="268442544" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="415" pc="268442575" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="416" pc="268442586" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="417" pc="268442608" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="418" pc="268442639" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="419" pc="268442655" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="420" pc="268442662" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="421" pc="268442675" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="422" pc="268442692" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="423" pc="268442712" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="424" pc="268442737" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="425" pc="268442757" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="427" pc="268442782" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="429" pc="268442804" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="430" pc="268442824" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="431" pc="268442849" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="432" pc="268442866" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="433" pc="268442886" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="434" pc="268442911" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="435" pc="268442931" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="437" pc="268442956" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="441" pc="268442987" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="442" pc="268442998" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="443" pc="268443005" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="444" pc="268443036" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="445" pc="268443049" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="446" pc="268443066" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="447" pc="268443086" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="448" pc="268443111" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="449" pc="268443131" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="451" pc="268443156" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="453" pc="268443178" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="454" pc="268443198" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="455" pc="268443223" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="456" pc="268443240" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="457" pc="268443260" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="458" pc="268443285" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="459" pc="268443305" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="461" pc="268443330" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="465" pc="268443361" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="466" pc="268443372" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="467" pc="268443379" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="468" pc="268443419" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="469" pc="268443432" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="470" pc="268443449" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="471" pc="268443469" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="472" pc="268443494" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="473" pc="268443514" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="475" pc="268443539" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="477" pc="268443561" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="478" pc="268443581" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="479" pc="268443606" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="480" pc="268443623" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="481" pc="268443643" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="482" pc="268443668" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="483" pc="268443688" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="485" pc="268443713" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="489" pc="268443744" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="490" pc="268443755" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="491" pc="268443826" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="492" pc="268443842" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="493" pc="268443849" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="494" pc="268443871" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="495" pc="268443882" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="496" pc="268443898" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="497" pc="268443905" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="498" pc="268443956" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="499" pc="268443967" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="500" pc="268443983" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="501" pc="268443990" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="502" pc="268444007" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="503" pc="268444063" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="504" pc="268444074" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="505" pc="268444081" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="506" pc="268444121" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="507" pc="268444132" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="508" pc="268444139" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="509" pc="268444179" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="510" pc="268444192" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="511" pc="268444209" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="512" pc="268444229" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="513" pc="268444254" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="514" pc="268444274" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="516" pc="268444299" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="518" pc="268444321" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="519" pc="268444341" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="520" pc="268444366" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="521" pc="268444383" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="522" pc="268444403" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="523" pc="268444428" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="524" pc="268444448" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="526" pc="268444473" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="530" pc="268444504" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="531" pc="268444515" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="532" pc="268444571" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="533" pc="268444587" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="534" pc="268444600" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="535" pc="268444611" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="536" pc="268444622" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="537" pc="268444653" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="538" pc="268444684" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="539" pc="268444695" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="541" pc="268444731" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="543" pc="268444758" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="544" pc="268444769" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="546" pc="268444805" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="548" pc="268444832" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="549" pc="268444845" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="551" pc="268444881" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="552" pc="268444912" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="553" pc="268444943" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="554" pc="268444954" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="556" pc="268444990" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="558" pc="268445017" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="559" pc="268445028" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="561" pc="268445064" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="563" pc="268445091" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="564" pc="268445104" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="568" pc="268445140" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="570" pc="268445180" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="571" pc="268445185" symbol="drawMetric"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="13" pc="268445458" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="19" pc="268445498" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="20" pc="268445538" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="26" pc="268445578" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="27" pc="268445618" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPower.mc" id="20" lineNum="63" pc="268445814" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPowerApp.mc" id="22" lineNum="7" pc="268445235" symbol="initialize"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPowerApp.mc" id="22" lineNum="7" pc="268445239" symbol="initialize"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPowerApp.mc" id="23" lineNum="11" pc="268445258" symbol="onStart"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPowerApp.mc" id="24" lineNum="14" pc="268445263" symbol="onStop"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPowerApp.mc" id="25" lineNum="41" pc="268445268" symbol="getInitialView"/>
+        <entry filename="/Users/samuel/Documents/Code/perso/RaceWithPower/sources/base/RaceWithPowerApp.mc" id="25" lineNum="41" pc="268445272" symbol="getInitialView"/>
+        <entry filename="Rez" id="31" lineNum="24" pc="268445311" symbol="MainLayout"/>
+        <entry filename="Rez" id="32" lineNum="31" pc="268445324" symbol="AlertLayout"/>
     </pcToLineNum>
     <symbolTable>
         <entry id="8388639" module="true" symbol="Graphics"/>
-        <entry field="true" id="61" symbol="currentPowerAverage"/>
-        <entry field="true" id="70" symbol="lapPace"/>
-        <entry field="true" id="64" symbol="fontOffset"/>
+        <entry field="true" id="49" symbol="currentPowerAverage"/>
+        <entry field="true" id="60" symbol="lapPace"/>
+        <entry field="true" id="52" symbol="fontOffset"/>
+        <entry field="true" id="57" symbol="idealPower"/>
         <entry id="8388632" method="true" symbol="&lt;init&gt;"/>
-        <entry field="true" id="81" symbol="showColors"/>
-        <entry field="true" id="56" symbol="alertDelay"/>
-        <entry field="true" id="90" symbol="geometry"/>
+        <entry field="true" id="71" symbol="showColors"/>
+        <entry field="true" id="43" symbol="alertDelay"/>
+        <entry field="true" id="81" symbol="geometry"/>
         <entry id="4" module="true" symbol="globals/Rez/Menus"/>
-        <entry field="true" id="59" symbol="correction"/>
-        <entry field="true" id="67" symbol="hrZones"/>
-        <entry field="true" id="76" symbol="paused"/>
-        <entry field="true" id="63" symbol="etaPower"/>
+        <entry field="true" id="47" symbol="correction"/>
+        <entry field="true" id="55" symbol="hrZones"/>
+        <entry field="true" id="66" symbol="paused"/>
+        <entry field="true" id="51" symbol="etaPower"/>
         <entry id="21" method="true" symbol="MainLayout"/>
-        <entry field="true" id="87" symbol="timer"/>
+        <entry field="true" id="78" symbol="timer"/>
         <entry id="8389748" method="true" symbol="onTimerStop"/>
-        <entry id="92" method="true" symbol="drawMetric"/>
+        <entry id="83" method="true" symbol="drawMetric"/>
         <entry id="8388647" module="true" symbol="UserProfile"/>
         <entry field="true" id="8388611" module="true" symbol="Toybox"/>
-        <entry field="true" id="54" symbol="WEIGHT"/>
+        <entry field="true" id="41" symbol="WEIGHT"/>
+        <entry field="true" id="26" symbol="LAP_DISTANCE"/>
         <entry id="8389747" method="true" symbol="onTimerStart"/>
-        <entry field="true" id="48" symbol="AppName"/>
-        <entry id="96" method="true" symbol="format_duration"/>
+        <entry field="true" id="34" symbol="AppName"/>
+        <entry id="87" method="true" symbol="format_duration"/>
         <entry id="8389749" method="true" symbol="onTimerPause"/>
         <entry id="8" module="true" symbol="globals/Rez/Strings"/>
-        <entry field="true" id="79" symbol="sensor"/>
+        <entry field="true" id="69" symbol="sensor"/>
         <entry id="8388772" module="true" object="true" symbol="Fonts"/>
         <entry field="true" id="8390265" symbol="targetPower"/>
-        <entry field="true" id="42" symbol="ALERT"/>
-        <entry field="true" id="55" symbol="VIBRATE"/>
+        <entry field="true" id="28" symbol="ALERT"/>
+        <entry field="true" id="42" symbol="VIBRATE"/>
         <entry id="8388648" module="true" symbol="WatchUi"/>
-        <entry field="true" id="74" symbol="lapTime"/>
+        <entry field="true" id="64" symbol="lapTime"/>
         <entry id="2" module="true" symbol="globals/Rez"/>
         <entry field="true" id="8388959" symbol="cadence"/>
         <entry id="8389410" module="true" symbol="AntPlus"/>
-        <entry field="true" id="68" symbol="lapDistance"/>
+        <entry field="true" id="58" symbol="lapDistance"/>
         <entry id="8389124" method="true" symbol="onUpdate"/>
-        <entry field="true" id="41" symbol="POWER_AVERAGE"/>
-        <entry field="true" id="44" symbol="PERCENTAGE"/>
+        <entry field="true" id="56" symbol="idealPace"/>
+        <entry field="true" id="27" symbol="POWER_AVERAGE"/>
+        <entry field="true" id="30" symbol="PERCENTAGE"/>
         <entry id="8388771" module="true" object="true" symbol="Drawables"/>
         <entry id="11" object="true" symbol="RaceWithPowerView"/>
         <entry id="14" module="true" symbol="Menus"/>
         <entry id="6" module="true" symbol="globals/Rez/Layouts"/>
         <entry id="12" object="true" symbol="RaceWithPowerApp"/>
-        <entry field="true" id="88" symbol="useMetric"/>
-        <entry field="true" id="89" symbol="usePercentage"/>
+        <entry field="true" id="79" symbol="useMetric"/>
+        <entry field="true" id="80" symbol="usePercentage"/>
         <entry id="8389122" method="true" symbol="onLayout"/>
-        <entry field="true" id="80" symbol="showAlerts"/>
+        <entry field="true" id="70" symbol="showAlerts"/>
         <entry field="true" id="8388738" symbol="currentSpeed"/>
-        <entry field="true" id="66" symbol="hr"/>
-        <entry id="91" method="true" symbol="set_fonts"/>
-        <entry field="true" id="52" symbol="TARGET_ELEVATION"/>
+        <entry field="true" id="54" symbol="hr"/>
+        <entry id="82" method="true" symbol="set_fonts"/>
+        <entry field="true" id="39" symbol="TARGET_ELEVATION"/>
         <entry id="8389137" method="true" symbol="compute"/>
-        <entry field="true" id="43" symbol="SHOW_COLORS_3"/>
-        <entry field="true" id="49" symbol="SHOW_COLORS_2"/>
-        <entry field="true" id="47" symbol="SHOW_COLORS_1"/>
-        <entry field="true" id="38" symbol="SHOW_COLORS"/>
-        <entry id="95" method="true" symbol="format_distance"/>
+        <entry field="true" id="76" symbol="targetPace"/>
+        <entry field="true" id="29" symbol="SHOW_COLORS_3"/>
+        <entry field="true" id="35" symbol="SHOW_COLORS_2"/>
+        <entry field="true" id="33" symbol="SHOW_COLORS_1"/>
+        <entry field="true" id="45" symbol="avgPace"/>
+        <entry field="true" id="23" symbol="SHOW_COLORS"/>
+        <entry id="86" method="true" symbol="format_distance"/>
         <entry field="true" id="8388987" method="true" symbol="vibrate"/>
         <entry field="true" id="8388742" symbol="currentPower"/>
-        <entry field="true" id="65" symbol="fonts"/>
-        <entry field="true" id="53" symbol="MAX_ALERTS"/>
+        <entry field="true" id="53" symbol="fonts"/>
+        <entry field="true" id="40" symbol="MAX_ALERTS"/>
         <entry id="7" module="true" symbol="globals/Rez/JsonData"/>
-        <entry field="true" id="36" symbol="Z5"/>
-        <entry field="true" id="33" symbol="Z4"/>
-        <entry field="true" id="30" symbol="Z3"/>
-        <entry field="true" id="27" symbol="Z2"/>
-        <entry field="true" id="24" symbol="Z1"/>
         <entry id="3" module="true" symbol="globals/Rez/Drawables"/>
-        <entry field="true" id="71" symbol="lapPower"/>
-        <entry field="true" id="58" symbol="avgPower"/>
+        <entry field="true" id="61" symbol="lapPower"/>
+        <entry field="true" id="46" symbol="avgPower"/>
         <entry id="8389752" method="true" symbol="onTimerReset"/>
-        <entry field="true" id="35" symbol="P5"/>
-        <entry field="true" id="32" symbol="P4"/>
-        <entry field="true" id="29" symbol="P3"/>
-        <entry field="true" id="26" symbol="P2"/>
-        <entry field="true" id="23" symbol="P1"/>
-        <entry field="true" id="77" symbol="powerAverage"/>
-        <entry field="true" id="39" symbol="FTP"/>
+        <entry field="true" id="67" symbol="powerAverage"/>
+        <entry field="true" id="24" symbol="FTP"/>
         <entry field="true" id="8389143" symbol="weight"/>
-        <entry field="true" id="40" symbol="TARGET_DISTANCE"/>
+        <entry field="true" id="25" symbol="TARGET_DISTANCE"/>
         <entry id="8388769" module="true" object="true" symbol="Rez"/>
-        <entry field="true" id="72" symbol="lapStartDistance"/>
-        <entry field="true" id="37" symbol="C5"/>
-        <entry field="true" id="34" symbol="C4"/>
-        <entry field="true" id="31" symbol="C3"/>
-        <entry field="true" id="28" symbol="C2"/>
-        <entry field="true" id="25" symbol="C1"/>
+        <entry field="true" id="62" symbol="lapStartDistance"/>
+        <entry field="true" id="36" symbol="LAP_CORRECT"/>
+        <entry field="true" id="48" symbol="correctLap"/>
         <entry id="8388640" module="true" symbol="Lang"/>
         <entry id="8390088" module="true" object="true" symbol="JsonData"/>
-        <entry field="true" id="73" symbol="lapStartTime"/>
+        <entry field="true" id="63" symbol="lapStartTime"/>
         <entry field="true" id="15" symbol="LauncherIcon"/>
-        <entry field="true" id="46" symbol="TARGET_TIME"/>
+        <entry field="true" id="32" symbol="TARGET_TIME"/>
         <entry id="8388610" symbol="statics"/>
-        <entry id="93" method="true" symbol="convert_speed_pace"/>
-        <entry field="true" id="60" symbol="correctionTimestamp"/>
+        <entry id="84" method="true" symbol="convert_speed_pace"/>
         <entry id="8389350" module="true" symbol="globals"/>
         <entry id="8388770" module="true" object="true" symbol="Strings"/>
         <entry id="8388702" method="true" symbol="initialize"/>
-        <entry field="true" id="86" symbol="targetTime"/>
+        <entry field="true" id="77" symbol="targetTime"/>
         <entry id="8389279" method="true" symbol="onStart"/>
-        <entry field="true" id="83" symbol="targetElevation"/>
+        <entry field="true" id="73" symbol="targetElevation"/>
         <entry id="10" object="true" symbol="Utils"/>
-        <entry field="true" id="78" symbol="remainingDistance"/>
+        <entry field="true" id="68" symbol="remainingDistance"/>
         <entry id="9" module="true" symbol="globals/Utils"/>
         <entry field="true" id="8388747" symbol="currentHeartRate"/>
-        <entry field="true" id="69" symbol="lapLength"/>
+        <entry field="true" id="59" symbol="lapLength"/>
         <entry id="8391701" method="true" symbol="setAntiAlias"/>
         <entry id="8389751" method="true" symbol="onTimerLap"/>
         <entry id="8389280" method="true" symbol="getInitialView"/>
         <entry id="8389281" method="true" symbol="onStop"/>
-        <entry id="94" method="true" symbol="replaceNull"/>
-        <entry field="true" id="50" symbol="TARGET_POWER"/>
-        <entry field="true" id="75" symbol="maxAlerts"/>
-        <entry field="true" id="85" symbol="targetLow"/>
+        <entry id="85" method="true" symbol="replaceNull"/>
+        <entry field="true" id="37" symbol="TARGET_POWER"/>
+        <entry field="true" id="65" symbol="maxAlerts"/>
+        <entry field="true" id="75" symbol="targetLow"/>
         <entry field="true" id="8388734" symbol="elapsedDistance"/>
         <entry field="true" id="8388745" symbol="totalAscent"/>
         <entry id="22" method="true" symbol="AlertLayout"/>
         <entry field="true" id="8388750" symbol="currentCadence"/>
         <entry id="13" module="true" symbol="Layouts"/>
-        <entry field="true" id="45" symbol="USE_CUSTOM_FONTS"/>
+        <entry field="true" id="31" symbol="USE_CUSTOM_FONTS"/>
         <entry id="8388636" module="true" symbol="Attention"/>
-        <entry field="true" id="57" symbol="alternateMetric"/>
+        <entry field="true" id="44" symbol="alternateMetric"/>
         <entry id="8389750" method="true" symbol="onTimerResume"/>
-        <entry field="true" id="62" symbol="etaPace"/>
+        <entry field="true" id="50" symbol="etaPace"/>
         <entry id="5" module="true" symbol="globals/Rez/Fonts"/>
-        <entry field="true" id="82" symbol="targetDistance"/>
+        <entry field="true" id="72" symbol="targetDistance"/>
         <entry id="8388635" module="true" symbol="Application"/>
-        <entry field="true" id="51" symbol="ALERT_DELAY"/>
+        <entry field="true" id="38" symbol="ALERT_DELAY"/>
         <entry field="true" id="20" symbol="F"/>
         <entry field="true" id="8388894" symbol="E"/>
         <entry field="true" id="19" symbol="D"/>
         <entry field="true" id="18" symbol="C"/>
         <entry field="true" id="17" symbol="B"/>
         <entry field="true" id="16" symbol="A"/>
-        <entry field="true" id="84" symbol="targetHigh"/>
+        <entry field="true" id="74" symbol="targetHigh"/>
     </symbolTable>
     <localVars>
         <entry arg="true" endPc="268435477" name="defaultValue" stackId="2" startPc="268435456"/>
@@ -492,46 +529,51 @@
         <entry arg="true" endPc="268436003" name="useSpeed" stackId="3" startPc="268435798"/>
         <entry arg="true" endPc="268436003" name="speed" stackId="1" startPc="268435798"/>
         <entry arg="true" endPc="268436003" name="useMetric" stackId="2" startPc="268435798"/>
-        <entry arg="true" endPc="268437017" name="strydsensor" stackId="1" startPc="268436006"/>
-        <entry arg="true" endPc="268437611" name="dc" stackId="1" startPc="268437603"/>
-        <entry endPc="268438106" name="i" stackId="2" startPc="268438065"/>
-        <entry endPc="268438438" name="i" stackId="5" startPc="268438380"/>
-        <entry endPc="268438478" name="entries" stackId="4" startPc="268438038"/>
-        <entry endPc="268438478" name="tempAverage" stackId="3" startPc="268438038"/>
-        <entry endPc="268438897" name="remElevation" stackId="6" startPc="268438757"/>
-        <entry endPc="268438897" name="remDistance" stackId="7" startPc="268438757"/>
-        <entry arg="true" endPc="268439045" name="info" stackId="1" startPc="268437611"/>
-        <entry endPc="268440515" name="height" stackId="3" startPc="268439049"/>
-        <entry endPc="268440515" name="width" stackId="2" startPc="268439049"/>
-        <entry endPc="268440515" name="bgColor" stackId="4" startPc="268439049"/>
-        <entry endPc="268440515" name="fgColor" stackId="5" startPc="268439049"/>
-        <entry endPc="268440515" name="geometry" stackId="6" startPc="268439049"/>
-        <entry arg="true" endPc="268440516" name="dc" stackId="1" startPc="268439045"/>
-        <entry endPc="268442662" name="distance" stackId="19" startPc="268442549"/>
-        <entry endPc="268442854" name="time" stackId="20" startPc="268442761"/>
-        <entry endPc="268443391" name="distance" stackId="21" startPc="268443309"/>
-        <entry endPc="268443584" name="textx" stackId="12" startPc="268440520"/>
-        <entry endPc="268443584" name="textFont" stackId="15" startPc="268440520"/>
-        <entry endPc="268443584" name="labelx" stackId="13" startPc="268440520"/>
-        <entry endPc="268443584" name="labelFont" stackId="14" startPc="268440520"/>
-        <entry endPc="268443584" name="showText" stackId="18" startPc="268440520"/>
-        <entry endPc="268443584" name="label" stackId="10" startPc="268440520"/>
-        <entry endPc="268443584" name="value" stackId="11" startPc="268440520"/>
-        <entry endPc="268443584" name="localOffset" stackId="16" startPc="268440520"/>
-        <entry endPc="268443584" name="labelOffset" stackId="17" startPc="268440520"/>
-        <entry arg="true" endPc="268443585" name="fgColor" stackId="9" startPc="268440516"/>
-        <entry arg="true" endPc="268443585" name="width" stackId="5" startPc="268440516"/>
-        <entry arg="true" endPc="268443585" name="align" stackId="7" startPc="268440516"/>
-        <entry arg="true" endPc="268443585" name="type" stackId="2" startPc="268440516"/>
-        <entry arg="true" endPc="268443585" name="y" stackId="4" startPc="268440516"/>
-        <entry arg="true" endPc="268443585" name="bgColor" stackId="8" startPc="268440516"/>
-        <entry arg="true" endPc="268443585" name="x" stackId="3" startPc="268440516"/>
-        <entry arg="true" endPc="268443585" name="dc" stackId="1" startPc="268440516"/>
-        <entry arg="true" endPc="268443585" name="height" stackId="6" startPc="268440516"/>
-        <entry arg="true" endPc="268443613" name="state" stackId="1" startPc="268443608"/>
-        <entry arg="true" endPc="268443618" name="state" stackId="1" startPc="268443613"/>
-        <entry arg="true" endPc="268443674" name="dc" stackId="1" startPc="268443661"/>
-        <entry arg="true" endPc="268443687" name="dc" stackId="1" startPc="268443674"/>
+        <entry arg="true" endPc="268437173" name="strydsensor" stackId="1" startPc="268436006"/>
+        <entry endPc="268437517" name="delta" stackId="1" startPc="268437284"/>
+        <entry arg="true" endPc="268438068" name="dc" stackId="1" startPc="268438060"/>
+        <entry endPc="268438684" name="i" stackId="2" startPc="268438643"/>
+        <entry endPc="268439016" name="i" stackId="5" startPc="268438958"/>
+        <entry endPc="268439056" name="entries" stackId="4" startPc="268438616"/>
+        <entry endPc="268439056" name="tempAverage" stackId="3" startPc="268438616"/>
+        <entry endPc="268439949" name="remElevation" stackId="6" startPc="268439569"/>
+        <entry endPc="268439949" name="remDistance" stackId="7" startPc="268439569"/>
+        <entry arg="true" endPc="268440251" name="info" stackId="1" startPc="268438068"/>
+        <entry endPc="268441721" name="height" stackId="3" startPc="268440255"/>
+        <entry endPc="268441721" name="width" stackId="2" startPc="268440255"/>
+        <entry endPc="268441721" name="bgColor" stackId="4" startPc="268440255"/>
+        <entry endPc="268441721" name="fgColor" stackId="5" startPc="268440255"/>
+        <entry endPc="268441721" name="geometry" stackId="6" startPc="268440255"/>
+        <entry arg="true" endPc="268441722" name="dc" stackId="1" startPc="268440251"/>
+        <entry endPc="268443868" name="distance" stackId="19" startPc="268443755"/>
+        <entry endPc="268444060" name="time" stackId="20" startPc="268443967"/>
+        <entry endPc="268444597" name="distance" stackId="21" startPc="268444515"/>
+        <entry endPc="268444878" name="delta2" stackId="23" startPc="268444622"/>
+        <entry endPc="268444878" name="delta" stackId="22" startPc="268444622"/>
+        <entry endPc="268445137" name="delta2" stackId="25" startPc="268444881"/>
+        <entry endPc="268445137" name="delta" stackId="24" startPc="268444881"/>
+        <entry endPc="268445234" name="textx" stackId="12" startPc="268441726"/>
+        <entry endPc="268445234" name="textFont" stackId="15" startPc="268441726"/>
+        <entry endPc="268445234" name="labelx" stackId="13" startPc="268441726"/>
+        <entry endPc="268445234" name="labelFont" stackId="14" startPc="268441726"/>
+        <entry endPc="268445234" name="showText" stackId="18" startPc="268441726"/>
+        <entry endPc="268445234" name="label" stackId="10" startPc="268441726"/>
+        <entry endPc="268445234" name="value" stackId="11" startPc="268441726"/>
+        <entry endPc="268445234" name="localOffset" stackId="16" startPc="268441726"/>
+        <entry endPc="268445234" name="labelOffset" stackId="17" startPc="268441726"/>
+        <entry arg="true" endPc="268445235" name="fgColor" stackId="9" startPc="268441722"/>
+        <entry arg="true" endPc="268445235" name="width" stackId="5" startPc="268441722"/>
+        <entry arg="true" endPc="268445235" name="align" stackId="7" startPc="268441722"/>
+        <entry arg="true" endPc="268445235" name="type" stackId="2" startPc="268441722"/>
+        <entry arg="true" endPc="268445235" name="y" stackId="4" startPc="268441722"/>
+        <entry arg="true" endPc="268445235" name="bgColor" stackId="8" startPc="268441722"/>
+        <entry arg="true" endPc="268445235" name="x" stackId="3" startPc="268441722"/>
+        <entry arg="true" endPc="268445235" name="dc" stackId="1" startPc="268441722"/>
+        <entry arg="true" endPc="268445235" name="height" stackId="6" startPc="268441722"/>
+        <entry arg="true" endPc="268445263" name="state" stackId="1" startPc="268445258"/>
+        <entry arg="true" endPc="268445268" name="state" stackId="1" startPc="268445263"/>
+        <entry arg="true" endPc="268445324" name="dc" stackId="1" startPc="268445311"/>
+        <entry arg="true" endPc="268445337" name="dc" stackId="1" startPc="268445324"/>
     </localVars>
     <annotations>
         <annotationEntry annotation="roundone" class="RaceWithPowerView" module="globals" symbol="geometry"/>
@@ -546,24 +588,10 @@
         <annotationEntry annotation="initialized" class="Fonts" module="globals/Rez" symbol="D"/>
         <annotationEntry annotation="initialized" class="Fonts" module="globals/Rez" symbol="E"/>
         <annotationEntry annotation="initialized" class="Fonts" module="globals/Rez" symbol="F"/>
-        <annotationEntry annotation="initialized" class="JsonData" module="globals/Rez" symbol="P1"/>
-        <annotationEntry annotation="initialized" class="JsonData" module="globals/Rez" symbol="Z1"/>
-        <annotationEntry annotation="initialized" class="JsonData" module="globals/Rez" symbol="C1"/>
-        <annotationEntry annotation="initialized" class="JsonData" module="globals/Rez" symbol="P2"/>
-        <annotationEntry annotation="initialized" class="JsonData" module="globals/Rez" symbol="Z2"/>
-        <annotationEntry annotation="initialized" class="JsonData" module="globals/Rez" symbol="C2"/>
-        <annotationEntry annotation="initialized" class="JsonData" module="globals/Rez" symbol="P3"/>
-        <annotationEntry annotation="initialized" class="JsonData" module="globals/Rez" symbol="Z3"/>
-        <annotationEntry annotation="initialized" class="JsonData" module="globals/Rez" symbol="C3"/>
-        <annotationEntry annotation="initialized" class="JsonData" module="globals/Rez" symbol="P4"/>
-        <annotationEntry annotation="initialized" class="JsonData" module="globals/Rez" symbol="Z4"/>
-        <annotationEntry annotation="initialized" class="JsonData" module="globals/Rez" symbol="C4"/>
-        <annotationEntry annotation="initialized" class="JsonData" module="globals/Rez" symbol="P5"/>
-        <annotationEntry annotation="initialized" class="JsonData" module="globals/Rez" symbol="Z5"/>
-        <annotationEntry annotation="initialized" class="JsonData" module="globals/Rez" symbol="C5"/>
         <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="SHOW_COLORS"/>
         <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="FTP"/>
         <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="TARGET_DISTANCE"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="LAP_DISTANCE"/>
         <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="POWER_AVERAGE"/>
         <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ALERT"/>
         <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="SHOW_COLORS_3"/>
@@ -573,6 +601,7 @@
         <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="SHOW_COLORS_1"/>
         <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="AppName"/>
         <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="SHOW_COLORS_2"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="LAP_CORRECT"/>
         <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="TARGET_POWER"/>
         <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ALERT_DELAY"/>
         <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="TARGET_ELEVATION"/>
@@ -589,10 +618,10 @@
         <dataEntry label="globals/Rez/Fonts" offset="386" parentId="Rez" symbolId="Fonts" type="module"/>
         <dataEntry label="globals/Rez/Layouts" offset="465" parentId="Rez" symbolId="Layouts" type="module"/>
         <dataEntry label="globals/Rez/JsonData" offset="512" parentId="Rez" symbolId="JsonData" type="module"/>
-        <dataEntry label="globals/Rez/Strings" offset="663" parentId="Rez" symbolId="Strings" type="module"/>
-        <dataEntry label="globals/RaceWithPowerView" offset="838" parentId="globals" symbolId="RaceWithPowerView" type="class"/>
-        <dataEntry label="globals/Utils" offset="1325" parentId="globals" symbolId="Utils" type="class"/>
-        <dataEntry label="globals/Utils/statics" offset="1380" parentId="globals" symbolId="globals/Utils" type="class"/>
+        <dataEntry label="globals/Rez/Strings" offset="543" parentId="Rez" symbolId="Strings" type="module"/>
+        <dataEntry label="globals/RaceWithPowerView" offset="734" parentId="globals" symbolId="RaceWithPowerView" type="class"/>
+        <dataEntry label="globals/Utils" offset="1253" parentId="globals" symbolId="Utils" type="class"/>
+        <dataEntry label="globals/Utils/statics" offset="1308" parentId="globals" symbolId="globals/Utils" type="class"/>
     </dataEntryOffsetMappings>
     <functions>
         <functionEntry accessMode="public" name="replaceNull" parent="Utils">

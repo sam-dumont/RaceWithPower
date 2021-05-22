@@ -45,4 +45,10 @@
 	<setting propertyKey="@Properties.N" title="@Strings.TARGET_ELEVATION">
 		<settingConfig type="numeric" />
 	</setting>
+	<setting propertyKey="@Properties.O" title="@Strings.LAP_DISTANCE">
+		<settingConfig type="numeric" />
+	</setting>
+	<setting propertyKey="@Properties.P" title="@Strings.LAP_CORRECT">
+		<settingConfig type="boolean" />
+	</setting>
 </settings>

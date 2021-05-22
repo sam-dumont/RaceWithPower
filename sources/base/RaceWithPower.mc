@@ -7,21 +7,24 @@ using Toybox.System as Sys;
 class RaceWithPowerView extends WatchUi.DataField {
   hidden var alertDelay;
   hidden var alternateMetric = false;
+  hidden var avgPace;
   hidden var avgPower;
   hidden var cadence = 0;
-  hidden var correction = [0,0];
-  hidden var correctionTimestamp = 0;
+  hidden var correction = [0,0,0];
+  hidden var correctLap;
   hidden var currentPower;
   hidden var currentPowerAverage;
   hidden var currentSpeed;
   hidden var elapsedDistance;
-  hidden var etaPace = 0;
-  hidden var etaPower = 0;
+  hidden var etaPace = [0,0];
+  hidden var etaPower = [0,0];
   hidden var fontOffset = 0;
   hidden var fonts;
   hidden var FTP;
   hidden var hr = 0;
   hidden var hrZones;
+  hidden var idealPace = [0,0];
+  hidden var idealPower = [0,0];
   hidden var lapDistance = 0;
   hidden var lapLength = 0;
   hidden var lapPace = 0;
@@ -40,6 +43,7 @@ class RaceWithPowerView extends WatchUi.DataField {
   hidden var targetElevation;
   hidden var targetHigh = 0;
   hidden var targetLow = 0;
+  hidden var targetPace = 0;
   hidden var targetPower;
   hidden var targetTime;
   hidden var timer;
@@ -104,12 +108,20 @@ class RaceWithPowerView extends WatchUi.DataField {
     targetElevation =
         Utils.replaceNull(Application.getApp().getProperty("N"), 0);
 
+    lapLength =
+        Utils.replaceNull(Application.getApp().getProperty("O"), 1000);
+
+    correctLap =
+        Utils.replaceNull(Application.getApp().getProperty("P"), true);
+
     weight =
         Utils.replaceNull(Application.getApp().getProperty("M"), 100);
 
     useMetric = System.getDeviceSettings().paceUnits == System.UNIT_METRIC
                     ? true
                     : false;
+
+    targetPace = (targetDistance * 1.0) / (targetTime * 1.0);
 
     set_fonts();
     
@@ -130,8 +142,27 @@ class RaceWithPowerView extends WatchUi.DataField {
 
   function onTimerLap() {
     lapTime = 0;
-    lapStartTime = timer;
-    lapStartDistance = Activity.getActivityInfo().elapsedDistance;
+
+    if(correctLap){
+      if(correction[2] == 0){
+        lapStartTime = timer;
+        lapStartDistance = Activity.getActivityInfo().elapsedDistance;
+        var delta = elapsedDistance.toNumber() % lapLength.toNumber();
+        if(delta <= 0.10 * lapLength){
+          correction[1] = correction[0];
+          correction[0] = -1 * delta;
+        }else if(delta >= 0.90 * lapLength){
+          correction[1] = correction[0];
+          correction[0] = lapLength - delta;
+        }
+      } else {
+        correction[0] = correction[1];
+      }
+    } else {
+      lapStartTime = timer;
+      lapStartDistance = Activity.getActivityInfo().elapsedDistance;
+    }
+
     lapPower = null;
     lapPace = null;
   }
@@ -162,6 +193,11 @@ class RaceWithPowerView extends WatchUi.DataField {
   function onLayout(dc) { return true; }
 
   function compute(info) {
+
+    if(correction[2] > 0){
+      correction[2] = correction[2] - 1;
+    }
+
     if (info has :currentCadence) {
       cadence = info.currentCadence;
     }
@@ -194,8 +230,9 @@ class RaceWithPowerView extends WatchUi.DataField {
         lapTime = timer - lapStartTime;
 
         if(info.elapsedDistance != null){
-          lapDistance = info.elapsedDistance - lapStartDistance;
+          lapDistance = (info.elapsedDistance - lapStartDistance) + correction[0];
           elapsedDistance = info.elapsedDistance;
+          avgPace = (info.elapsedDistance + correction[0]) / (timer * 1.0);
         }
 
         if (currentPower != null) {
@@ -235,25 +272,33 @@ class RaceWithPowerView extends WatchUi.DataField {
     }
 
     if(lapTime != 0 && lapDistance != 0){
-      lapPace = (lapDistance * 1.0) / (lapTime * 1.0);
+      lapPace = ((lapDistance + correction[0]) * 1.0) / (lapTime * 1.0);
     }
 
     if(elapsedDistance != null && elapsedDistance > 0 && lapPace != 0 && lapPace != null){
-      etaPace = ((targetDistance * 1.0 - elapsedDistance * 1.0) / lapPace).toNumber();
+      etaPace[0] = (((elapsedDistance + correction[0]) * 1.0) / avgPace).toNumber();
+      etaPace[1] = ((targetDistance * 1.0 - (elapsedDistance + correction[0]) * 1.0) / lapPace).toNumber();
+      idealPace[0] = (((elapsedDistance + correction[0]) * 1.0) / targetPace).toNumber();
+      idealPace[1] = ((targetDistance * 1.0 - (elapsedDistance + correction[0]) * 1.0) / targetPace).toNumber();
     }
     if(elapsedDistance != null && elapsedDistance > 0 && lapPower != 0){
       var remElevation = targetElevation - totalAscent;
-      var remDistance = targetDistance - elapsedDistance;
+      var remDistance = targetDistance - (elapsedDistance + correction[0]);
       if (remElevation > 0 && remDistance > 0){
         remDistance = remDistance + (remElevation * 2);
       }
 
       // method from https://blog.stryd.com/2020/01/10/how-to-calculate-your-race-time-from-your-target-power/ + adding the elevation in
-      etaPower = ((1.04 * remDistance ) / ((lapPower * 1.0) / (weight * 1.0)) + 0.5).toNumber();
+      etaPower[0] = ((1.04 * (targetDistance - remDistance) ) / ((avgPower * 1.0) / (weight * 1.0)) + 0.5).toNumber();
+      etaPower[1] = ((1.04 * remDistance ) / ((lapPower * 1.0) / (weight * 1.0)) + 0.5).toNumber();
+      idealPower[0] = ((1.04 * (targetDistance - remDistance) ) / ((targetPower * 1.0) / (weight * 1.0)) + 0.5).toNumber();
+      idealPower[1] = ((1.04 * remDistance ) / ((targetPower * 1.0) / (weight * 1.0)) + 0.5).toNumber();
     }
 
-    etaPace = etaPace < 0 ? 0 : etaPace;
-    etaPower = etaPower < 0 ? 0 : etaPower;
+    etaPace[1] = etaPace[1] < 0 ? 0 : etaPace[1];
+    idealPace[1] = idealPace[1] < 0 ? 0 : idealPace[1];
+    etaPower[1] = etaPower[1] < 0 ? 0 : etaPower[1];
+    idealPower[1] = idealPower[1] < 0 ? 0 : idealPower[1];
 
     if(timer != null && timer % 5 == 0){
       alternateMetric = !alternateMetric;
@@ -488,11 +533,35 @@ class RaceWithPowerView extends WatchUi.DataField {
       value = distance[0];
     } else if (type == 11) {
       if(alternateMetric){
-        label = "ETA PACE";
-        value = Utils.format_duration(etaPace);
+        var delta = etaPace[0] - idealPace[0];
+        var delta2 = etaPace[1] - idealPace[1];
+        if(delta<0){
+          delta = "-"+Utils.format_duration(delta * -1);
+        } else {
+          delta = "+"+Utils.format_duration(delta);
+        }
+        if(delta2<0){
+          delta2 = "-"+Utils.format_duration(delta2 * -1);
+        } else {
+          delta2 = "+"+Utils.format_duration(delta2);
+        }
+        label = delta+" ETA PACE "+delta2;
+        value = Utils.format_duration(etaPace[1]);
       } else {
-        label = "ETA PWR";
-        value = Utils.format_duration(etaPower);
+        var delta = etaPower[0] - idealPower[0];
+        var delta2 = etaPower[1] - idealPower[1];
+        if(delta<0){
+          delta = "-"+Utils.format_duration(delta * -1);
+        } else {
+          delta = "+"+Utils.format_duration(delta);
+        }
+        if(delta2<0){
+          delta2 = "-"+Utils.format_duration(delta2 * -1);
+        } else {
+          delta2 = "+"+Utils.format_duration(delta2);
+        }
+        label = delta+" ETA PWR "+delta2;
+        value = Utils.format_duration(etaPower[1]);
       }
     }
 
