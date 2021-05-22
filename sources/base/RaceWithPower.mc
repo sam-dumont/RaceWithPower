@@ -13,6 +13,7 @@ class RaceWithPowerView extends WatchUi.DataField {
   hidden var correction = [0,0,0];
   hidden var correctLap;
   hidden var currentPower;
+  hidden var currentPowerRaw;
   hidden var currentPowerAverage;
   hidden var currentSpeed;
   hidden var elapsedDistance;
@@ -25,6 +26,7 @@ class RaceWithPowerView extends WatchUi.DataField {
   hidden var hrZones;
   hidden var idealPace = [0,0];
   hidden var idealPower = [0,0];
+  hidden var idealPowerTarget = 0;
   hidden var lapDistance = 0;
   hidden var lapLength = 0;
   hidden var lapPace = 0;
@@ -122,6 +124,7 @@ class RaceWithPowerView extends WatchUi.DataField {
                     : false;
 
     targetPace = (targetDistance * 1.0) / (targetTime * 1.0);
+    idealPowerTarget = ((1.04 * targetDistance) / (targetTime * 1.0)) * weight;
 
     set_fonts();
     
@@ -288,11 +291,17 @@ class RaceWithPowerView extends WatchUi.DataField {
         remDistance = remDistance + (remElevation * 2);
       }
 
+      var factor = 1.0;
+
+      if(usePercentage){
+        factor = FTP * 1.0;
+      }
+
       // method from https://blog.stryd.com/2020/01/10/how-to-calculate-your-race-time-from-your-target-power/ + adding the elevation in
-      etaPower[0] = ((1.04 * (targetDistance - remDistance) ) / ((avgPower * 1.0) / (weight * 1.0)) + 0.5).toNumber();
-      etaPower[1] = ((1.04 * remDistance ) / ((lapPower * 1.0) / (weight * 1.0)) + 0.5).toNumber();
-      idealPower[0] = ((1.04 * (targetDistance - remDistance) ) / ((targetPower * 1.0) / (weight * 1.0)) + 0.5).toNumber();
-      idealPower[1] = ((1.04 * remDistance ) / ((targetPower * 1.0) / (weight * 1.0)) + 0.5).toNumber();
+      etaPower[0] = ((1.04 * (targetDistance - remDistance) ) / ((avgPower * factor) / (weight * 1.0)) + 0.5).toNumber();
+      etaPower[1] = ((1.04 * remDistance ) / ((lapPower * factor) / (weight * 1.0)) + 0.5).toNumber();
+      idealPower[0] = ((1.04 * (targetDistance - remDistance) ) / ((idealPowerTarget * 1.0) / (weight * 1.0)) + 0.5).toNumber();
+      idealPower[1] = ((1.04 * remDistance ) / ((idealPowerTarget * 1.0) / (weight * 1.0)) + 0.5).toNumber();
     }
 
     etaPace[1] = etaPace[1] < 0 ? 0 : etaPace[1];
