@@ -1,4 +1,4 @@
-# RunPowerWorkout
+# Race With Power
 
 RaceWithPower is a Garmin datafield designed to show you useful metrics while racing with power as main metric.
 
