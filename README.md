@@ -19,13 +19,16 @@ It is available in the ConnectIQ store at this address : https://apps.garmin.com
 9. Current lap pace (corrected)
 10. Current lap power (corrected)
 11. Current lap distance (corrected)
-12. ETA based on current lap power and pace
+12. ETA/Predicted end time based on current lap power and pace
 
 Customization is possible :
 * Alert outside of race power target
 * Correct distance by pressing on a lap button (within -/+ 10% of the lap distance)
 * Choose colors to display (None, Foreground only, Background and Foreground)
 * Choose to use custom font (narrower) or standard.
+* Disable the current time of day display
+* Disable the lap details display
+* Choose between ETA and Predicted end time.
 # Settings
 
 * Show power in raw value or percentage of FTP
@@ -42,6 +45,14 @@ Customization is possible :
 ![](doc/img/FR945.png)
 
 ![](doc/img/Fenix5s.png)
+
+When disabling advanced options, you can obtain a more "minimalist" field.
+
+![](doc/img/SIMPLE2.png)
+
+![](doc/img/FR935_s.png)
+
+![](doc/img/FR945_s.png)
 
 ### Pragati Font License
 

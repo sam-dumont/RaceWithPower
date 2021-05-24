@@ -2,7 +2,6 @@
 	<string id="AppName">Race With Power</string>
 	<string id="PERCENTAGE">Use Percentage?</string>
 	<string id="FTP">What is your FTP/CP?</string>
-	<string id="ALERT">Display alerts?</string>
 	<string id="VIBRATE">Vibrate on alerts?</string>
 	<string id="POWER_AVERAGE">Power averaging in seconds (1-30)</string>
 	<string id="SHOW_COLORS">Show Colors in Datafield</string>
@@ -10,13 +9,15 @@
 	<string id="SHOW_COLORS_2">Text Only</string>
 	<string id="SHOW_COLORS_3">None</string>
 	<string id="USE_CUSTOM_FONTS">Use custom fonts ? (only for capability level 2 or 4)</string>
-	<string id="ALERT_DELAY">Delay between alerts.</string>
-	<string id="MAX_ALERTS">Maximum amount of alerts.</string>
 	<string id="TARGET_POWER">Target power.</string>
-	<string id="TARGET_TIME">Target time (in seconds).</string>
+	<string id="TARGET_TIME">Target time (in seconds OR hh:mm:ss format).</string>
 	<string id="TARGET_DISTANCE">Target distance (in meters).</string>
 	<string id="TARGET_ELEVATION">Course elevation (in meters).</string>
-	<string id="WEIGHT">Weight (as setup on Stryd !).</string>
-	<string id="LAP_DISTANCE">Race lap distance.</string>
+	<string id="WEIGHT">Weight in kg (as setup on Stryd !).</string>
+	<string id="LAP_DISTANCE">Race lap distance (in meters).</string>
 	<string id="LAP_CORRECT">Correct the distance when pressing lap button ?</string>
+	<string id="SHOW_TIME">Show time of day ?</string>
+	<string id="SHOW_LAP_DATA">Show lap data (pace, power, distance) ?</string>
+	<string id="SHOW_ETA">Show ETA (remaining time) instead of predicted finish time ?</string>
+	<string id="ALTERNATE_PC">Alternate between pace and power estimates ?</string>
 </strings>

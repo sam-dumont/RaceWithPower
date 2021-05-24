@@ -1,18 +1,19 @@
 <properties>
     <property id="A" type="boolean">false</property>
     <property id="B" type="number">330</property>
-    <property id="C" type="boolean">true</property>
     <property id="D" type="boolean">true</property>
     <property id="E" type="number">10</property>
     <property id="F" type="number">1</property>
-    <property id="G" type="number">15</property>
-    <property id="H" type="number">3</property>
     <property id="I" type="boolean">true</property>
     <property id="J" type="number">350</property>
     <property id="K" type="number">5000</property>
-    <property id="L" type="number">1200</property>
+    <property id="L" type="string">1200</property>
     <property id="M" type="number">100</property>
     <property id="N" type="number">0</property>
     <property id="O" type="number">1000</property>
     <property id="P" type="boolean">true</property>
+    <property id="Q" type="boolean">false</property>
+    <property id="R" type="boolean">false</property>
+    <property id="S" type="boolean">false</property>
+    <property id="T" type="boolean">false</property>
 </properties>

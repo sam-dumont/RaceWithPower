@@ -16,7 +16,7 @@ class RaceWithPowerApp extends Application.AppBase {
   (:ant)
   function onStart(state) {
     //Create the sensor object and open it
-    var sensorsetting = Utils.replaceNull(Application.getApp().getProperty("L"), -1);
+    var sensorsetting = Utils.replaceNull(Application.getApp().getProperty("ZZ"), -1);
     if(sensorsetting != -1){
       sensor = new PowerSensor(sensorsetting);
       sensor.open();

@@ -1,0 +1,9 @@
+<strings>
+    <string id="ALERT_TYPE">Alert metric type</string>
+    <string id="ALERT_DELAY">Delay between alerts</string>
+    <string id="ALERT_COUNT">Maximum number of alerts</string>
+    <string id="ENABLE_ALERT">Enable alerts ?</string>
+    <string id="ALERT_1">Current power</string>
+    <string id="ALERT_2">Lap power</string>
+    <string id="ALERT_3">Average power</string>
+</strings>

@@ -1,5 +1,5 @@
 <settings>
-	<setting propertyKey="@Properties.L" title="@Strings.ANTID">
+	<setting propertyKey="@Properties.ZZ" title="@Strings.ANTID">
 		<settingConfig type="numeric" />
 	</setting>
 </settings>
