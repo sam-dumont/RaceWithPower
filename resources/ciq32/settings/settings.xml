@@ -1,12 +1,18 @@
 <settings>
-    <setting propertyKey="@Properties.F" title="@Strings.SHOW_COLORS">
-        <settingConfig type="list">
-            <listEntry value="1">@Strings.SHOW_COLORS_1</listEntry>
-            <listEntry value="2">@Strings.SHOW_COLORS_2</listEntry>
-            <listEntry value="3">@Strings.SHOW_COLORS_3</listEntry>
-        </settingConfig>
+    <setting propertyKey="@Properties.W" title="@Strings.ENABLE_ALERT">
+        <settingConfig type="boolean" />
     </setting>
-    <setting propertyKey="@Properties.G" title="@Strings.ALERT_DELAY">
+    <setting propertyKey="@Properties.X" title="@Strings.ALERT_DELAY">
         <settingConfig type="numeric" />
+    </setting>
+    <setting propertyKey="@Properties.Y" title="@Strings.ALERT_COUNT">
+        <settingConfig type="numeric" />
+    </setting>
+    <setting propertyKey="@Properties.Z" title="@Strings.ALERT_TYPE">
+        <settingConfig type="list">
+            <listEntry value="1">@Strings.ALERT_1</listEntry>
+            <listEntry value="2">@Strings.ALERT_2</listEntry>
+            <listEntry value="3">@Strings.ALERT_3</listEntry>
+        </settingConfig>
     </setting>
 </settings>

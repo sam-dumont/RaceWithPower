@@ -5,9 +5,6 @@
 	<setting propertyKey="@Properties.B" title="@Strings.FTP">
 		<settingConfig type="numeric" />
 	</setting>
-	<setting propertyKey="@Properties.C" title="@Strings.ALERT">
-		<settingConfig type="boolean" />
-	</setting>
 	<setting propertyKey="@Properties.D" title="@Strings.VIBRATE">
 		<settingConfig type="boolean" />
 	</setting>
@@ -20,12 +17,6 @@
 			<listEntry value="2">@Strings.SHOW_COLORS_2</listEntry>
 			<listEntry value="3">@Strings.SHOW_COLORS_3</listEntry>
 		</settingConfig>
-	</setting>
-	<setting propertyKey="@Properties.G" title="@Strings.ALERT_DELAY">
-		<settingConfig type="numeric" />
-	</setting>
-	<setting propertyKey="@Properties.H" title="@Strings.MAX_ALERTS">
-		<settingConfig type="numeric" />
 	</setting>
 	<setting propertyKey="@Properties.I" title="@Strings.USE_CUSTOM_FONTS">
 		<settingConfig type="boolean" />

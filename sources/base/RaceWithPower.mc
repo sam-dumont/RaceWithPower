@@ -5,19 +5,26 @@ using Toybox.AntPlus;
 using Toybox.System as Sys;
 
 class RaceWithPowerView extends WatchUi.DataField {
-  hidden var alertDelay;
+  (:ciq32) hidden var alertCount = 0;
+  (:ciq32) hidden var alertDelay;
+  (:ciq32) hidden var alertTimer = 0;
+  (:ciq32) hidden var alertDisplayed = false;
+  (:ciq32) hidden var alertType;
+  (:ciq32) hidden var enableAlerts;
+  (:ciq32) hidden var maxAlerts;
+  (:ciq32) hidden var showAlerts;
   hidden var alternateMetric = false;
-  hidden var enableAlternate;
   hidden var avgPace;
   hidden var avgPower;
   hidden var cadence = 0;
   hidden var correction = [0,0,0];
   hidden var correctLap;
   hidden var currentPower;
-  hidden var currentPowerRaw;
   hidden var currentPowerAverage;
+  hidden var currentPowerRaw;
   hidden var currentSpeed;
   hidden var elapsedDistance;
+  hidden var enableAlternate;
   hidden var etaPace = [0,0];
   hidden var etaPower = [0,0];
   hidden var fontOffset = 0;
@@ -35,16 +42,14 @@ class RaceWithPowerView extends WatchUi.DataField {
   hidden var lapStartDistance = 0;
   hidden var lapStartTime = 0;
   hidden var lapTime = 0;
-  hidden var maxAlerts;
   hidden var paused = true;
   hidden var powerAverage;
   hidden var remainingDistance;
   hidden var sensor;
-  hidden var showAlerts;
-  hidden var showTime;
+  hidden var showColors;
   hidden var showEta;
   hidden var showLapData;
-  hidden var showColors;
+  hidden var showTime;
   hidden var targetDistance;
   hidden var targetElevation;
   hidden var targetHigh = 0;
@@ -59,45 +64,18 @@ class RaceWithPowerView extends WatchUi.DataField {
   hidden var vibrate;
   hidden var weight;
 
-  // [ Width, Center, 1st horizontal line, 2nd horizontal line
-  // 3rd Horizontal line, 1st vertical, Second vertical, Radius,
-  // Top Arc, Bottom Arc, Offset Target Y, Background rect height, Offset Target
-  // X, Center mid field ]
-
-  (:roundzero) const geometry =
-      [ 218, 109, 77, 122, 167, 70, 161, 103, 114, 85, 27, 45, 30, 116 ];
-  (:roundone) const geometry =
-      [ 240, 120, 85, 135, 185, 77, 177, 105, 114, 96, 32, 50, 40, 127 ];
-  (:roundtwo) const geometry =
-      [ 260, 130, 91, 146, 201, 83, 192, 115, 124, 106, 37, 55, 45, 138 ];
-  (:roundthree) const geometry =
-      [ 280, 140, 98, 157, 216, 90, 207, 125, 134, 116, 42, 59, 50, 149 ];
-  (:roundfour) const geometry =
-      [ 390, 195, 140, 220, 300, 125, 289, 180, 189, 171, 45, 80, 55, 207 ];
-  (:roundfive) const geometry =
-      [ 360, 180, 127, 202, 277, 115, 266, 165, 174, 156, 50, 75, 52, 191 ];
-  (:roundsix) const geometry =
-      [ 416, 208, 147, 234, 320, 133, 308, 193, 202, 187, 55, 87, 60, 221 ];
-
   function initialize(strydsensor) {
 
     usePercentage = Utils.replaceNull(
         Application.getApp().getProperty("A"), false);
     FTP = Utils.replaceNull(Application.getApp().getProperty("B"), 330);
-    showAlerts =
-        Utils.replaceNull(Application.getApp().getProperty("C"), true);
+
     vibrate =
         Utils.replaceNull(Application.getApp().getProperty("D"), true);
     powerAverage =
         Utils.replaceNull(Application.getApp().getProperty("E"), 3);
     showColors =
         Utils.replaceNull(Application.getApp().getProperty("F"), 1);
-
-    alertDelay =
-        Utils.replaceNull(Application.getApp().getProperty("G"), 15);
-
-    maxAlerts =
-        Utils.replaceNull(Application.getApp().getProperty("H"), 3);
 
     targetPower =
         Utils.replaceNull(Application.getApp().getProperty("J"), 350);
@@ -171,6 +149,7 @@ class RaceWithPowerView extends WatchUi.DataField {
     idealPowerTarget = ((1.04 * targetDistance) / (targetTime * 1.0)) * weight;
 
     set_fonts();
+    set_extra_settings();
     
     DataField.initialize();
     
@@ -235,6 +214,26 @@ class RaceWithPowerView extends WatchUi.DataField {
   (:lowmemlarge) function set_fonts() {
     fontOffset = 2;
     fonts = [ 0, 1, 2, 3, 6, 8 ];
+  }
+
+  (:ciq2)
+  function set_extra_settings(){
+
+  }
+
+  (:ciq32)
+  function set_extra_settings(){
+    showAlerts =
+        Utils.replaceNull(Application.getApp().getProperty("W"), true);
+        
+    alertDelay =
+        Utils.replaceNull(Application.getApp().getProperty("X"), 15);
+
+    maxAlerts =
+        Utils.replaceNull(Application.getApp().getProperty("Y"), 3);
+
+    alertType =
+        Utils.replaceNull(Application.getApp().getProperty("Z"), 1);
   }
 
   function onLayout(dc) { return true; }
@@ -361,8 +360,59 @@ class RaceWithPowerView extends WatchUi.DataField {
     if(timer != null && timer % 5 == 0){
       alternateMetric = !alternateMetric;
     }
+
+    checkAlert();
     
     return true;
+  }
+
+  (:ciq2)
+  function checkAlert(){}
+
+  (:ciq32)
+  function checkAlert(){
+
+    var metric = currentPower;
+
+    if(alertType == 2){
+      metric = lapPower;
+    } else if (alertType == 3){
+      metric = avgPower;
+    }
+
+    if (timer != null && timer > alertDelay && WatchUi.DataField has
+        :showAlert && showAlerts) {
+
+      if ((metric != null && (targetLow != 0 && targetHigh != 0) &&
+            (metric < targetLow || metric > targetHigh))) {
+        if (alertDisplayed == false) {
+          if (alertCount < maxAlerts) {
+            if (Attention has :vibrate && vibrate) {
+              Attention.vibrate([
+                new Attention.VibeProfile(100, 300),
+                new Attention.VibeProfile(0, 50),
+                new Attention.VibeProfile(100, 300),
+                new Attention.VibeProfile(0, 50),
+                new Attention.VibeProfile(100, 300)
+              ]);
+            }
+
+            WatchUi.DataField.showAlert(new RaceWithPowerAlertView(
+                targetHigh, targetLow, metric,
+                [ fonts[2], fonts[5] ]));
+            alertDisplayed = true;
+            alertTimer = timer;
+            alertCount++;
+          }
+        } else {
+          if ((timer - alertTimer) > alertDelay) {
+            alertDisplayed = false;
+          }
+        }
+      } else {
+        alertCount = 0;
+      }
+    }
   }
 
   function onUpdate(dc) {
@@ -444,7 +494,7 @@ class RaceWithPowerView extends WatchUi.DataField {
     var labelFont = fonts[0];
     var textFont = fonts[3];
     var localOffset = 0;
-    var labelOffset = 0;
+    var labelOffset = -2;
     var showText = true;
 
     if(align == 0){
@@ -456,10 +506,10 @@ class RaceWithPowerView extends WatchUi.DataField {
     }
 
     if(type == 0) {
-      localOffset = -4;
       textFont = fonts[1];
       var delta = etaPace[0] - idealPace[0];
       if(showLapData){
+        localOffset = (height / 4) - fontOffset;
         if(delta<0){
           label = "AHEAD";
           value = "-"+Utils.format_duration(delta * -1);
@@ -470,7 +520,7 @@ class RaceWithPowerView extends WatchUi.DataField {
       } else{
         showText = false;
         labelFont = fonts[1];
-        labelOffset = -2;
+        labelOffset = 5 - (2 * fontOffset);
         if(delta<0){
           label = "-"+Utils.format_duration(delta * -1);
         } else {
@@ -513,7 +563,7 @@ class RaceWithPowerView extends WatchUi.DataField {
       label = "CUR PWR "+powerAverage+"S";
       value = currentPower == null ? 0 : currentPower;
       textFont = fonts[5];
-      localOffset = 5;
+      localOffset = 5 + (fontOffset * 7);
       if(currentPower != null){
         if (showColors == 1) {
           if (currentPower < targetLow) {
@@ -536,8 +586,8 @@ class RaceWithPowerView extends WatchUi.DataField {
         }
       }
     } else if (type == 3) {
-      localOffset = -4;
       textFont = fonts[1];
+      localOffset = (height / 4) - fontOffset;
       if(enableAlternate && alternateMetric){
         label = "PC DIFF";
         var delta = etaPace[1] - idealPace[1];
@@ -582,15 +632,15 @@ class RaceWithPowerView extends WatchUi.DataField {
     } else if (type == 5) {
       var distance = Utils.format_distance((elapsedDistance == null ? 0 : elapsedDistance + correction[0]), useMetric);
       labelFont = fonts[showTime == true ? 1 : 2];
-      labelOffset = showTime ? 1 : -2;
+      labelOffset = showTime ? labelOffset + fontOffset : height / 1.5 + (2 * fontOffset);
       label = distance[0];
     } else if (type == 6) {
       labelFont = fonts[showTime ? 1 : 2];
-      labelOffset = showTime ? 1 : -2;
+      labelOffset = showTime ? labelOffset + fontOffset : height / 1.5 + (2 * fontOffset);
       label = Utils.format_duration(timer == null ? 0 : timer);
     } else if (type == 7) {
       labelFont = fonts[1];
-      labelOffset = 1;
+      labelOffset = showTime ? labelOffset + fontOffset : height / 1.5 + (2 * fontOffset);
       var time = Sys.getClockTime();
       label = time.hour.format("%02d") + ":" + time.min.format("%02d");
     } else if (type == 8) {
@@ -626,8 +676,8 @@ class RaceWithPowerView extends WatchUi.DataField {
       value = distance[0];
     } else if (type == 11) {
       if(!showLapData){
+        localOffset = 4;
         textFont = fonts[4];
-        localOffset = 2;
       }
       if(enableAlternate && alternateMetric){
         label = showEta ? "ETA PACE" : "EST FIN PACE";
@@ -638,10 +688,10 @@ class RaceWithPowerView extends WatchUi.DataField {
       }
     }
 
-    dc.drawText(labelx, y + (fontOffset * (1 + labelOffset)), labelFont, label, align);
+    dc.drawText(labelx, y + labelOffset, labelFont, label, align);
 
     if(showText){
-      dc.drawText(textx, y + (fontOffset * (5 + localOffset)) + 15, textFont, value, align);
+      dc.drawText(textx, y + (fontOffset * 5) + localOffset + 15, textFont, value, align);
     }
   }
 
