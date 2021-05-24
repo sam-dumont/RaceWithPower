@@ -7,6 +7,7 @@ using Toybox.System as Sys;
 class RaceWithPowerView extends WatchUi.DataField {
   hidden var alertDelay;
   hidden var alternateMetric = false;
+  hidden var enableAlternate;
   hidden var avgPace;
   hidden var avgPower;
   hidden var cadence = 0;
@@ -40,6 +41,9 @@ class RaceWithPowerView extends WatchUi.DataField {
   hidden var remainingDistance;
   hidden var sensor;
   hidden var showAlerts;
+  hidden var showTime;
+  hidden var showEta;
+  hidden var showLapData;
   hidden var showColors;
   hidden var targetDistance;
   hidden var targetElevation;
@@ -114,7 +118,35 @@ class RaceWithPowerView extends WatchUi.DataField {
         Utils.replaceNull(Application.getApp().getProperty("K"), 5000);
 
     targetTime =
-        Utils.replaceNull(Application.getApp().getProperty("L"), 1200);
+        Utils.replaceNull(Application.getApp().getProperty("L"), "1200");
+
+    var index = targetTime.find(":");
+    if (index != null){
+      var a = targetTime.substring(0, index);
+      var b = null;
+      var c = null;
+      var rem = targetTime.substring(index+1, targetTime.length());
+      index = rem.find(":");
+      if(index != null){
+        b = rem.substring(0, index);
+        c = rem.substring(index+1, rem.length());
+        targetTime = a.toNumber() * 3600 + b.toNumber() * 60 + c.toNumber();
+      }else{
+        b = rem;
+        targetTime = a.toNumber() * 60 + b.toNumber();
+      }
+    }else{
+      targetTime = targetTime.toNumber();
+    }
+
+    showTime =
+        Utils.replaceNull(Application.getApp().getProperty("Q"), false);
+
+    showLapData =
+        Utils.replaceNull(Application.getApp().getProperty("R"), false);
+
+    showEta =
+        Utils.replaceNull(Application.getApp().getProperty("S"), false);
 
     targetElevation =
         Utils.replaceNull(Application.getApp().getProperty("N"), 0);
@@ -131,6 +163,9 @@ class RaceWithPowerView extends WatchUi.DataField {
     useMetric = System.getDeviceSettings().paceUnits == System.UNIT_METRIC
                     ? true
                     : false;
+
+    enableAlternate =
+        Utils.replaceNull(Application.getApp().getProperty("T"), false);
 
     targetPace = (targetDistance * 1.0) / (targetTime * 1.0);
     idealPowerTarget = ((1.04 * targetDistance) / (targetTime * 1.0)) * weight;
@@ -186,7 +221,7 @@ class RaceWithPowerView extends WatchUi.DataField {
     if (Utils.replaceNull(Application.getApp().getProperty("I"), true)) {
       fontOffset = -4;
       fonts = [
-        WatchUi.loadResource(Rez.Fonts.A), WatchUi.loadResource(Rez.Fonts.C),
+        WatchUi.loadResource(Rez.Fonts.A), WatchUi.loadResource(Rez.Fonts.B),
         WatchUi.loadResource(Rez.Fonts.C), WatchUi.loadResource(Rez.Fonts.D),
         WatchUi.loadResource(Rez.Fonts.E), WatchUi.loadResource(Rez.Fonts.F)
       ];
@@ -318,6 +353,11 @@ class RaceWithPowerView extends WatchUi.DataField {
     etaPower[1] = etaPower[1] < 0 ? 0 : etaPower[1];
     idealPower[1] = idealPower[1] < 0 ? 0 : idealPower[1];
 
+    if(!showEta && timer != null){
+      etaPower[1] = etaPower[1] + timer;
+      etaPace[1] = etaPace[1] + timer;
+    }
+
     if(timer != null && timer % 5 == 0){
       alternateMetric = !alternateMetric;
     }
@@ -343,33 +383,53 @@ class RaceWithPowerView extends WatchUi.DataField {
       0.25 * width, 0.33 * width, 0.66 * width, 0.75 * width, 0.3 * height
     ];
 
-    drawMetric(dc,0,0,geometry[3],geometry[8],geometry[3],0,bgColor,fgColor);
     drawMetric(dc,1,geometry[11],geometry[3],geometry[8],geometry[3],2,bgColor,fgColor);
-    drawMetric(dc,2,geometry[8],geometry[3],geometry[1],geometry[4],1,bgColor,fgColor);
-    drawMetric(dc,3,0,geometry[4],geometry[8],geometry[3],0,bgColor,fgColor);
     drawMetric(dc,4,geometry[11],geometry[4],geometry[8],geometry[3],2,bgColor,fgColor);
-    drawMetric(dc,5,0,geometry[2],geometry[0],geometry[2],0,bgColor,fgColor);
-    drawMetric(dc,6,geometry[0],geometry[2],geometry[0],geometry[2],2,bgColor,fgColor);
-    drawMetric(dc,7,0,0,width,geometry[2],1,bgColor,fgColor);
-    drawMetric(dc,8,0,geometry[5],geometry[9],geometry[3],0,bgColor,fgColor);
-    drawMetric(dc,9,geometry[9],geometry[5],geometry[9],geometry[3],1,bgColor,fgColor);
-    drawMetric(dc,10,geometry[10],geometry[5],geometry[9],geometry[3],2,bgColor,fgColor);
-    drawMetric(dc,11,0,geometry[7],width,geometry[3],1,bgColor,fgColor);
+    if(showTime){
+      drawMetric(dc,7,0,0,width,geometry[2],1,bgColor,fgColor);
+      drawMetric(dc,5,0,geometry[2],geometry[0],geometry[2],0,bgColor,fgColor);
+      drawMetric(dc,6,geometry[0],geometry[2],geometry[0],geometry[2],2,bgColor,fgColor);
+    }else {
+      drawMetric(dc,5,0,0,geometry[0],geometry[2],0,bgColor,fgColor);
+      drawMetric(dc,6,geometry[0],0,geometry[0],geometry[2],2,bgColor,fgColor);
+    }
+    if(showLapData){
+      drawMetric(dc,2,geometry[8],geometry[3],geometry[1],geometry[4],1,bgColor,fgColor);
+      drawMetric(dc,8,0,geometry[5],geometry[9],geometry[3],0,bgColor,fgColor);
+      drawMetric(dc,9,geometry[9],geometry[5],geometry[9],geometry[3],1,bgColor,fgColor);
+      drawMetric(dc,10,geometry[10],geometry[5],geometry[9],geometry[3],2,bgColor,fgColor);
+      drawMetric(dc,3,0,geometry[4],geometry[8],geometry[3],0,bgColor,fgColor);
+      drawMetric(dc,0,0,geometry[3],geometry[8],geometry[3],0,bgColor,fgColor);
+      drawMetric(dc,11,0,geometry[7],width,geometry[3],1,bgColor,fgColor);
+    } else {
+      drawMetric(dc,2,0,geometry[3],geometry[11],geometry[4],1,bgColor,fgColor);
+      drawMetric(dc,11,0,geometry[5],width,geometry[4],1,bgColor,fgColor);
+      drawMetric(dc,0,0,geometry[7],width,geometry[3],1,-1,fgColor);
+    }
 
     dc.setColor(fgColor,-1);
     // draw the lines
-    dc.drawLine(0, geometry[2], width, geometry[2]);
+    if(showTime){
+      dc.drawLine(0, geometry[2], width, geometry[2]);
+    }
     dc.drawLine(0, geometry[3], width, geometry[3]);
-    dc.drawLine(0, geometry[4], geometry[8], geometry[4]);
     dc.drawLine(geometry[11], geometry[4], width, geometry[4]);
     dc.drawLine(0, geometry[5], width, geometry[5]);
-    //dc.drawLine(0, geometry[6], width, geometry[6]);
-    dc.drawLine(0, geometry[7], width, geometry[7]);
-    dc.drawLine(geometry[0], geometry[2], geometry[0], geometry[3]);
-    dc.drawLine(geometry[8], geometry[3], geometry[8], geometry[4]);
+    if(showTime){
+      dc.drawLine(geometry[0], geometry[2], geometry[0], geometry[3]);
+    } else {
+      dc.drawLine(geometry[0], 0, geometry[0], geometry[3]);
+    }
     dc.drawLine(geometry[11], geometry[3], geometry[11], geometry[4]);
-    dc.drawLine(geometry[9], geometry[5], geometry[9], geometry[7]);
-    dc.drawLine(geometry[10], geometry[5], geometry[10], geometry[7]);
+    if(showLapData){
+      dc.drawLine(0, geometry[4], geometry[8], geometry[4]);
+      dc.drawLine(0, geometry[7], width, geometry[7]);
+      dc.drawLine(geometry[9], geometry[5], geometry[9], geometry[7]);
+      dc.drawLine(geometry[10], geometry[5], geometry[10], geometry[7]);
+      dc.drawLine(geometry[8], geometry[3], geometry[8], geometry[4]);
+    } else {
+      
+    }
   }
 
   function drawMetric(dc,type,x,y,width,height,align,bgColor,fgColor) {
@@ -399,12 +459,23 @@ class RaceWithPowerView extends WatchUi.DataField {
       localOffset = -4;
       textFont = fonts[1];
       var delta = etaPace[0] - idealPace[0];
-      if(delta<0){
-        label = "AHEAD";
-        value = "-"+Utils.format_duration(delta * -1);
-      } else {
-        label = "BEHIND";
-        value = "+"+Utils.format_duration(delta);
+      if(showLapData){
+        if(delta<0){
+          label = "AHEAD";
+          value = "-"+Utils.format_duration(delta * -1);
+        } else {
+          label = "BEHIND";
+          value = "+"+Utils.format_duration(delta);
+        }
+      } else{
+        showText = false;
+        labelFont = fonts[1];
+        labelOffset = -2;
+        if(delta<0){
+          label = "-"+Utils.format_duration(delta * -1);
+        } else {
+          label = "+"+Utils.format_duration(delta);
+        }
       }
     } else if (type == 1){
       label = "HR";
@@ -467,7 +538,7 @@ class RaceWithPowerView extends WatchUi.DataField {
     } else if (type == 3) {
       localOffset = -4;
       textFont = fonts[1];
-      if(alternateMetric){
+      if(enableAlternate && alternateMetric){
         label = "PC DIFF";
         var delta = etaPace[1] - idealPace[1];
         if(delta<0){
@@ -510,12 +581,12 @@ class RaceWithPowerView extends WatchUi.DataField {
       }
     } else if (type == 5) {
       var distance = Utils.format_distance((elapsedDistance == null ? 0 : elapsedDistance + correction[0]), useMetric);
-      labelFont = fonts[1];
-      labelOffset = 1;
-      label = distance[0]+distance[1];
+      labelFont = fonts[showTime == true ? 1 : 2];
+      labelOffset = showTime ? 1 : -2;
+      label = distance[0];
     } else if (type == 6) {
-      labelFont = fonts[1];
-      labelOffset = 1;
+      labelFont = fonts[showTime ? 1 : 2];
+      labelOffset = showTime ? 1 : -2;
       label = Utils.format_duration(timer == null ? 0 : timer);
     } else if (type == 7) {
       labelFont = fonts[1];
@@ -554,11 +625,15 @@ class RaceWithPowerView extends WatchUi.DataField {
       label = "LAP DIST "+distance[1];
       value = distance[0];
     } else if (type == 11) {
-      if(alternateMetric){
-        label = "ETA PACE";
+      if(!showLapData){
+        textFont = fonts[4];
+        localOffset = 2;
+      }
+      if(enableAlternate && alternateMetric){
+        label = showEta ? "ETA PACE" : "EST FIN PACE";
         value = Utils.format_duration(etaPace[1]);
       } else {
-        label = "ETA POWER";
+        label = showEta ? "ETA POWER" : "EST FIN PWR";
         value = Utils.format_duration(etaPower[1]);
       }
     }

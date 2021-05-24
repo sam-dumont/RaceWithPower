@@ -37,7 +37,7 @@
 		<settingConfig type="numeric" />
 	</setting>
 	<setting propertyKey="@Properties.L" title="@Strings.TARGET_TIME">
-		<settingConfig type="numeric" />
+		<settingConfig type="alphaNumeric" />
 	</setting>
 	<setting propertyKey="@Properties.M" title="@Strings.WEIGHT">
 		<settingConfig type="numeric" />
@@ -49,6 +49,18 @@
 		<settingConfig type="numeric" />
 	</setting>
 	<setting propertyKey="@Properties.P" title="@Strings.LAP_CORRECT">
+		<settingConfig type="boolean" />
+	</setting>
+	<setting propertyKey="@Properties.Q" title="@Strings.SHOW_TIME">
+		<settingConfig type="boolean" />
+	</setting>
+	<setting propertyKey="@Properties.R" title="@Strings.SHOW_LAP_DATA">
+		<settingConfig type="boolean" />
+	</setting>
+	<setting propertyKey="@Properties.S" title="@Strings.SHOW_ETA">
+		<settingConfig type="boolean" />
+	</setting>
+	<setting propertyKey="@Properties.T" title="@Strings.ALTERNATE_PC">
 		<settingConfig type="boolean" />
 	</setting>
 </settings>

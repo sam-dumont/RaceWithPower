@@ -1,0 +1,6 @@
+<properties>
+
+    <property id="X" type="boolean">true</property>
+    <property id="Y" type="numeric">3</property>
+    <property id="Z" type="numeric">15</property>
+</properties>
