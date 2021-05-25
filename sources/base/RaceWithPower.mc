@@ -19,6 +19,7 @@ class RaceWithPowerView extends WatchUi.DataField {
   hidden var cadence = 0;
   hidden var correction = [0,0,0];
   hidden var correctLap;
+  hidden var currentPaceAverage;
   hidden var currentPower;
   hidden var currentPowerAverage;
   hidden var currentPowerRaw;
@@ -155,6 +156,7 @@ class RaceWithPowerView extends WatchUi.DataField {
     
     hrZones = UserProfile.getHeartRateZones(UserProfile.HR_ZONE_SPORT_GENERIC);
     currentPowerAverage = new[powerAverage];
+    currentPaceAverage = new[powerAverage];
     sensor = strydsensor;
   }
 
@@ -279,6 +281,24 @@ class RaceWithPowerView extends WatchUi.DataField {
           lapDistance = (info.elapsedDistance - lapStartDistance) + correction[0];
           elapsedDistance = info.elapsedDistance;
           avgPace = (info.elapsedDistance + correction[0]) / (timer * 1.0);
+
+          for (var i = powerAverage - 1; i > 0; --i) {
+            currentPaceAverage[i] = currentPaceAverage[i - 1];
+          }
+
+          currentPaceAverage[0] = currentSpeed;
+
+          var tempAverage = 0;
+          var entries = powerAverage;
+
+          for (var i = 0; i < powerAverage; ++i) {
+            if (currentPaceAverage[i] != null){
+              tempAverage += currentPaceAverage[i];
+            } else {
+              entries -= 1;
+            }
+          }
+          currentSpeed = ((tempAverage * 1.0 / entries * 1.0) + 0.5).toNumber();
         }
 
         if (currentPower != null) {
@@ -560,28 +580,33 @@ class RaceWithPowerView extends WatchUi.DataField {
         }
       }
     } else if (type == 2) {
-      label = "CUR PWR "+powerAverage+"S";
-      value = currentPower == null ? 0 : currentPower;
       textFont = fonts[5];
       localOffset = 5 + (fontOffset * 7);
-      if(currentPower != null){
-        if (showColors == 1) {
-          if (currentPower < targetLow) {
-            dc.setColor(0x0000FF, -1);
-          } else if (currentPower > targetHigh) {
-            dc.setColor(0xAA0000, -1);
-          } else {
-            dc.setColor(0x00AA00, -1);
-          }
-          dc.fillRectangle(x, y, width, height);
-          dc.setColor(0xFFFFFF, -1);
-        } else if (showColors == 2) {
-          if (currentPower < targetLow) {
-            dc.setColor(0x0000FF, -1);
-          } else if (currentPower > targetHigh) {
-            dc.setColor(0xAA0000, -1);
-          } else {
-            dc.setColor(0x00AA00, -1);
+      if(enableAlternate && alternateMetric){
+        label = "CUR PACE "+powerAverage+"S";
+        value = Utils.convert_speed_pace(currentSpeed == null ? 0 : currentSpeed, useMetric, false);
+      } else {
+        label = "CUR PWR "+powerAverage+"S";
+        value = currentPower == null ? 0 : currentPower;
+        if(currentPower != null){
+          if (showColors == 1) {
+            if (currentPower < targetLow) {
+              dc.setColor(0x0000FF, -1);
+            } else if (currentPower > targetHigh) {
+              dc.setColor(0xAA0000, -1);
+            } else {
+              dc.setColor(0x00AA00, -1);
+            }
+            dc.fillRectangle(x, y, width, height);
+            dc.setColor(0xFFFFFF, -1);
+          } else if (showColors == 2) {
+            if (currentPower < targetLow) {
+              dc.setColor(0x0000FF, -1);
+            } else if (currentPower > targetHigh) {
+              dc.setColor(0xAA0000, -1);
+            } else {
+              dc.setColor(0x00AA00, -1);
+            }
           }
         }
       }
@@ -606,26 +631,31 @@ class RaceWithPowerView extends WatchUi.DataField {
         }
       }
     } else if (type == 4) {
-      label = "AVG PWR";
-      value = avgPower == null ? 0 : avgPower.toNumber();
-      if(avgPower != null){
-        if (showColors == 1) {
-          if (avgPower < targetLow) {
-            dc.setColor(0x0000FF, -1);
-          } else if (avgPower > targetHigh) {
-            dc.setColor(0xAA0000, -1);
-          } else {
-            dc.setColor(0x00AA00, -1);
-          }
-          dc.fillRectangle(x, y, width, height);
-          dc.setColor(0xFFFFFF, -1);
-        } else if (showColors == 2) {
-          if (avgPower < targetLow) {
-            dc.setColor(0x0000FF, -1);
-          } else if (avgPower > targetHigh) {
-            dc.setColor(0xAA0000, -1);
-          } else {
-            dc.setColor(0x00AA00, -1);
+      if(enableAlternate && alternateMetric){
+        label = "AVG PACE";
+        value = Utils.convert_speed_pace(avgPace == null ? 0 : avgPace, useMetric, false);
+      } else {
+        label = "AVG PWR";
+        value = avgPower == null ? 0 : avgPower.toNumber();
+        if(avgPower != null){
+          if (showColors == 1) {
+            if (avgPower < targetLow) {
+              dc.setColor(0x0000FF, -1);
+            } else if (avgPower > targetHigh) {
+              dc.setColor(0xAA0000, -1);
+            } else {
+              dc.setColor(0x00AA00, -1);
+            }
+            dc.fillRectangle(x, y, width, height);
+            dc.setColor(0xFFFFFF, -1);
+          } else if (showColors == 2) {
+            if (avgPower < targetLow) {
+              dc.setColor(0x0000FF, -1);
+            } else if (avgPower > targetHigh) {
+              dc.setColor(0xAA0000, -1);
+            } else {
+              dc.setColor(0x00AA00, -1);
+            }
           }
         }
       }
@@ -680,10 +710,10 @@ class RaceWithPowerView extends WatchUi.DataField {
         textFont = fonts[4];
       }
       if(enableAlternate && alternateMetric){
-        label = showEta ? "ETA PACE" : "EST FIN PACE";
+        label = showEta ? "ETA PACE" : "FINISH TIME PACE";
         value = Utils.format_duration(etaPace[1]);
       } else {
-        label = showEta ? "ETA POWER" : "EST FIN PWR";
+        label = showEta ? "ETA POWER" : "FINISH TIME POWER";
         value = Utils.format_duration(etaPower[1]);
       }
     }
