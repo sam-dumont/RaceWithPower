@@ -298,7 +298,7 @@ class RaceWithPowerView extends WatchUi.DataField {
               entries -= 1;
             }
           }
-          currentSpeed = ((tempAverage * 1.0 / entries * 1.0) + 0.5).toNumber();
+          currentSpeed = tempAverage * 1.0 / entries * 1.0;
         }
 
         if (currentPower != null) {
