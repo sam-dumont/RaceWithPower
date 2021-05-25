@@ -680,10 +680,10 @@ class RaceWithPowerView extends WatchUi.DataField {
         textFont = fonts[4];
       }
       if(enableAlternate && alternateMetric){
-        label = showEta ? "ETA PACE" : "EST FIN PACE";
+        label = showEta ? "ETA PACE" : "FINISH TIME PACE";
         value = Utils.format_duration(etaPace[1]);
       } else {
-        label = showEta ? "ETA POWER" : "EST FIN PWR";
+        label = showEta ? "ETA POWER" : "FINISH TIME POWER";
         value = Utils.format_duration(etaPower[1]);
       }
     }
