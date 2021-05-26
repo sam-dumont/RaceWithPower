@@ -246,9 +246,6 @@ class RaceWithPowerView extends WatchUi.DataField {
       correction[2] = correction[2] - 1;
     }
 
-    if (info has :currentCadence) {
-      cadence = info.currentCadence;
-    }
     if (info has :currentHeartRate) {
       hr = info.currentHeartRate;
     }
@@ -259,14 +256,6 @@ class RaceWithPowerView extends WatchUi.DataField {
       currentPower = sensor.currentPower;
     }
 
-    if (info has :currentSpeed) {
-      currentSpeed = info.currentSpeed;
-    }
-
-    if (info has :totalAscent) {
-      totalAscent = info.totalAscent == null ? 0 : info.totalAscent;
-    }
-
     if (usePercentage && currentPower != null) {
       currentPower =
           ((currentPower / (FTP * 1.0)) * 100).toNumber();
@@ -274,6 +263,19 @@ class RaceWithPowerView extends WatchUi.DataField {
 
     if (paused != true) {
       if (info != null) {
+
+        if (info has :currentSpeed) {
+          currentSpeed = info.currentSpeed;
+        }
+
+        if (info has :totalAscent) {
+          totalAscent = info.totalAscent == null ? 0 : info.totalAscent;
+        }
+
+        if (info has :currentCadence) {
+          cadence = info.currentCadence;
+        }
+
         timer = info.elapsedTime / 1000;
         lapTime = timer - lapStartTime;
 
@@ -529,7 +531,7 @@ class RaceWithPowerView extends WatchUi.DataField {
       textFont = fonts[1];
       var delta = etaPace[0] - idealPace[0];
       if(showLapData){
-        localOffset = (height / 4) - fontOffset;
+        localOffset = 5 - (2*fontOffset);
         if(delta<0){
           label = "AHEAD";
           value = "-"+Utils.format_duration(delta * -1);
@@ -583,6 +585,10 @@ class RaceWithPowerView extends WatchUi.DataField {
       textFont = fonts[5];
       localOffset = 5 + (fontOffset * 7);
       if(enableAlternate && alternateMetric){
+        if(showLapData){ 
+          textFont = fonts[4];
+          localOffset = 5 - (fontOffset * 3);
+        } 
         label = "CUR PACE "+powerAverage+"S";
         value = Utils.convert_speed_pace(currentSpeed == null ? 0 : currentSpeed, useMetric, false);
       } else {
@@ -612,7 +618,7 @@ class RaceWithPowerView extends WatchUi.DataField {
       }
     } else if (type == 3) {
       textFont = fonts[1];
-      localOffset = (height / 4) - fontOffset;
+      localOffset = 5 - (2*fontOffset);
       if(enableAlternate && alternateMetric){
         label = "PC DIFF";
         var delta = etaPace[1] - idealPace[1];
