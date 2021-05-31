@@ -98,8 +98,6 @@ class RaceWithPowerView extends WatchUi.DataField {
     trailMode =
         Utils.replaceNull(Application.getApp().getProperty("G"), false);
 
-    System.println(trailMode);
-
     targetPower =
         Utils.replaceNull(Application.getApp().getProperty("J"), 350);
 
@@ -109,8 +107,6 @@ class RaceWithPowerView extends WatchUi.DataField {
     for(var i = 0; i < runZones.size(); i++){
       runZones[i] = ((runZones[i] / 100.0) * targetPower);
     }
-
-    System.println(runZones);
 
     targetDistance =
         Utils.replaceNull(Application.getApp().getProperty("K"), 5000);
