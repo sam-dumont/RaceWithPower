@@ -671,13 +671,13 @@ class RaceWithPowerView extends WatchUi.DataField {
 
           dc.setColor(0xFFFFFF,-1);
           if(trailMode){
-            var text = "FLAT";
+            var text = "FLAT "+grade.toNumber();
             if(alertModes[0] == 1){
-              text = "HIKE";
+              text = "HIKE "+grade.toNumber();
             } else if(alertModes[0] == 2){
-              text = "DOWNHILL";
+              text = "DOWNHILL "+grade.toNumber();
             } else if(alertModes[0] == 3){
-              text = "UPHILL";
+              text = "UPHILL "+grade.toNumber();
             }
             dc.drawText(width / 2,(y + fontOffset),fonts[0],text,1);
           }
@@ -694,18 +694,18 @@ class RaceWithPowerView extends WatchUi.DataField {
           dc.setPenWidth(1);
 
           if(currentPower != null){
-            var tgtHigh = usePercentage ? (((currentPower + (targetBandwith / 2)) / FTP) * 100).format("%0.1f") : (currentPower + (targetBandwith / 2));
-            var tgtLow = usePercentage ? (((currentPower - (targetBandwith / 2)) / FTP) * 100).format("%0.1f") : (currentPower - (targetBandwith / 2));
+            var tgtHigh = usePercentage ? (((currentPower + (targetBandwith / 2)) / FTP) * 100).format("%0.1f") : (currentPower + (targetBandwith / 2) + 0.5).toNumber();
+            var tgtLow = usePercentage ? (((currentPower - (targetBandwith / 2)) / FTP) * 100).format("%0.1f") : (currentPower - (targetBandwith / 2) + 0.5).toNumber();
             dc.drawText(x == 0 ? 20 : x,(y + fontOffset),fonts[0],tgtHigh,2);
             dc.drawText(x == 0 ? 20 : x,(y + height - 25),fonts[0],tgtLow,2);
-            dc.drawText(x+width,(y + height - 25 + (fontOffset*2)),fonts[1],usePercentage ? (currentPower / FTP * 100).format("%0.1f") : currentPower,0);
+            dc.drawText(x+width,(y + height - 25 + (fontOffset*2)),fonts[1],usePercentage ? (currentPower / FTP * 100).format("%0.1f") : (currentPower + 0.5).toNumber(),0);
           }
 
           dc.clearClip();
 
         }else{
           label = "CUR PWR "+powerAverage+"S";
-          value = currentPower == null ? 0 : usePercentage ? (currentPower / FTP * 100).format("%0.1f") : currentPower;
+          value = currentPower == null ? 0 : usePercentage ? (currentPower / FTP * 100).format("%0.1f") : currentPower.toNumber();
           if(currentPower != null){
             if (showColors == 1) {
               if (currentPower < targetLow) {
