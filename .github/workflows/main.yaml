@@ -81,6 +81,7 @@ jobs:
           sed -i "s/0.0.0/${{ github.event.release.tag_name }}/g" manifest.xml
           if [[ "${{ github.event.release.tag_name }}" =~ "beta" ]]; then
             sed -i "s/2bc544f929fe430e82a3605ba2fbcf19/732caf1f-b810-48b4-90ba-d49b003a9ded/g" manifest.xml
+            sed -i "s/Race With Power/BETA RwP/g" resources/base/strings/strings.xml
             echo "app_id=732caf1f-b810-48b4-90ba-d49b003a9ded" >> $GITHUB_ENV
             echo "store_id=f552963b-91d9-4c51-89ed-85c2e25830cd" >> $GITHUB_ENV
             echo "beta_app=true" >> $GITHUB_ENV
