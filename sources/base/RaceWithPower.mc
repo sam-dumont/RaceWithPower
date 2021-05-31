@@ -300,7 +300,7 @@ class RaceWithPowerView extends WatchUi.DataField {
             }
           }
           var dist = distArr[0] - distArr[entries - 1];
-          grade = dist == 0 ? 0 : tempAverage / dist;
+          grade = dist == 0 ? 0 : (((tempAverage * 1.0) / dist) + 0.5).toNumber();
         }
 
         timer = info.elapsedTime / 1000;
