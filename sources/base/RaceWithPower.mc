@@ -21,7 +21,7 @@ class RaceWithPowerView extends WatchUi.DataField {
   hidden var correctLap;
   hidden var currentPaceAverage;
   hidden var currentPower;
-  hidden var currentPowerAverage;
+  hidden var currentPowerAverage = new[30];
   hidden var currentPowerRaw;
   hidden var currentSpeed;
   hidden var elapsedDistance;
@@ -49,7 +49,9 @@ class RaceWithPowerView extends WatchUi.DataField {
   hidden var sensor;
   hidden var showColors;
   hidden var showEta;
+  hidden var showHistogram = false;
   hidden var showLapData;
+  hidden var percentageDelta;
   hidden var showTime;
   hidden var targetDistance;
   hidden var targetElevation;
@@ -64,11 +66,20 @@ class RaceWithPowerView extends WatchUi.DataField {
   hidden var usePercentage;
   hidden var vibrate;
   hidden var weight;
+  hidden var gradeArr = new[15];
+  hidden var distArr = new[15];
+  hidden var grade = 0;
+  hidden var trailMode;
+  hidden var trailSettings;
 
   function initialize(strydsensor) {
 
     usePercentage = Utils.replaceNull(
         Application.getApp().getProperty("A"), false);
+
+    percentageDelta = Utils.replaceNull(
+        Application.getApp().getProperty("AA"), 1);
+
     FTP = Utils.replaceNull(Application.getApp().getProperty("B"), 330);
 
     vibrate =
@@ -78,6 +89,16 @@ class RaceWithPowerView extends WatchUi.DataField {
     showColors =
         Utils.replaceNull(Application.getApp().getProperty("F"), 1);
 
+    showHistogram =
+        Utils.replaceNull(Application.getApp().getProperty("C"), false);
+    
+
+    trailMode =
+        Utils.replaceNull(Application.getApp().getProperty("G"), false);
+    
+    trailSettings =
+        Utils.split(Utils.replaceNull(Application.getApp().getProperty("H"), "100,80,90,120"),",");
+
     targetPower =
         Utils.replaceNull(Application.getApp().getProperty("J"), 350);
 
@@ -86,11 +107,11 @@ class RaceWithPowerView extends WatchUi.DataField {
     }
 
     if(usePercentage){
-      targetHigh = ((((targetPower * 1.01) / FTP) * 100 ) + 0.5).toNumber();
-      targetLow = ((((targetPower * 0.99) / FTP) * 100 ) + 0.5).toNumber();
+      targetHigh = ((((targetPower * ((100.0 + percentageDelta) / 100.0) / FTP)) * 100 ) + 0.5).toNumber();
+      targetLow = ((((targetPower * ((100.0 - percentageDelta) / 100.0) / FTP)) * 100 ) + 0.5).toNumber();
     } else {
-      targetHigh = ((targetPower * 1.01) + 0.5).toNumber();
-      targetLow = ((targetPower * 0.99) + 0.5).toNumber();
+      targetHigh = ((targetPower * ((100.0 + percentageDelta) / 100.0)) + 0.5).toNumber();
+      targetLow = ((targetPower * ((100.0 - percentageDelta) / 100.0)) + 0.5).toNumber();
     }
 
     targetDistance =
@@ -99,23 +120,14 @@ class RaceWithPowerView extends WatchUi.DataField {
     targetTime =
         Utils.replaceNull(Application.getApp().getProperty("L"), "1200");
 
-    var index = targetTime.find(":");
-    if (index != null){
-      var a = targetTime.substring(0, index);
-      var b = null;
-      var c = null;
-      var rem = targetTime.substring(index+1, targetTime.length());
-      index = rem.find(":");
-      if(index != null){
-        b = rem.substring(0, index);
-        c = rem.substring(index+1, rem.length());
-        targetTime = a.toNumber() * 3600 + b.toNumber() * 60 + c.toNumber();
-      }else{
-        b = rem;
-        targetTime = a.toNumber() * 60 + b.toNumber();
-      }
+    var targetTimeSplit = Utils.split(targetTime,":");
+
+    if(targetTimeSplit.size() == 3){
+      targetTime = targetTimeSplit[0].toNumber() * 3600 + targetTimeSplit[1].toNumber() * 60 + targetTimeSplit[2].toNumber();
+    }else if(targetTimeSplit.size() == 2){
+      targetTime = targetTimeSplit[0].toNumber() * 60 + targetTimeSplit[1].toNumber();
     }else{
-      targetTime = targetTime.toNumber();
+      targetTime = targetTimeSplit[0].toNumber();
     }
 
     showTime =
@@ -155,7 +167,6 @@ class RaceWithPowerView extends WatchUi.DataField {
     DataField.initialize();
     
     hrZones = UserProfile.getHeartRateZones(UserProfile.HR_ZONE_SPORT_GENERIC);
-    currentPowerAverage = new[powerAverage];
     currentPaceAverage = new[powerAverage];
     sensor = strydsensor;
   }
@@ -276,6 +287,33 @@ class RaceWithPowerView extends WatchUi.DataField {
           cadence = info.currentCadence;
         }
 
+        if (info has :altitude && info.elapsedDistance != null){
+
+          for (var i = 14; i > 0; --i) {
+            gradeArr[i] = gradeArr[i - 1];
+            distArr[i] = distArr[i - 1];
+          }
+
+          gradeArr[0] = info.altitude;
+          distArr[0] = info.elapsedDistance;
+
+          var tempAverage = 0;
+          var entries = 15;
+          var prevEntry = info.altitude;
+
+          for (var i = 0; i < 15; ++i) {
+            if (gradeArr[i] != null){
+              tempAverage += (prevEntry - gradeArr[i]);
+              prevEntry = gradeArr[i];
+            } else {
+              prevEntry = 0;
+              entries -= 1;
+            }
+          }
+          var dist = distArr[0] - distArr[entries - 1];
+          grade = dist == 0 ? 0 : tempAverage / dist;
+        }
+
         timer = info.elapsedTime / 1000;
         lapTime = timer - lapStartTime;
 
@@ -304,7 +342,7 @@ class RaceWithPowerView extends WatchUi.DataField {
         }
 
         if (currentPower != null) {
-          for (var i = powerAverage - 1; i > 0; --i) {
+          for (var i = 29; i > 0; --i) {
             currentPowerAverage[i] = currentPowerAverage[i - 1];
           }
 
@@ -592,26 +630,72 @@ class RaceWithPowerView extends WatchUi.DataField {
         label = "CUR PACE "+powerAverage+"S";
         value = Utils.convert_speed_pace(currentSpeed == null ? 0 : currentSpeed, useMetric, false);
       } else {
-        label = "CUR PWR "+powerAverage+"S";
-        value = currentPower == null ? 0 : currentPower;
-        if(currentPower != null){
-          if (showColors == 1) {
-            if (currentPower < targetLow) {
-              dc.setColor(0x0000FF, -1);
-            } else if (currentPower > targetHigh) {
-              dc.setColor(0xAA0000, -1);
-            } else {
-              dc.setColor(0x00AA00, -1);
+
+        if(showHistogram){
+
+          dc.setClip(x,y,width,height);
+          var hLength = width * 1.0 / 30;
+          var targetBandwith = targetHigh - targetLow;
+          var hHeight = height * 1.0 / targetBandwith;
+          var localPwr = currentPower == null ? 0 : currentPower;
+
+          dc.setColor(0x00AA00, -1);
+          dc.fillRectangle(x, y, width, height);
+
+          var diff = (currentPower == null ? 0 : currentPower) - targetPower;
+
+          var h = (diff * hHeight).abs() > height ? height : diff * hHeight;
+          if(diff > 0){
+            dc.setColor(0xAA0000, -1);
+            dc.fillRectangle(x, y, width, h);
+          }else{
+            dc.setColor(0x0000FF, -1);
+            dc.fillRectangle(x, y + (height - h.abs()), width, h.abs());
+          }
+
+          dc.setColor(0xFFFFFF,-1);
+
+          dc.setPenWidth(4);
+          var prevPt = 0;
+          for (var i = 0; i < 30; i++) {
+            if(currentPowerAverage[i] != null){
+              h = (currentPowerAverage[i] - localPwr) * hHeight;
+              dc.drawLine((x + width) - (i * hLength), (y + (height / 2) - h), (x + width) - ((i - 1) * hLength), (y + (height / 2) - prevPt));
+              prevPt = h;
             }
-            dc.fillRectangle(x, y, width, height);
-            dc.setColor(0xFFFFFF, -1);
-          } else if (showColors == 2) {
-            if (currentPower < targetLow) {
-              dc.setColor(0x0000FF, -1);
-            } else if (currentPower > targetHigh) {
-              dc.setColor(0xAA0000, -1);
-            } else {
-              dc.setColor(0x00AA00, -1);
+          }
+          dc.setPenWidth(1);
+
+          if(currentPower != null){
+            dc.drawText(x == 0 ? 20 : x,(y + fontOffset),fonts[0],(currentPower + (targetBandwith / 2)).toNumber(),2);
+            dc.drawText(x == 0 ? 20 : x,(y + height - 25),fonts[0],(currentPower - (targetBandwith / 2)).toNumber(),2);
+            dc.drawText(x+width,(y + height - 25 + (fontOffset*2)),fonts[1],currentPower,0);
+          }
+
+          dc.clearClip();
+
+        }else{
+          label = "CUR PWR "+powerAverage+"S";
+          value = currentPower == null ? 0 : currentPower;
+          if(currentPower != null){
+            if (showColors == 1) {
+              if (currentPower < targetLow) {
+                dc.setColor(0x0000FF, -1);
+              } else if (currentPower > targetHigh) {
+                dc.setColor(0xAA0000, -1);
+              } else {
+                dc.setColor(0x00AA00, -1);
+              }
+              dc.fillRectangle(x, y, width, height);
+              dc.setColor(0xFFFFFF, -1);
+            } else if (showColors == 2) {
+              if (currentPower < targetLow) {
+                dc.setColor(0x0000FF, -1);
+              } else if (currentPower > targetHigh) {
+                dc.setColor(0xAA0000, -1);
+              } else {
+                dc.setColor(0x00AA00, -1);
+              }
             }
           }
         }

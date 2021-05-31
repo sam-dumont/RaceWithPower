@@ -57,4 +57,20 @@ class Utils {
       return useSpeed ? "0.00" : "0:00";
     }
   }
+
+  function split(s, sep) {
+    var tokens = [];
+
+    var found = s.find(sep);
+    while (found != null) {
+      var token = s.substring(0, found);
+      tokens.add(token);
+      s = s.substring(found + sep.length(), s.length());
+      found = s.find(sep);
+    }
+
+    tokens.add(s);
+
+    return tokens;
+  }
 }

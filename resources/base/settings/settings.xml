@@ -2,8 +2,14 @@
 	<setting propertyKey="@Properties.A" title="@Strings.PERCENTAGE">
 		<settingConfig type="boolean" />
 	</setting>
+	<setting propertyKey="@Properties.AA" title="@Strings.PDELTA">
+		<settingConfig type="numeric" />
+	</setting>
 	<setting propertyKey="@Properties.B" title="@Strings.FTP">
 		<settingConfig type="numeric" />
+	</setting>
+	<setting propertyKey="@Properties.C" title="@Strings.SHOW_HISTOGRAM">
+		<settingConfig type="boolean" />
 	</setting>
 	<setting propertyKey="@Properties.D" title="@Strings.VIBRATE">
 		<settingConfig type="boolean" />
@@ -17,6 +23,12 @@
 			<listEntry value="2">@Strings.SHOW_COLORS_2</listEntry>
 			<listEntry value="3">@Strings.SHOW_COLORS_3</listEntry>
 		</settingConfig>
+	</setting>
+	<setting propertyKey="@Properties.G" title="@Strings.TRAIL_MODE">
+		<settingConfig type="boolean" />
+	</setting>
+	<setting propertyKey="@Properties.H" title="@Strings.TRAIL_PARAMETERS">
+		<settingConfig type="alphaNumeric" />
 	</setting>
 	<setting propertyKey="@Properties.I" title="@Strings.USE_CUSTOM_FONTS">
 		<settingConfig type="boolean" />
