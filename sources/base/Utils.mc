@@ -58,18 +58,18 @@ class Utils {
     }
   }
 
-  function split(s, sep) {
+  function split(s, sep, number) {
     var tokens = [];
 
     var found = s.find(sep);
     while (found != null) {
       var token = s.substring(0, found);
-      tokens.add(token);
+      tokens.add(number ? token.toNumber() : token);
       s = s.substring(found + sep.length(), s.length());
       found = s.find(sep);
     }
 
-    tokens.add(s);
+    tokens.add(number ? s.toNumber() : s);
 
     return tokens;
   }

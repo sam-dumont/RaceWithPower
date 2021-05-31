@@ -19,9 +19,8 @@
 	<string id="TARGET_ELEVATION">Course elevation (in meters).</string>
 	<string id="TARGET_POWER">Target power.</string>
 	<string id="TARGET_TIME">Target time (in seconds OR hh:mm:ss format).</string>
-
 	<string id="TRAIL_MODE">Trail mode ?</string>
-	<string id="TRAIL_PARAMETERS">Flat,Uphill,Downhill,Hiking.</string>
+	<string id="TRAIL_PARAMETERS">Flat,Hiking,Downhill,Uphill.</string>
 	<string id="USE_CUSTOM_FONTS">Use custom fonts ? (only for capability level 2 or 4)</string>
 	<string id="VIBRATE">Vibrate on alerts?</string>
 	<string id="WEIGHT">Weight in kg (as setup on Stryd !).</string>
