@@ -1,4 +1,3 @@
-
 class Utils {
     static function replaceNull(nullableValue, defaultValue) {
         if (nullableValue != null) {
@@ -24,8 +23,7 @@ class Utils {
         if ((distance / factor) >= 1) {
             return [ ((distance * 1.0) / (factor * 1.0)).format("%0.2f"), unit];
         } else {
-            return [
-                (distance / factor * smallunitfactor).toNumber() + "", smallunit];
+            return [ (distance / factor * smallunitfactor).toNumber() + "", smallunit];
         }
     }
 

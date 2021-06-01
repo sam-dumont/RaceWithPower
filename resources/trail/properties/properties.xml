@@ -1,0 +1,7 @@
+<properties>
+    <property id="C" type="boolean">false</property>
+    <property id="G" type="boolean">false</property>
+    <property id="H" type="string">100,80,85,90</property>
+    <property id="BB" type="number">0</property>
+    <property id="CC" type="number">0</property>
+</properties>

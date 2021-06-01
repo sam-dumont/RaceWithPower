@@ -12,15 +12,12 @@
 	<string id="SHOW_COLORS_3">None</string>
 	<string id="SHOW_COLORS">Show Colors in Datafield</string>
 	<string id="SHOW_ETA">Show ETA (remaining time) instead of predicted finish time ?</string>
-	<string id="SHOW_HISTOGRAM">Show a graphical line instead of raw number</string>
 	<string id="SHOW_LAP_DATA">Show lap data (pace, power, distance) ?</string>
 	<string id="SHOW_TIME">Show time of day ?</string>
 	<string id="TARGET_DISTANCE">Target distance (in meters).</string>
 	<string id="TARGET_ELEVATION">Course elevation (in meters).</string>
 	<string id="TARGET_POWER">Target power.</string>
 	<string id="TARGET_TIME">Target time (in seconds OR hh:mm:ss format).</string>
-	<string id="TRAIL_MODE">Trail mode ?</string>
-	<string id="TRAIL_PARAMETERS">Flat,Hiking,Downhill,Uphill.</string>
 	<string id="USE_CUSTOM_FONTS">Use custom fonts ? (only for capability level 2 or 4)</string>
 	<string id="VIBRATE">Vibrate on alerts?</string>
 	<string id="WEIGHT">Weight in kg (as setup on Stryd !).</string>

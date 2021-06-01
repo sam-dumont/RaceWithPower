@@ -1,0 +1,17 @@
+<settings>
+    <setting propertyKey="@Properties.G" title="@Strings.TRAIL_MODE">
+        <settingConfig type="boolean" />
+    </setting>
+    <setting propertyKey="@Properties.H" title="@Strings.TRAIL_PARAMETERS">
+        <settingConfig type="alphaNumeric" />
+    </setting>
+    <setting propertyKey="@Properties.C" title="@Strings.SHOW_HISTOGRAM">
+        <settingConfig type="boolean" />
+    </setting>
+    <setting propertyKey="@Properties.BB" title="@Strings.PWR_DECREASE">
+        <settingConfig type="numeric" />
+    </setting>
+    <setting propertyKey="@Properties.CC" title="@Strings.TIME_DECREASE">
+        <settingConfig type="numeric" />
+    </setting>
+</settings>
