@@ -94,8 +94,7 @@ class RaceWithPowerView extends WatchUi.DataField {
         Utils.replaceNull(Application.getApp().getProperty("F"), 1);
 
     showHistogram =
-        Utils.replaceNull(Application.getApp().getProperty("C"), false);
-    
+        Utils.replaceNull(Application.getApp().getProperty("C"), false);    
 
     trailMode =
         Utils.replaceNull(Application.getApp().getProperty("G"), false);
@@ -318,17 +317,22 @@ class RaceWithPowerView extends WatchUi.DataField {
         pTargetPower = runZones[0];
 
         if(trailMode){
+          var factor = 1.0;
+          if(decreaseTime > 0 && timer > (3600 * decreaseTime)){
+            factor = (100 - pwrDecrease) / 100.0;
+          }
           alertModes[1] = alertModes[0];
           if(cadence < 120){
-            pTargetPower = runZones[2];
+            pTargetPower = factor * runZones[2];
             alertModes[0] = 1;
           } else if (grade < -2) {
-            pTargetPower = runZones[3];
+            pTargetPower = factor * runZones[3];
             alertModes[0] = 2;
           } else if (grade > 4) {
-            pTargetPower = runZones[4];
+            pTargetPower = factor * runZones[4];
             alertModes[0] = 3;
           } else {
+            pTargetPower = pTargetPower * factor;
             alertModes[0] = 0;
           }
         }
