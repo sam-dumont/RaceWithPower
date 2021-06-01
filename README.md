@@ -29,6 +29,10 @@ Customization is possible :
 * Disable the current time of day display
 * Disable the lap details display
 * Choose between ETA and Predicted end time.
+* Display a power graph over 30 seconds instead of a single metric.
+* Trail Mode
+  * Automatically adjust power targets (flat, hiking, uphill and downhill values)
+  * Decrease power targets after a certain number of hours
 # Settings
 
 * Show power in raw value or percentage of FTP
