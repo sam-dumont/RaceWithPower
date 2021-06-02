@@ -37,6 +37,8 @@ Customization is possible :
 
 * Show power in raw value or percentage of FTP
 * Set up race parameters : distance, elevation, target power (percentage or raw value depending on preceding option) and target time.
+* Set up bandwith for alerts (+/- n percent of target power)
+* Choose various settings for trail mode
 * Choose power averaging window (1-30 seconds)
 * Enable alerts outside of race power target
 
@@ -57,6 +59,12 @@ When disabling advanced options, you can obtain a more "minimalist" field.
 ![](doc/img/FR935_s.png)
 
 ![](doc/img/FR945_s.png)
+
+It is also possible to use the trail mode and show an historical graph of your power, be it in minimal or full layout.
+
+![](doc/img/Fenix5xplus.png)
+
+![](doc/img/Fenix6ProGraph.png)
 
 ### Pragati Font License
 

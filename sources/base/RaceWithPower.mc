@@ -102,6 +102,10 @@ class RaceWithPowerView extends WatchUi.DataField {
     targetPower =
         Utils.replaceNull(Application.getApp().getProperty("J"), 350);
 
+    if(usePercentage){
+      targetPower = (targetPower / 100.0) * FTP;
+    }
+
     runZones =
         Utils.split(Utils.replaceNull(Application.getApp().getProperty("H"), "100"),",",true);
 
@@ -750,7 +754,7 @@ class RaceWithPowerView extends WatchUi.DataField {
       } else{
         showText = false;
         labelFont = fonts[1];
-        labelOffset = 5 - (2 * fontOffset);
+        labelOffset = (dc.getFontHeight(labelFont) / 2) + (fontOffset * 3);
         if(delta<0){
           label = "-"+Utils.format_duration(delta * -1);
         } else {
@@ -898,7 +902,7 @@ class RaceWithPowerView extends WatchUi.DataField {
       value = distance[0];
     } else if (type == 11) {
       if(!showLapData){
-        localOffset = 1;
+        localOffset = (dc.getFontHeight(labelFont) / 4) + (fontOffset * 3);
         textFont = fonts[4];
       }
       if(enableAlternate && alternateMetric){
