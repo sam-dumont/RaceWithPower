@@ -2,6 +2,9 @@
 	<setting propertyKey="@Properties.A" title="@Strings.PERCENTAGE">
 		<settingConfig type="boolean" />
 	</setting>
+	<setting propertyKey="@Properties.AA" title="@Strings.PDELTA">
+		<settingConfig type="numeric" />
+	</setting>
 	<setting propertyKey="@Properties.B" title="@Strings.FTP">
 		<settingConfig type="numeric" />
 	</setting>

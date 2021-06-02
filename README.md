@@ -29,10 +29,16 @@ Customization is possible :
 * Disable the current time of day display
 * Disable the lap details display
 * Choose between ETA and Predicted end time.
+* Display a power graph over 30 seconds instead of a single metric.
+* Trail Mode
+  * Automatically adjust power targets (flat, hiking, uphill and downhill values)
+  * Decrease power targets after a certain number of hours
 # Settings
 
 * Show power in raw value or percentage of FTP
 * Set up race parameters : distance, elevation, target power (percentage or raw value depending on preceding option) and target time.
+* Set up bandwith for alerts (+/- n percent of target power)
+* Choose various settings for trail mode
 * Choose power averaging window (1-30 seconds)
 * Enable alerts outside of race power target
 
@@ -53,6 +59,12 @@ When disabling advanced options, you can obtain a more "minimalist" field.
 ![](doc/img/FR935_s.png)
 
 ![](doc/img/FR945_s.png)
+
+It is also possible to use the trail mode and show an historical graph of your power, be it in minimal or full layout.
+
+![](doc/img/Fenix5xplus.png)
+
+![](doc/img/Fenix6ProGraph.png)
 
 ### Pragati Font License
 

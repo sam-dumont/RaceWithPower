@@ -1,4 +1,3 @@
-
 class Utils {
     static function replaceNull(nullableValue, defaultValue) {
         if (nullableValue != null) {
@@ -24,8 +23,7 @@ class Utils {
         if ((distance / factor) >= 1) {
             return [ ((distance * 1.0) / (factor * 1.0)).format("%0.2f"), unit];
         } else {
-            return [
-                (distance / factor * smallunitfactor).toNumber() + "", smallunit];
+            return [ (distance / factor * smallunitfactor).toNumber() + "", smallunit];
         }
     }
 
@@ -56,5 +54,21 @@ class Utils {
     } else {
       return useSpeed ? "0.00" : "0:00";
     }
+  }
+
+  function split(s, sep, number) {
+    var tokens = [];
+
+    var found = s.find(sep);
+    while (found != null) {
+      var token = s.substring(0, found);
+      tokens.add(number ? token.toNumber() : token);
+      s = s.substring(found + sep.length(), s.length());
+      found = s.find(sep);
+    }
+
+    tokens.add(number ? s.toNumber() : s);
+
+    return tokens;
   }
 }
