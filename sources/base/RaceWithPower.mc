@@ -365,7 +365,7 @@ class RaceWithPowerView extends WatchUi.DataField {
               entries -= 1;
             }
           }
-          currentSpeed = tempAverage * 1.0 / entries * 1.0;
+          currentSpeed = entries == 0 ? 0 : tempAverage * 1.0 / entries * 1.0;
         }
 
         if (currentPower != null) {
@@ -397,7 +397,7 @@ class RaceWithPowerView extends WatchUi.DataField {
               entries -= 1;
             }
           }
-          currentPower = tempAverage * 1.0 / entries * 1.0;
+          currentPower = entries == 0 ? 0 : tempAverage * 1.0 / entries * 1.0;
         } else {
           currentPower = 0;
         }
@@ -414,7 +414,7 @@ class RaceWithPowerView extends WatchUi.DataField {
       idealPace[0] = (((elapsedDistance + correction[0]) * 1.0) / targetPace).toNumber();
       idealPace[1] = ((targetDistance * 1.0 - (elapsedDistance + correction[0]) * 1.0) / targetPace).toNumber();
     }
-    if(elapsedDistance != null && elapsedDistance > 0 && lapPower != 0){
+    if(elapsedDistance != null && elapsedDistance > 0 && lapPower != 0 && weight != 0 && targetDistance != 0 && avgPower != 0){
       var remElevation = targetElevation - totalAscent;
       var remDistance = targetDistance - (elapsedDistance + correction[0]);
       if (remElevation > 0 && remDistance > 0){
@@ -510,7 +510,7 @@ class RaceWithPowerView extends WatchUi.DataField {
               entries -= 1;
             }
           }
-          currentSpeed = tempAverage * 1.0 / entries * 1.0;
+          currentSpeed = entries == 0 ? 0 : tempAverage * 1.0 / entries * 1.0;
         }
 
         if (currentPower != null) {
@@ -542,7 +542,7 @@ class RaceWithPowerView extends WatchUi.DataField {
               entries -= 1;
             }
           }
-          currentPower = tempAverage * 1.0 / entries * 1.0;
+          currentPower = entries == 0 ? 0 : tempAverage * 1.0 / entries * 1.0;
         } else {
           currentPower = 0;
         }
