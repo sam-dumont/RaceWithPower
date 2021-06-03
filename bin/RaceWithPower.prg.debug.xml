@@ -581,177 +581,181 @@
         <entry filename="Rez" id="40" lineNum="31" pc="268451718" symbol="AlertLayout"/>
     </pcToLineNum>
     <symbolTable>
-        <entry field="true" id="111" symbol="gradeArr"/>
+        <entry field="true" id="106" symbol="gradeArr"/>
         <entry id="8388639" module="true" symbol="Graphics"/>
-        <entry field="true" id="72" symbol="currentPowerAverage"/>
-        <entry field="true" id="86" symbol="lapPace"/>
-        <entry field="true" id="71" symbol="currentPaceAverage"/>
-        <entry field="true" id="77" symbol="fontOffset"/>
-        <entry field="true" id="82" symbol="idealPower"/>
+        <entry field="true" id="68" symbol="currentPowerAverage"/>
+        <entry field="true" id="82" symbol="lapPace"/>
+        <entry field="true" id="8389246" symbol="transmissionType"/>
+        <entry field="true" id="67" symbol="currentPaceAverage"/>
+        <entry field="true" id="73" symbol="fontOffset"/>
+        <entry field="true" id="78" symbol="idealPower"/>
         <entry id="8388632" method="true" symbol="&lt;init&gt;"/>
-        <entry field="true" id="95" symbol="showColors"/>
-        <entry field="true" id="59" symbol="alertDelay"/>
-        <entry field="true" id="124" symbol="geometry"/>
+        <entry field="true" id="90" symbol="showColors"/>
+        <entry field="true" id="55" symbol="alertDelay"/>
+        <entry field="true" id="119" symbol="geometry"/>
         <entry id="4" module="true" symbol="globals/Rez/Menus"/>
-        <entry field="true" id="69" symbol="correction"/>
-        <entry field="true" id="114" symbol="decreaseTime"/>
-        <entry field="true" id="80" symbol="hrZones"/>
+        <entry field="true" id="65" symbol="correction"/>
+        <entry field="true" id="109" symbol="decreaseTime"/>
+        <entry field="true" id="76" symbol="hrZones"/>
         <entry id="8391699" method="true" symbol="showAlert"/>
-        <entry field="true" id="91" symbol="paused"/>
-        <entry field="true" id="76" symbol="etaPower"/>
-        <entry id="120" method="true" symbol="set_extra_settings"/>
-        <entry id="22" method="true" symbol="MainLayout"/>
-        <entry field="true" id="60" symbol="alertTimer"/>
-        <entry field="true" id="108" symbol="timer"/>
-        <entry field="true" id="99" symbol="percentageDelta"/>
-        <entry field="true" id="98" symbol="showLapData"/>
-        <entry id="123" method="true" symbol="drawCurrentPower"/>
+        <entry field="true" id="87" symbol="paused"/>
+        <entry field="true" id="72" symbol="etaPower"/>
+        <entry id="115" method="true" symbol="set_extra_settings"/>
+        <entry id="19" method="true" symbol="MainLayout"/>
+        <entry field="true" id="56" symbol="alertTimer"/>
+        <entry field="true" id="103" symbol="timer"/>
+        <entry field="true" id="94" symbol="percentageDelta"/>
+        <entry id="8391211" method="true" symbol="onMessage"/>
+        <entry field="true" id="93" symbol="showLapData"/>
+        <entry id="118" method="true" symbol="drawCurrentPower"/>
         <entry id="8389748" method="true" symbol="onTimerStop"/>
-        <entry field="true" id="96" symbol="showEta"/>
-        <entry field="true" id="63" symbol="enableAlerts"/>
-        <entry id="122" method="true" symbol="drawMetric"/>
-        <entry id="121" method="true" symbol="checkAlert"/>
+        <entry field="true" id="91" symbol="showEta"/>
+        <entry field="true" id="59" symbol="enableAlerts"/>
+        <entry id="117" method="true" symbol="drawMetric"/>
+        <entry id="116" method="true" symbol="checkAlert"/>
         <entry id="8388647" module="true" symbol="UserProfile"/>
         <entry field="true" id="8388611" module="true" symbol="Toybox"/>
-        <entry field="true" id="61" symbol="alertDisplayed"/>
-        <entry field="true" id="35" symbol="WEIGHT"/>
-        <entry field="true" id="28" symbol="LAP_DISTANCE"/>
+        <entry field="true" id="8389274" symbol="searchThreshold"/>
+        <entry field="true" id="57" symbol="alertDisplayed"/>
+        <entry field="true" id="31" symbol="WEIGHT"/>
+        <entry field="true" id="25" symbol="LAP_DISTANCE"/>
+        <entry field="true" id="8389244" symbol="deviceNumber"/>
         <entry id="8389747" method="true" symbol="onTimerStart"/>
-        <entry field="true" id="32" symbol="AppName"/>
-        <entry field="true" id="8388963" symbol="altitude"/>
-        <entry id="129" method="true" symbol="format_duration"/>
-        <entry field="true" id="40" symbol="PDELTA"/>
+        <entry id="8388634" module="true" symbol="Ant"/>
+        <entry field="true" id="27" symbol="AppName"/>
+        <entry id="124" method="true" symbol="format_duration"/>
+        <entry field="true" id="35" symbol="PDELTA"/>
         <entry id="8389749" method="true" symbol="onTimerPause"/>
-        <entry field="true" id="106" symbol="pTargetPower"/>
+        <entry field="true" id="101" symbol="pTargetPower"/>
         <entry id="8" module="true" symbol="globals/Rez/Strings"/>
-        <entry field="true" id="94" symbol="sensor"/>
+        <entry field="true" id="15" symbol="sensor"/>
         <entry id="8388772" module="true" object="true" symbol="Fonts"/>
-        <entry field="true" id="52" symbol="SHOW_HISTOGRAM"/>
         <entry field="true" id="8390265" symbol="targetPower"/>
-        <entry field="true" id="57" symbol="VIBRATE"/>
+        <entry field="true" id="50" symbol="VIBRATE"/>
+        <entry field="true" id="30" symbol="ANTID"/>
         <entry id="8388648" module="true" symbol="WatchUi"/>
-        <entry field="true" id="30" symbol="PWR_DECREASE"/>
-        <entry field="true" id="37" symbol="TIME_DECREASE"/>
-        <entry field="true" id="90" symbol="lapTime"/>
+        <entry field="true" id="86" symbol="lapTime"/>
         <entry id="2" module="true" symbol="globals/Rez"/>
-        <entry field="true" id="31" symbol="TRAIL_PARAMETERS"/>
         <entry field="true" id="8388959" symbol="cadence"/>
         <entry id="8389410" module="true" symbol="AntPlus"/>
-        <entry field="true" id="25" symbol="ALERT_COUNT"/>
-        <entry field="true" id="113" symbol="pwrDecrease"/>
-        <entry field="true" id="84" symbol="lapDistance"/>
+        <entry field="true" id="22" symbol="ALERT_COUNT"/>
+        <entry field="true" id="108" symbol="pwrDecrease"/>
+        <entry field="true" id="8389245" symbol="deviceType"/>
+        <entry field="true" id="80" symbol="lapDistance"/>
         <entry id="8389124" method="true" symbol="onUpdate"/>
-        <entry field="true" id="81" symbol="idealPace"/>
-        <entry field="true" id="29" symbol="POWER_AVERAGE"/>
-        <entry field="true" id="42" symbol="PERCENTAGE"/>
+        <entry field="true" id="77" symbol="idealPace"/>
+        <entry field="true" id="26" symbol="POWER_AVERAGE"/>
+        <entry field="true" id="37" symbol="PERCENTAGE"/>
         <entry id="8388771" module="true" object="true" symbol="Drawables"/>
+        <entry field="true" id="53" symbol="reopen"/>
         <entry id="12" object="true" symbol="RaceWithPowerView"/>
-        <entry id="15" module="true" symbol="Menus"/>
-        <entry field="true" id="33" symbol="ENABLE_ALERT"/>
+        <entry id="17" module="true" symbol="Menus"/>
+        <entry field="true" id="28" symbol="ENABLE_ALERT"/>
         <entry id="6" module="true" symbol="globals/Rez/Layouts"/>
         <entry id="13" object="true" symbol="RaceWithPowerApp"/>
-        <entry field="true" id="58" symbol="alertCount"/>
-        <entry field="true" id="109" symbol="useMetric"/>
-        <entry field="true" id="110" symbol="usePercentage"/>
+        <entry field="true" id="54" symbol="alertCount"/>
+        <entry field="true" id="104" symbol="useMetric"/>
+        <entry field="true" id="105" symbol="usePercentage"/>
         <entry id="8389122" method="true" symbol="onLayout"/>
-        <entry field="true" id="65" symbol="showAlerts"/>
+        <entry field="true" id="61" symbol="showAlerts"/>
         <entry field="true" id="8388738" symbol="currentSpeed"/>
-        <entry field="true" id="79" symbol="hr"/>
-        <entry id="119" method="true" symbol="set_fonts"/>
-        <entry field="true" id="53" symbol="TARGET_ELEVATION"/>
+        <entry field="true" id="75" symbol="hr"/>
+        <entry id="114" method="true" symbol="set_fonts"/>
+        <entry field="true" id="47" symbol="TARGET_ELEVATION"/>
         <entry id="8389137" method="true" symbol="compute"/>
         <entry id="10" object="true" symbol="RaceWithPowerAlertView"/>
-        <entry field="true" id="105" symbol="targetPace"/>
-        <entry field="true" id="41" symbol="SHOW_COLORS_3"/>
-        <entry field="true" id="46" symbol="SHOW_COLORS_2"/>
-        <entry field="true" id="45" symbol="SHOW_COLORS_1"/>
-        <entry field="true" id="67" symbol="avgPace"/>
-        <entry field="true" id="24" symbol="SHOW_COLORS"/>
-        <entry field="true" id="39" symbol="ALERT_3"/>
-        <entry field="true" id="50" symbol="ALERT_2"/>
-        <entry field="true" id="49" symbol="ALERT_1"/>
-        <entry id="128" method="true" symbol="format_distance"/>
+        <entry field="true" id="100" symbol="targetPace"/>
+        <entry field="true" id="36" symbol="SHOW_COLORS_3"/>
+        <entry field="true" id="41" symbol="SHOW_COLORS_2"/>
+        <entry field="true" id="40" symbol="SHOW_COLORS_1"/>
+        <entry field="true" id="63" symbol="avgPace"/>
+        <entry field="true" id="21" symbol="SHOW_COLORS"/>
+        <entry field="true" id="34" symbol="ALERT_3"/>
+        <entry field="true" id="45" symbol="ALERT_2"/>
+        <entry field="true" id="44" symbol="ALERT_1"/>
+        <entry id="123" method="true" symbol="format_distance"/>
         <entry field="true" id="8388987" method="true" symbol="vibrate"/>
         <entry field="true" id="8388742" symbol="currentPower"/>
-        <entry field="true" id="97" symbol="showHistogram"/>
-        <entry field="true" id="78" symbol="fonts"/>
+        <entry field="true" id="92" symbol="showHistogram"/>
+        <entry field="true" id="74" symbol="fonts"/>
+        <entry field="true" id="51" symbol="searching"/>
         <entry id="7" module="true" symbol="globals/Rez/JsonData"/>
-        <entry field="true" id="74" symbol="enableAlternate"/>
+        <entry field="true" id="70" symbol="enableAlternate"/>
+        <entry field="true" id="8389271" symbol="radioFrequency"/>
         <entry id="3" module="true" symbol="globals/Rez/Drawables"/>
-        <entry field="true" id="116" symbol="trailMode"/>
-        <entry field="true" id="87" symbol="lapPower"/>
-        <entry field="true" id="117" symbol="runZones"/>
-        <entry field="true" id="68" symbol="avgPower"/>
+        <entry field="true" id="111" symbol="trailMode"/>
+        <entry field="true" id="83" symbol="lapPower"/>
+        <entry field="true" id="112" symbol="runZones"/>
+        <entry field="true" id="64" symbol="avgPower"/>
         <entry id="8389752" method="true" symbol="onTimerReset"/>
-        <entry field="true" id="92" symbol="powerAverage"/>
-        <entry field="true" id="26" symbol="FTP"/>
-        <entry field="true" id="55" symbol="SHOW_LAP_DATA"/>
-        <entry id="126" method="true" symbol="split"/>
+        <entry field="true" id="88" symbol="powerAverage"/>
+        <entry field="true" id="23" symbol="FTP"/>
+        <entry field="true" id="48" symbol="SHOW_LAP_DATA"/>
+        <entry id="121" method="true" symbol="split"/>
+        <entry field="true" id="8389270" symbol="messagePeriod"/>
         <entry field="true" id="8389143" symbol="weight"/>
-        <entry field="true" id="36" symbol="TARGET_DISTANCE"/>
+        <entry field="true" id="32" symbol="TARGET_DISTANCE"/>
+        <entry id="8388645" module="true" symbol="Time"/>
         <entry id="8388769" module="true" object="true" symbol="Rez"/>
-        <entry field="true" id="88" symbol="lapStartDistance"/>
-        <entry field="true" id="47" symbol="LAP_CORRECT"/>
-        <entry field="true" id="70" symbol="correctLap"/>
+        <entry field="true" id="84" symbol="lapStartDistance"/>
+        <entry id="8389256" method="true" symbol="open"/>
+        <entry field="true" id="42" symbol="LAP_CORRECT"/>
+        <entry field="true" id="66" symbol="correctLap"/>
         <entry id="8388640" module="true" symbol="Lang"/>
         <entry id="8390088" module="true" object="true" symbol="JsonData"/>
-        <entry field="true" id="89" symbol="lapStartTime"/>
-        <entry field="true" id="16" symbol="LauncherIcon"/>
-        <entry field="true" id="43" symbol="TARGET_TIME"/>
+        <entry field="true" id="85" symbol="lapStartTime"/>
+        <entry field="true" id="18" symbol="LauncherIcon"/>
+        <entry field="true" id="38" symbol="TARGET_TIME"/>
         <entry id="8388610" symbol="statics"/>
-        <entry id="125" method="true" symbol="convert_speed_pace"/>
-        <entry field="true" id="115" symbol="grade"/>
+        <entry field="true" id="8389272" symbol="searchTimeoutLowPriority"/>
+        <entry id="120" method="true" symbol="convert_speed_pace"/>
+        <entry field="true" id="110" symbol="grade"/>
         <entry id="8389350" module="true" symbol="globals"/>
+        <entry field="true" id="52" symbol="failedInit"/>
         <entry id="8388770" module="true" object="true" symbol="Strings"/>
-        <entry field="true" id="118" symbol="alertModes"/>
+        <entry field="true" id="113" symbol="alertModes"/>
         <entry id="8388702" method="true" symbol="initialize"/>
-        <entry field="true" id="107" symbol="targetTime"/>
-        <entry field="true" id="27" symbol="ALTERNATE_PC"/>
+        <entry field="true" id="102" symbol="targetTime"/>
+        <entry id="14" object="true" symbol="PowerSensor"/>
+        <entry field="true" id="24" symbol="ALTERNATE_PC"/>
         <entry id="8389279" method="true" symbol="onStart"/>
-        <entry field="true" id="102" symbol="targetElevation"/>
+        <entry field="true" id="97" symbol="targetElevation"/>
         <entry id="11" object="true" symbol="Utils"/>
-        <entry field="true" id="54" symbol="TRAIL_MODE"/>
-        <entry field="true" id="93" symbol="remainingDistance"/>
+        <entry field="true" id="89" symbol="remainingDistance"/>
         <entry id="9" module="true" symbol="globals/Utils"/>
         <entry field="true" id="8388747" symbol="currentHeartRate"/>
-        <entry field="true" id="85" symbol="lapLength"/>
+        <entry field="true" id="81" symbol="lapLength"/>
         <entry id="8391701" method="true" symbol="setAntiAlias"/>
-        <entry field="true" id="51" symbol="SHOW_ETA"/>
+        <entry field="true" id="46" symbol="SHOW_ETA"/>
         <entry id="8389751" method="true" symbol="onTimerLap"/>
         <entry id="8389280" method="true" symbol="getInitialView"/>
         <entry id="8389281" method="true" symbol="onStop"/>
-        <entry id="127" method="true" symbol="replaceNull"/>
-        <entry field="true" id="48" symbol="TARGET_POWER"/>
-        <entry field="true" id="38" symbol="SHOW_TIME"/>
-        <entry field="true" id="64" symbol="maxAlerts"/>
-        <entry field="true" id="56" symbol="ALERT_TYPE"/>
-        <entry field="true" id="104" symbol="targetLow"/>
+        <entry id="122" method="true" symbol="replaceNull"/>
+        <entry field="true" id="43" symbol="TARGET_POWER"/>
+        <entry field="true" id="33" symbol="SHOW_TIME"/>
+        <entry field="true" id="60" symbol="maxAlerts"/>
+        <entry field="true" id="49" symbol="ALERT_TYPE"/>
+        <entry field="true" id="99" symbol="targetLow"/>
         <entry field="true" id="8388734" symbol="elapsedDistance"/>
-        <entry field="true" id="73" symbol="currentPowerRaw"/>
+        <entry field="true" id="69" symbol="currentPowerRaw"/>
         <entry field="true" id="8388745" symbol="totalAscent"/>
-        <entry id="23" method="true" symbol="AlertLayout"/>
+        <entry id="20" method="true" symbol="AlertLayout"/>
         <entry field="true" id="8388750" symbol="currentCadence"/>
-        <entry id="14" module="true" symbol="Layouts"/>
-        <entry field="true" id="44" symbol="USE_CUSTOM_FONTS"/>
-        <entry field="true" id="62" symbol="alertType"/>
-        <entry field="true" id="83" symbol="idealPowerTarget"/>
+        <entry id="16" module="true" symbol="Layouts"/>
+        <entry field="true" id="39" symbol="USE_CUSTOM_FONTS"/>
+        <entry field="true" id="58" symbol="alertType"/>
+        <entry field="true" id="79" symbol="idealPowerTarget"/>
         <entry id="8388636" module="true" symbol="Attention"/>
-        <entry field="true" id="112" symbol="distArr"/>
-        <entry field="true" id="66" symbol="alternateMetric"/>
+        <entry field="true" id="107" symbol="distArr"/>
+        <entry field="true" id="62" symbol="alternateMetric"/>
         <entry id="8389750" method="true" symbol="onTimerResume"/>
-        <entry field="true" id="75" symbol="etaPace"/>
-        <entry field="true" id="100" symbol="showTime"/>
+        <entry field="true" id="71" symbol="etaPace"/>
+        <entry field="true" id="95" symbol="showTime"/>
         <entry id="5" module="true" symbol="globals/Rez/Fonts"/>
-        <entry field="true" id="101" symbol="targetDistance"/>
+        <entry field="true" id="96" symbol="targetDistance"/>
         <entry id="8388635" module="true" symbol="Application"/>
-        <entry field="true" id="34" symbol="ALERT_DELAY"/>
-        <entry field="true" id="21" symbol="F"/>
-        <entry field="true" id="8388894" symbol="E"/>
-        <entry field="true" id="20" symbol="D"/>
-        <entry field="true" id="19" symbol="C"/>
-        <entry field="true" id="18" symbol="B"/>
-        <entry field="true" id="17" symbol="A"/>
-        <entry field="true" id="103" symbol="targetHigh"/>
+        <entry field="true" id="29" symbol="ALERT_DELAY"/>
+        <entry field="true" id="98" symbol="targetHigh"/>
     </symbolTable>
     <localVars>
         <entry arg="true" endPc="268435548" name="low" stackId="2" startPc="268435456"/>
@@ -791,91 +795,80 @@
         <entry endPc="268438784" name="targetTimeSplit" stackId="3" startPc="268436898"/>
         <entry arg="true" endPc="268438785" name="strydsensor" stackId="1" startPc="268436894"/>
         <entry endPc="268439129" name="delta" stackId="1" startPc="268438896"/>
-        <entry arg="true" endPc="268439926" name="dc" stackId="1" startPc="268439918"/>
-        <entry endPc="268440355" name="i" stackId="2" startPc="268440286"/>
-        <entry endPc="268440522" name="i" stackId="6" startPc="268440441"/>
-        <entry endPc="268440609" name="entries" stackId="4" startPc="268440268"/>
-        <entry endPc="268440609" name="tempAverage" stackId="3" startPc="268440268"/>
-        <entry endPc="268440609" name="prevEntry" stackId="5" startPc="268440268"/>
-        <entry endPc="268440609" name="dist" stackId="7" startPc="268440268"/>
-        <entry endPc="268441028" name="factor" stackId="8" startPc="268440692"/>
-        <entry endPc="268441338" name="i" stackId="9" startPc="268441297"/>
-        <entry endPc="268441456" name="i" stackId="12" startPc="268441398"/>
-        <entry endPc="268441500" name="entries" stackId="11" startPc="268441168"/>
-        <entry endPc="268441500" name="tempAverage" stackId="10" startPc="268441168"/>
-        <entry endPc="268441575" name="i" stackId="13" startPc="268441534"/>
-        <entry endPc="268441907" name="i" stackId="16" startPc="268441849"/>
-        <entry endPc="268441951" name="entries" stackId="15" startPc="268441516"/>
-        <entry endPc="268441951" name="tempAverage" stackId="14" startPc="268441516"/>
-        <entry endPc="268442905" name="remElevation" stackId="17" startPc="268442524"/>
-        <entry endPc="268442905" name="remDistance" stackId="18" startPc="268442524"/>
-        <entry endPc="268442905" name="factor" stackId="19" startPc="268442524"/>
-        <entry arg="true" endPc="268443324" name="info" stackId="1" startPc="268439926"/>
-        <entry endPc="268444175" name="metric" stackId="1" startPc="268443328"/>
-        <entry endPc="268446030" name="height" stackId="3" startPc="268444180"/>
-        <entry endPc="268446030" name="width" stackId="2" startPc="268444180"/>
-        <entry endPc="268446030" name="bgColor" stackId="4" startPc="268444180"/>
-        <entry endPc="268446030" name="fgColor" stackId="5" startPc="268444180"/>
-        <entry endPc="268446030" name="geometry" stackId="6" startPc="268444180"/>
-        <entry arg="true" endPc="268446031" name="dc" stackId="1" startPc="268444176"/>
-        <entry endPc="268446542" name="delta" stackId="19" startPc="268446241"/>
-        <entry endPc="268447575" name="delta" stackId="20" startPc="268447463"/>
-        <entry endPc="268447690" name="delta" stackId="21" startPc="268447578"/>
-        <entry endPc="268448400" name="distance" stackId="22" startPc="268448231"/>
-        <entry endPc="268448697" name="time" stackId="23" startPc="268448561"/>
-        <entry endPc="268449285" name="distance" stackId="24" startPc="268449203"/>
-        <entry endPc="268449594" name="textx" stackId="12" startPc="268446035"/>
-        <entry endPc="268449594" name="textFont" stackId="15" startPc="268446035"/>
-        <entry endPc="268449594" name="labelx" stackId="13" startPc="268446035"/>
-        <entry endPc="268449594" name="labelFont" stackId="14" startPc="268446035"/>
-        <entry endPc="268449594" name="showText" stackId="18" startPc="268446035"/>
-        <entry endPc="268449594" name="label" stackId="10" startPc="268446035"/>
-        <entry endPc="268449594" name="value" stackId="11" startPc="268446035"/>
-        <entry endPc="268449594" name="localOffset" stackId="16" startPc="268446035"/>
-        <entry endPc="268449594" name="labelOffset" stackId="17" startPc="268446035"/>
-        <entry arg="true" endPc="268449595" name="fgColor" stackId="9" startPc="268446031"/>
-        <entry arg="true" endPc="268449595" name="width" stackId="5" startPc="268446031"/>
-        <entry arg="true" endPc="268449595" name="align" stackId="7" startPc="268446031"/>
-        <entry arg="true" endPc="268449595" name="type" stackId="2" startPc="268446031"/>
-        <entry arg="true" endPc="268449595" name="y" stackId="4" startPc="268446031"/>
-        <entry arg="true" endPc="268449595" name="bgColor" stackId="8" startPc="268446031"/>
-        <entry arg="true" endPc="268449595" name="x" stackId="3" startPc="268446031"/>
-        <entry arg="true" endPc="268449595" name="dc" stackId="1" startPc="268446031"/>
-        <entry arg="true" endPc="268449595" name="height" stackId="6" startPc="268446031"/>
-        <entry endPc="268450444" name="targets" stackId="25" startPc="268450114"/>
-        <entry endPc="268450444" name="text" stackId="26" startPc="268450114"/>
-        <entry endPc="268450612" name="i" stackId="28" startPc="268450489"/>
-        <entry endPc="268451096" name="tgtHigh" stackId="29" startPc="268450642"/>
-        <entry endPc="268451096" name="tgtLow" stackId="30" startPc="268450642"/>
-        <entry endPc="268451111" name="hLength" stackId="19" startPc="268449746"/>
-        <entry endPc="268451111" name="h" stackId="24" startPc="268449746"/>
-        <entry endPc="268451111" name="localPwr" stackId="22" startPc="268449746"/>
-        <entry endPc="268451111" name="hHeight" stackId="21" startPc="268449746"/>
-        <entry endPc="268451111" name="prevPt" stackId="27" startPc="268449746"/>
-        <entry endPc="268451111" name="diff" stackId="23" startPc="268449746"/>
-        <entry endPc="268451111" name="targetBandwith" stackId="20" startPc="268449746"/>
-        <entry endPc="268451628" name="textx" stackId="12" startPc="268449599"/>
-        <entry endPc="268451628" name="textFont" stackId="15" startPc="268449599"/>
-        <entry endPc="268451628" name="labelx" stackId="13" startPc="268449599"/>
-        <entry endPc="268451628" name="labelFont" stackId="14" startPc="268449599"/>
-        <entry endPc="268451628" name="showText" stackId="18" startPc="268449599"/>
-        <entry endPc="268451628" name="label" stackId="10" startPc="268449599"/>
-        <entry endPc="268451628" name="value" stackId="11" startPc="268449599"/>
-        <entry endPc="268451628" name="localOffset" stackId="16" startPc="268449599"/>
-        <entry endPc="268451628" name="labelOffset" stackId="17" startPc="268449599"/>
-        <entry arg="true" endPc="268451629" name="fgColor" stackId="9" startPc="268449595"/>
-        <entry arg="true" endPc="268451629" name="width" stackId="5" startPc="268449595"/>
-        <entry arg="true" endPc="268451629" name="align" stackId="7" startPc="268449595"/>
-        <entry arg="true" endPc="268451629" name="type" stackId="2" startPc="268449595"/>
-        <entry arg="true" endPc="268451629" name="y" stackId="4" startPc="268449595"/>
-        <entry arg="true" endPc="268451629" name="bgColor" stackId="8" startPc="268449595"/>
-        <entry arg="true" endPc="268451629" name="x" stackId="3" startPc="268449595"/>
-        <entry arg="true" endPc="268451629" name="dc" stackId="1" startPc="268449595"/>
-        <entry arg="true" endPc="268451629" name="height" stackId="6" startPc="268449595"/>
-        <entry arg="true" endPc="268451657" name="state" stackId="1" startPc="268451652"/>
-        <entry arg="true" endPc="268451662" name="state" stackId="1" startPc="268451657"/>
-        <entry arg="true" endPc="268451718" name="dc" stackId="1" startPc="268451705"/>
-        <entry arg="true" endPc="268451731" name="dc" stackId="1" startPc="268451718"/>
+        <entry arg="true" endPc="268439598" name="dc" stackId="1" startPc="268439590"/>
+        <entry endPc="268440289" name="i" stackId="2" startPc="268440248"/>
+        <entry endPc="268440407" name="i" stackId="5" startPc="268440349"/>
+        <entry endPc="268440451" name="entries" stackId="4" startPc="268440119"/>
+        <entry endPc="268440451" name="tempAverage" stackId="3" startPc="268440119"/>
+        <entry endPc="268440526" name="i" stackId="6" startPc="268440485"/>
+        <entry endPc="268440858" name="i" stackId="9" startPc="268440800"/>
+        <entry endPc="268440902" name="entries" stackId="8" startPc="268440467"/>
+        <entry endPc="268440902" name="tempAverage" stackId="7" startPc="268440467"/>
+        <entry endPc="268441796" name="remElevation" stackId="10" startPc="268441415"/>
+        <entry endPc="268441796" name="remDistance" stackId="11" startPc="268441415"/>
+        <entry endPc="268441796" name="factor" stackId="12" startPc="268441415"/>
+        <entry arg="true" endPc="268442215" name="info" stackId="1" startPc="268439598"/>
+        <entry endPc="268443066" name="metric" stackId="1" startPc="268442219"/>
+        <entry endPc="268444921" name="height" stackId="3" startPc="268443071"/>
+        <entry endPc="268444921" name="width" stackId="2" startPc="268443071"/>
+        <entry endPc="268444921" name="bgColor" stackId="4" startPc="268443071"/>
+        <entry endPc="268444921" name="fgColor" stackId="5" startPc="268443071"/>
+        <entry endPc="268444921" name="geometry" stackId="6" startPc="268443071"/>
+        <entry arg="true" endPc="268444922" name="dc" stackId="1" startPc="268443067"/>
+        <entry endPc="268445433" name="delta" stackId="19" startPc="268445132"/>
+        <entry endPc="268446466" name="delta" stackId="20" startPc="268446354"/>
+        <entry endPc="268446581" name="delta" stackId="21" startPc="268446469"/>
+        <entry endPc="268447291" name="distance" stackId="22" startPc="268447122"/>
+        <entry endPc="268447588" name="time" stackId="23" startPc="268447452"/>
+        <entry endPc="268448176" name="distance" stackId="24" startPc="268448094"/>
+        <entry endPc="268448485" name="textx" stackId="12" startPc="268444926"/>
+        <entry endPc="268448485" name="textFont" stackId="15" startPc="268444926"/>
+        <entry endPc="268448485" name="labelx" stackId="13" startPc="268444926"/>
+        <entry endPc="268448485" name="labelFont" stackId="14" startPc="268444926"/>
+        <entry endPc="268448485" name="showText" stackId="18" startPc="268444926"/>
+        <entry endPc="268448485" name="label" stackId="10" startPc="268444926"/>
+        <entry endPc="268448485" name="value" stackId="11" startPc="268444926"/>
+        <entry endPc="268448485" name="localOffset" stackId="16" startPc="268444926"/>
+        <entry endPc="268448485" name="labelOffset" stackId="17" startPc="268444926"/>
+        <entry arg="true" endPc="268448486" name="fgColor" stackId="9" startPc="268444922"/>
+        <entry arg="true" endPc="268448486" name="width" stackId="5" startPc="268444922"/>
+        <entry arg="true" endPc="268448486" name="align" stackId="7" startPc="268444922"/>
+        <entry arg="true" endPc="268448486" name="type" stackId="2" startPc="268444922"/>
+        <entry arg="true" endPc="268448486" name="y" stackId="4" startPc="268444922"/>
+        <entry arg="true" endPc="268448486" name="bgColor" stackId="8" startPc="268444922"/>
+        <entry arg="true" endPc="268448486" name="x" stackId="3" startPc="268444922"/>
+        <entry arg="true" endPc="268448486" name="dc" stackId="1" startPc="268444922"/>
+        <entry arg="true" endPc="268448486" name="height" stackId="6" startPc="268444922"/>
+        <entry endPc="268449086" name="textx" stackId="12" startPc="268448490"/>
+        <entry endPc="268449086" name="textFont" stackId="15" startPc="268448490"/>
+        <entry endPc="268449086" name="labelx" stackId="13" startPc="268448490"/>
+        <entry endPc="268449086" name="labelFont" stackId="14" startPc="268448490"/>
+        <entry endPc="268449086" name="showText" stackId="18" startPc="268448490"/>
+        <entry endPc="268449086" name="label" stackId="10" startPc="268448490"/>
+        <entry endPc="268449086" name="value" stackId="11" startPc="268448490"/>
+        <entry endPc="268449086" name="localOffset" stackId="16" startPc="268448490"/>
+        <entry endPc="268449086" name="labelOffset" stackId="17" startPc="268448490"/>
+        <entry arg="true" endPc="268449087" name="fgColor" stackId="9" startPc="268448486"/>
+        <entry arg="true" endPc="268449087" name="width" stackId="5" startPc="268448486"/>
+        <entry arg="true" endPc="268449087" name="align" stackId="7" startPc="268448486"/>
+        <entry arg="true" endPc="268449087" name="type" stackId="2" startPc="268448486"/>
+        <entry arg="true" endPc="268449087" name="y" stackId="4" startPc="268448486"/>
+        <entry arg="true" endPc="268449087" name="bgColor" stackId="8" startPc="268448486"/>
+        <entry arg="true" endPc="268449087" name="x" stackId="3" startPc="268448486"/>
+        <entry arg="true" endPc="268449087" name="dc" stackId="1" startPc="268448486"/>
+        <entry arg="true" endPc="268449087" name="height" stackId="6" startPc="268448486"/>
+        <entry endPc="268449240" name="sensorsetting" stackId="2" startPc="268449114"/>
+        <entry arg="true" endPc="268449241" name="state" stackId="1" startPc="268449110"/>
+        <entry arg="true" endPc="268449280" name="state" stackId="1" startPc="268449241"/>
+        <entry endPc="268449673" name="deviceCfg" stackId="4" startPc="268449334"/>
+        <entry endPc="268449673" name="chanAssign" stackId="2" startPc="268449334"/>
+        <entry arg="true" endPc="268449674" name="devNumber" stackId="1" startPc="268449330"/>
+        <entry endPc="268449928" name="payload1" stackId="4" startPc="268449724"/>
+        <entry endPc="268449928" name="payload0" stackId="3" startPc="268449724"/>
+        <entry endPc="268449928" name="payload" stackId="2" startPc="268449724"/>
+        <entry arg="true" endPc="268449929" name="msg" stackId="1" startPc="268449720"/>
+        <entry arg="true" endPc="268449942" name="dc" stackId="1" startPc="268449929"/>
+        <entry arg="true" endPc="268449955" name="dc" stackId="1" startPc="268449942"/>
     </localVars>
     <annotations>
         <annotationEntry annotation="roundthree" class="RaceWithPowerAlertView" module="globals" symbol="geometry"/>
@@ -887,35 +880,28 @@
         <annotationEntry annotation="ciq32" class="RaceWithPowerView" module="globals" symbol="enableAlerts"/>
         <annotationEntry annotation="ciq32" class="RaceWithPowerView" module="globals" symbol="maxAlerts"/>
         <annotationEntry annotation="ciq32" class="RaceWithPowerView" module="globals" symbol="showAlerts"/>
-        <annotationEntry annotation="highmem" class="RaceWithPowerView" module="globals" symbol="set_fonts"/>
+        <annotationEntry annotation="lowmemlow" class="RaceWithPowerView" module="globals" symbol="set_fonts"/>
         <annotationEntry annotation="ciq32" class="RaceWithPowerView" module="globals" symbol="set_extra_settings"/>
-        <annotationEntry annotation="trail" class="RaceWithPowerView" module="globals" symbol="compute"/>
+        <annotationEntry annotation="notrail" class="RaceWithPowerView" module="globals" symbol="compute"/>
         <annotationEntry annotation="ciq32" class="RaceWithPowerView" module="globals" symbol="checkAlert"/>
-        <annotationEntry annotation="trail" class="RaceWithPowerView" module="globals" symbol="drawCurrentPower"/>
-        <annotationEntry annotation="noant" class="RaceWithPowerApp" module="globals" symbol="onStart"/>
-        <annotationEntry annotation="noant" class="RaceWithPowerApp" module="globals" symbol="onStop"/>
-        <annotationEntry annotation="noant" class="RaceWithPowerApp" module="globals" symbol="getInitialView"/>
+        <annotationEntry annotation="notrail" class="RaceWithPowerView" module="globals" symbol="drawCurrentPower"/>
+        <annotationEntry annotation="ant" class="RaceWithPowerApp" module="globals" symbol="sensor"/>
+        <annotationEntry annotation="ant" class="RaceWithPowerApp" module="globals" symbol="onStart"/>
+        <annotationEntry annotation="ant" class="RaceWithPowerApp" module="globals" symbol="onStop"/>
+        <annotationEntry annotation="ant" class="RaceWithPowerApp" module="globals" symbol="getInitialView"/>
         <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
-        <annotationEntry annotation="initialized" class="Fonts" module="globals/Rez" symbol="A"/>
-        <annotationEntry annotation="initialized" class="Fonts" module="globals/Rez" symbol="B"/>
-        <annotationEntry annotation="initialized" class="Fonts" module="globals/Rez" symbol="C"/>
-        <annotationEntry annotation="initialized" class="Fonts" module="globals/Rez" symbol="D"/>
-        <annotationEntry annotation="initialized" class="Fonts" module="globals/Rez" symbol="E"/>
-        <annotationEntry annotation="initialized" class="Fonts" module="globals/Rez" symbol="F"/>
         <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="SHOW_COLORS"/>
         <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ALERT_COUNT"/>
         <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="FTP"/>
         <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ALTERNATE_PC"/>
         <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="LAP_DISTANCE"/>
         <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="POWER_AVERAGE"/>
-        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="PWR_DECREASE"/>
-        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="TRAIL_PARAMETERS"/>
         <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="AppName"/>
         <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ENABLE_ALERT"/>
         <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ALERT_DELAY"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ANTID"/>
         <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="WEIGHT"/>
         <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="TARGET_DISTANCE"/>
-        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="TIME_DECREASE"/>
         <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="SHOW_TIME"/>
         <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ALERT_3"/>
         <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="PDELTA"/>
@@ -930,27 +916,26 @@
         <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ALERT_1"/>
         <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ALERT_2"/>
         <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="SHOW_ETA"/>
-        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="SHOW_HISTOGRAM"/>
         <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="TARGET_ELEVATION"/>
-        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="TRAIL_MODE"/>
         <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="SHOW_LAP_DATA"/>
         <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ALERT_TYPE"/>
         <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="VIBRATE"/>
     </annotations>
     <dataEntryOffsetMappings>
         <dataEntry label="globals" offset="95" parentId="" symbolId="globals" type="module"/>
-        <dataEntry label="globals/RaceWithPowerApp" offset="174" parentId="globals" symbolId="RaceWithPowerApp" type="class"/>
-        <dataEntry label="globals/Rez" offset="245" parentId="globals" symbolId="Rez" type="module"/>
-        <dataEntry label="globals/Rez/Drawables" offset="324" parentId="Rez" symbolId="Drawables" type="module"/>
-        <dataEntry label="globals/Rez/Menus" offset="363" parentId="Rez" symbolId="Menus" type="module"/>
-        <dataEntry label="globals/Rez/Fonts" offset="394" parentId="Rez" symbolId="Fonts" type="module"/>
-        <dataEntry label="globals/Rez/Layouts" offset="473" parentId="Rez" symbolId="Layouts" type="module"/>
-        <dataEntry label="globals/Rez/JsonData" offset="520" parentId="Rez" symbolId="JsonData" type="module"/>
-        <dataEntry label="globals/Rez/Strings" offset="551" parentId="Rez" symbolId="Strings" type="module"/>
-        <dataEntry label="globals/RaceWithPowerView" offset="854" parentId="globals" symbolId="RaceWithPowerView" type="class"/>
-        <dataEntry label="globals/RaceWithPowerAlertView" offset="1573" parentId="globals" symbolId="RaceWithPowerAlertView" type="class"/>
-        <dataEntry label="globals/Utils" offset="1692" parentId="globals" symbolId="Utils" type="class"/>
-        <dataEntry label="globals/Utils/statics" offset="1755" parentId="globals" symbolId="globals/Utils" type="class"/>
+        <dataEntry label="globals/RaceWithPowerApp" offset="182" parentId="globals" symbolId="RaceWithPowerApp" type="class"/>
+        <dataEntry label="globals/Rez" offset="261" parentId="globals" symbolId="Rez" type="module"/>
+        <dataEntry label="globals/Rez/Drawables" offset="340" parentId="Rez" symbolId="Drawables" type="module"/>
+        <dataEntry label="globals/Rez/Menus" offset="379" parentId="Rez" symbolId="Menus" type="module"/>
+        <dataEntry label="globals/Rez/Fonts" offset="410" parentId="Rez" symbolId="Fonts" type="module"/>
+        <dataEntry label="globals/Rez/Layouts" offset="441" parentId="Rez" symbolId="Layouts" type="module"/>
+        <dataEntry label="globals/Rez/JsonData" offset="488" parentId="Rez" symbolId="JsonData" type="module"/>
+        <dataEntry label="globals/Rez/Strings" offset="519" parentId="Rez" symbolId="Strings" type="module"/>
+        <dataEntry label="globals/PowerSensor" offset="790" parentId="globals" symbolId="PowerSensor" type="class"/>
+        <dataEntry label="globals/RaceWithPowerView" offset="893" parentId="globals" symbolId="RaceWithPowerView" type="class"/>
+        <dataEntry label="globals/RaceWithPowerAlertView" offset="1612" parentId="globals" symbolId="RaceWithPowerAlertView" type="class"/>
+        <dataEntry label="globals/Utils" offset="1731" parentId="globals" symbolId="Utils" type="class"/>
+        <dataEntry label="globals/Utils/statics" offset="1794" parentId="globals" symbolId="globals/Utils" type="class"/>
     </dataEntryOffsetMappings>
     <functions>
         <functionEntry accessMode="public" name="initialize" parent="RaceWithPowerAlertView">
@@ -1075,6 +1060,19 @@
             <documentation/>
         </functionEntry>
         <functionEntry accessMode="public" name="getInitialView" parent="RaceWithPowerApp">
+            <documentation>
+                <![CDATA[<div class="description"> Return the initial view of your application here<br/></div>]]>
+            </documentation>
+        </functionEntry>
+        <functionEntry accessMode="public" name="initialize" parent="PowerSensor">
+            <param id="devNumber"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="open" parent="PowerSensor">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onMessage" parent="PowerSensor">
+            <param id="msg"/>
             <documentation/>
         </functionEntry>
         <functionEntry accessMode="public" name="MainLayout" parent="Layouts">
