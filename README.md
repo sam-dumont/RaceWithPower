@@ -32,6 +32,7 @@ Customization is possible :
 * Display a power graph over 30 seconds instead of a single metric.
 * Trail Mode
   * Automatically adjust power targets (flat, hiking, uphill and downhill values)
+  * Calculate race target power based on TTE, Riegel exponent and estimated duration.
   * Decrease power targets after a certain number of hours
 # Settings
 
