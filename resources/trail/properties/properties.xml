@@ -4,4 +4,7 @@
     <property id="H" type="string">100,80,85,90</property>
     <property id="BB" type="number">0</property>
     <property id="CC" type="number">0</property>
+    <property id="DD" type="number">11</property>
+    <property id="EE" type="number">50</property>
+    <property id="FF" type="boolean">false</property>
 </properties>

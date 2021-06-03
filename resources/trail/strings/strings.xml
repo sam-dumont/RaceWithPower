@@ -1,7 +1,10 @@
 <strings>
     <string id="TRAIL_MODE">Trail mode ?</string>
-    <string id="TRAIL_PARAMETERS">Flat,Hiking,Downhill,Uphill.</string>
+    <string id="TRAIL_PARAMETERS">Flat,Uphill,Downhill,Hiking.</string>
     <string id="SHOW_HISTOGRAM">Show a graphical line instead of raw number</string>
     <string id="PWR_DECREASE">Power decrease in percent.</string>
     <string id="TIME_DECREASE">Delay (in hours) before applying the power decrease</string>
+    <string id="TTE">Time to exhaustion (in minutes)</string>
+    <string id="RIEGEL">Riegel exponent (fatigue factor). Only the decimal part.</string>
+    <string id="AUTO_TRAIL_CP">Auto-calculate trail race power</string>
 </strings>

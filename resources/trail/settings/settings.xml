@@ -14,4 +14,13 @@
     <setting propertyKey="@Properties.CC" title="@Strings.TIME_DECREASE">
         <settingConfig type="numeric" />
     </setting>
+    <setting propertyKey="@Properties.DD" title="@Strings.RIEGEL">
+        <settingConfig type="numeric" />
+    </setting>
+    <setting propertyKey="@Properties.EE" title="@Strings.TTE">
+        <settingConfig type="numeric" />
+    </setting>
+    <setting propertyKey="@Properties.FF" title="@Strings.AUTO_TRAIL_CP">
+        <settingConfig type="boolean" />
+    </setting>
 </settings>
