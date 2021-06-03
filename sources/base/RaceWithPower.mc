@@ -865,15 +865,15 @@ class RaceWithPowerView extends WatchUi.DataField {
     } else if (type == 5) {
       var distance = Utils.format_distance((elapsedDistance == null ? 0 : elapsedDistance + correction[0]), useMetric);
       labelFont = fonts[showTime == true ? 1 : 2];
-      labelOffset = showTime ? labelOffset + fontOffset : height / 2.5 + (2 * fontOffset);
+      labelOffset = showTime ? labelOffset + fontOffset : height / 3 + (2 * fontOffset);
       label = distance[0];
     } else if (type == 6) {
       labelFont = fonts[showTime ? 1 : 2];
-      labelOffset = showTime ? labelOffset + fontOffset : height / 2.5 + (2 * fontOffset);
+      labelOffset = showTime ? labelOffset + fontOffset : height / 3 + (2 * fontOffset);
       label = Utils.format_duration(timer == null ? 0 : timer);
     } else if (type == 7) {
       labelFont = fonts[1];
-      labelOffset = showTime ? labelOffset + fontOffset : height / 2.5 + (2 * fontOffset);
+      labelOffset = showTime ? labelOffset + fontOffset : height / 3 + (2 * fontOffset);
       var time = Sys.getClockTime();
       label = time.hour.format("%02d") + ":" + time.min.format("%02d");
     } else if (type == 8) {
