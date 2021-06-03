@@ -49,7 +49,9 @@ class RaceWithPowerView extends WatchUi.DataField {
   hidden var sensor;
   hidden var showColors;
   hidden var showEta;
-  hidden var showHistogram = false;
+  (:trail) hidden var showHistogram = false;
+  (:trail) hidden var tte;
+  (:trail) hidden var riegel;
   hidden var showLapData;
   hidden var percentageDelta;
   hidden var showTime;
@@ -67,13 +69,13 @@ class RaceWithPowerView extends WatchUi.DataField {
   hidden var usePercentage;
   hidden var vibrate;
   hidden var weight;
-  hidden var gradeArr = new[15];
-  hidden var distArr = new[15];
-  hidden var pwrDecrease = 0;
-  hidden var decreaseTime = 0;
-  hidden var grade = 0;
-  hidden var trailMode;
-  hidden var runZones;
+  (:trail) hidden var gradeArr = new[15];
+  (:trail) hidden var distArr = new[15];
+  (:trail) hidden var pwrDecrease = 0;
+  (:trail) hidden var decreaseTime = 0;
+  (:trail) hidden var grade = 0;
+  (:trail) hidden var trailMode;
+  (:trail) hidden var runZones;
   hidden var alertModes = [0,0];
 
   function initialize(strydsensor) {
@@ -93,12 +95,6 @@ class RaceWithPowerView extends WatchUi.DataField {
     showColors =
         Utils.replaceNull(Application.getApp().getProperty("F"), 1);
 
-    showHistogram =
-        Utils.replaceNull(Application.getApp().getProperty("C"), false);    
-
-    trailMode =
-        Utils.replaceNull(Application.getApp().getProperty("G"), false);
-
     targetPower =
         Utils.replaceNull(Application.getApp().getProperty("J"), 350);
 
@@ -106,12 +102,7 @@ class RaceWithPowerView extends WatchUi.DataField {
       targetPower = (targetPower / 100.0) * FTP;
     }
 
-    runZones =
-        Utils.split(Utils.replaceNull(Application.getApp().getProperty("H"), "100"),",",true);
 
-    for(var i = 0; i < runZones.size(); i++){
-      runZones[i] = ((runZones[i] / 100.0) * targetPower);
-    }
 
     targetDistance =
         Utils.replaceNull(Application.getApp().getProperty("K"), 5000);
@@ -162,18 +153,46 @@ class RaceWithPowerView extends WatchUi.DataField {
 
     set_fonts();
     set_extra_settings();
-
-    pwrDecrease =
-      Utils.replaceNull(Application.getApp().getProperty("BB"), 0);
-
-    decreaseTime =
-      Utils.replaceNull(Application.getApp().getProperty("CC"), 0);
+    set_trail_settings();
     
     DataField.initialize();
     
     hrZones = UserProfile.getHeartRateZones(UserProfile.HR_ZONE_SPORT_GENERIC);
     currentPaceAverage = new[powerAverage];
     sensor = strydsensor;
+  }
+
+  (:notrail)
+  function set_trail_settings(){}
+
+  (:trail)
+  function set_trail_settings(){
+
+    showHistogram =
+        Utils.replaceNull(Application.getApp().getProperty("C"), false);    
+
+    trailMode =
+        Utils.replaceNull(Application.getApp().getProperty("G"), false);
+    
+    tte = Utils.replaceNull(Application.getApp().getProperty("EE"), 50);
+    riegel = (Utils.replaceNull(Application.getApp().getProperty("DD"), 11) / 100.0);
+
+    if(trailMode && Utils.replaceNull(Application.getApp().getProperty("FF"), false)){
+      targetPower = FTP * Math.pow((targetTime / 60.0) / tte, -1 * riegel);
+    }
+
+    runZones =
+        Utils.split(Utils.replaceNull(Application.getApp().getProperty("H"), "100"),",",true);
+
+    for(var i = 0; i < runZones.size(); i++){
+      runZones[i] = ((runZones[i] / 100.0) * targetPower);
+    }
+
+    pwrDecrease =
+      Utils.replaceNull(Application.getApp().getProperty("BB"), 0);
+
+    decreaseTime =
+      Utils.replaceNull(Application.getApp().getProperty("CC"), 0);
   }
 
   function onTimerStart() { paused = false; }
@@ -333,15 +352,15 @@ class RaceWithPowerView extends WatchUi.DataField {
             factor = (100 - pwrDecrease) / 100.0;
           }
           alertModes[1] = alertModes[0];
-          if(cadence < 120){
-            pTargetPower = factor * runZones[2];
-            alertModes[0] = 1;
-          } else if (grade < -2) {
+          if(cadence < 130){
             pTargetPower = factor * runZones[3];
+            alertModes[0] = 3;
+          } else if (grade < -2) {
+            pTargetPower = factor * runZones[2];
             alertModes[0] = 2;
           } else if (grade > 4) {
-            pTargetPower = factor * runZones[4];
-            alertModes[0] = 3;
+            pTargetPower = factor * runZones[1];
+            alertModes[0] = 1;
           } else {
             pTargetPower = pTargetPower * factor;
             alertModes[0] = 0;
@@ -491,10 +510,8 @@ class RaceWithPowerView extends WatchUi.DataField {
         timer = info.elapsedTime / 1000;
         lapTime = timer - lapStartTime;
 
-        pTargetPower = runZones[0];
-
-        targetHigh = ((pTargetPower * ((100.0 + percentageDelta) / 100.0)) + 0.5).toNumber();
-        targetLow = ((pTargetPower * ((100.0 - percentageDelta) / 100.0)) + 0.5).toNumber();
+        targetHigh = ((targetPower * ((100.0 + percentageDelta) / 100.0)) + 0.5).toNumber();
+        targetLow = ((targetPower * ((100.0 - percentageDelta) / 100.0)) + 0.5).toNumber();
 
         if(info.elapsedDistance != null && timer != 0){
           lapDistance = (info.elapsedDistance - lapStartDistance) + correction[0];
@@ -941,7 +958,7 @@ class RaceWithPowerView extends WatchUi.DataField {
     var labelOffset = -2;
     var showText = true;
 
-    if(showHistogram && targetHigh != 0 && targetHigh != 0){
+    if(showHistogram && targetLow != 0 && targetHigh != 0){
       dc.setClip(x,y,width,height);
       var hLength = width * 1.0 / 30;
       var targetBandwith = targetHigh - targetLow;
@@ -964,14 +981,18 @@ class RaceWithPowerView extends WatchUi.DataField {
 
       dc.setColor(0xFFFFFF,-1);
       if(trailMode){
-        var targets = " TGT "+(usePercentage ? ((targetLow / FTP) * 100).format("%0.1f") : (targetLow + 0.5).toNumber()) + "-" + (usePercentage ? ((targetHigh / FTP) * 100).format("%0.1f") : (targetHigh + 0.5).toNumber());
-        var text = "FLAT"+targets;
-        if(alertModes[0] == 1){
-          text = "HIKE "+targets;
-        } else if(alertModes[0] == 2){
-          text = "DOWNHILL "+targets;
-        } else if(alertModes[0] == 3){
-          text = "UPHILL "+targets;
+        var targets = "TGT "+(usePercentage ? ((targetLow / FTP) * 100).format("%0.1f") : (targetLow + 0.5).toNumber()) + "-" + (usePercentage ? ((targetHigh / FTP) * 100).format("%0.1f") : (targetHigh + 0.5).toNumber());
+        var text = targets;
+        if(fontOffset == -4){
+          targets = grade.toNumber()+"  "+targets;
+          text = "FLAT "+targets;
+          if(alertModes[0] == 3){
+            text = "HIKE "+targets;
+          } else if(alertModes[0] == 2){
+            text = "DOWNHILL "+targets;
+          } else if(alertModes[0] == 1){
+            text = "UPHILL "+targets;
+          } 
         }
         dc.drawText(x + width,(y + fontOffset),fonts[0],text,0);
       }
