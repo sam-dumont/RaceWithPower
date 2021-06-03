@@ -227,11 +227,18 @@ class RaceWithPowerView extends WatchUi.DataField {
     }
   }
 
-  (:lowmemlow) function set_fonts() { fonts = [ 0, 1, 2, 3, 6, 8 ]; }
-
   (:lowmemlarge) function set_fonts() {
     fontOffset = 2;
     fonts = [ 0, 1, 2, 3, 6, 8 ];
+  }
+
+  (:lowmem) function set_fonts() {
+    fonts = [ 0, 1, 2, 3, 6, 8 ];
+  }
+
+  (:lowmemlow) function set_fonts() {
+    fontOffset = -1;
+    fonts = [ 0, 1, 2, 3, 5, 7 ];
   }
 
   (:ciq2)
