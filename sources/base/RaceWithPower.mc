@@ -74,6 +74,8 @@ class RaceWithPowerView extends WatchUi.DataField {
   (:trail) hidden var pwrDecrease = 0;
   (:trail) hidden var decreaseTime = 0;
   (:trail) hidden var grade = 0;
+  (:trail) hidden var graphCounter = 1;
+  (:trail) hidden var graphAgg = 10;
   (:trail) hidden var trailMode;
   (:trail) hidden var runZones;
   hidden var alertModes = [0,0];
@@ -395,11 +397,29 @@ class RaceWithPowerView extends WatchUi.DataField {
         }
 
         if (currentPower != null) {
-          for (var i = 29; i > 0; --i) {
-            currentPowerAverage[i] = currentPowerAverage[i - 1];
+
+          if (showHistogram){
+            if(currentPowerAverage[0] == null){
+              currentPowerAverage[0] = currentPower;
+            }
+            if(graphCounter > powerAverage){
+              for (var i = 29; i > 0; --i) {
+                currentPowerAverage[i] = currentPowerAverage[i - 1];
+              }
+              currentPowerAverage[0] = currentPower;
+              graphCounter = 1;
+            } else{
+              currentPowerAverage[0] = (((currentPowerAverage[0] * (graphCounter - 1)) + currentPower) / (graphCounter * 1.0));
+              graphCounter = graphCounter + 1;
+            }
+          } else {
+            for (var i = 29; i > 0; --i) {
+              currentPowerAverage[i] = currentPowerAverage[i - 1];
+            }
+            currentPowerAverage[0] = currentPower;
           }
 
-          currentPowerAverage[0] = currentPower;
+          System.println(currentPowerAverage);
 
           if (lapPower == null) {
             lapPower = currentPower;
@@ -963,12 +983,12 @@ class RaceWithPowerView extends WatchUi.DataField {
       var hLength = width * 1.0 / 30;
       var targetBandwith = targetHigh - targetLow;
       var hHeight = height * 1.0 / targetBandwith;
-      var localPwr = currentPower == null ? 0 : currentPower;
+      var localPwr = currentPowerAverage[0] == null ? 0 : currentPowerAverage[0];
 
       dc.setColor(0x00AA00, -1);
       dc.fillRectangle(x, y, width, height);
 
-      var diff = (currentPower == null ? 0 : currentPower) - pTargetPower;
+      var diff = (localPwr == null ? 0 : localPwr) - pTargetPower;
 
       var h = (diff * hHeight).abs() > height ? height : diff * hHeight;
       if(diff > 0){
@@ -1008,12 +1028,12 @@ class RaceWithPowerView extends WatchUi.DataField {
       }
       dc.setPenWidth(1);
 
-      if(currentPower != null){
-        var tgtHigh = usePercentage ? (((currentPower + (targetBandwith / 2)) / FTP) * 100).format("%0.1f") : (currentPower + (targetBandwith / 2) + 0.5).toNumber();
-        var tgtLow = usePercentage ? (((currentPower - (targetBandwith / 2)) / FTP) * 100).format("%0.1f") : (currentPower - (targetBandwith / 2) + 0.5).toNumber();
+      if(localPwr != null){
+        var tgtHigh = usePercentage ? (((localPwr + (targetBandwith / 2)) / FTP) * 100).format("%0.1f") : (localPwr + (targetBandwith / 2) + 0.5).toNumber();
+        var tgtLow = usePercentage ? (((localPwr - (targetBandwith / 2)) / FTP) * 100).format("%0.1f") : (localPwr - (targetBandwith / 2) + 0.5).toNumber();
         dc.drawText(x == 0 ? 20 : x,(y + fontOffset),fonts[0],tgtHigh,2);
         dc.drawText(x == 0 ? 20 : x,(y + height - 25),fonts[0],tgtLow,2);
-        dc.drawText(x+width,(y + height - 25 + (fontOffset*2)),fonts[1],usePercentage ? (currentPower / FTP * 100).format("%0.1f") : (currentPower + 0.5).toNumber(),0);
+        dc.drawText(x+width,(y + height - 25 + (fontOffset*2)),fonts[1],usePercentage ? (localPwr / FTP * 100).format("%0.1f") : (localPwr + 0.5).toNumber(),0);
       }
 
       dc.clearClip();
