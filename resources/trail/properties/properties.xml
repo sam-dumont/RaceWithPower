@@ -7,4 +7,5 @@
     <property id="DD" type="number">11</property>
     <property id="EE" type="number">50</property>
     <property id="FF" type="boolean">false</property>
+    <property id="GG" type="boolean">false</property>
 </properties>
