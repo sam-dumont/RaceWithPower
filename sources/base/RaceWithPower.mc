@@ -7,13 +7,28 @@ using Toybox.System as Sys;
 class RaceWithPowerView extends WatchUi.DataField {
   (:ciq32) hidden var alertCount = 0;
   (:ciq32) hidden var alertDelay;
-  (:ciq32) hidden var alertTimer = 0;
   (:ciq32) hidden var alertDisplayed = false;
+  (:ciq32) hidden var alertTimer = 0;
   (:ciq32) hidden var alertType;
   (:ciq32) hidden var enableAlerts;
   (:ciq32) hidden var maxAlerts;
   (:ciq32) hidden var showAlerts;
+  (:trail) hidden var decreaseTime = 0;
+  (:trail) hidden var distArr = new[15];
+  hidden var grade = 0;
+  (:trail) hidden var gradeArr = new[15];
+  (:trail) hidden var graphAgg = 10;
+  (:trail) hidden var graphCounter = 1;
+  (:trail) hidden var pwrDecrease = 0;
+  (:trail) hidden var riegel;
+  (:trail) hidden var runZones;
+  (:trail) hidden var showHistogram = false;
+  (:trail) hidden var trailMode;
+  (:trail) hidden var tte;
+  hidden var alertModes = [0,0];
   hidden var alternateMetric = false;
+  hidden var altInsteadLap;
+  hidden var altitude = 0;
   hidden var avgPace;
   hidden var avgPower;
   hidden var cadence = 0;
@@ -44,16 +59,14 @@ class RaceWithPowerView extends WatchUi.DataField {
   hidden var lapStartTime = 0;
   hidden var lapTime = 0;
   hidden var paused = true;
+  hidden var percentageDelta;
   hidden var powerAverage;
+  hidden var pTargetPower;
   hidden var remainingDistance;
   hidden var sensor;
   hidden var showColors;
   hidden var showEta;
-  (:trail) hidden var showHistogram = false;
-  (:trail) hidden var tte;
-  (:trail) hidden var riegel;
   hidden var showLapData;
-  hidden var percentageDelta;
   hidden var showTime;
   hidden var targetDistance;
   hidden var targetElevation;
@@ -61,7 +74,6 @@ class RaceWithPowerView extends WatchUi.DataField {
   hidden var targetLow = 0;
   hidden var targetPace = 0;
   hidden var targetPower;
-  hidden var pTargetPower;
   hidden var targetTime;
   hidden var timer;
   hidden var totalAscent;
@@ -69,16 +81,6 @@ class RaceWithPowerView extends WatchUi.DataField {
   hidden var usePercentage;
   hidden var vibrate;
   hidden var weight;
-  (:trail) hidden var gradeArr = new[15];
-  (:trail) hidden var distArr = new[15];
-  (:trail) hidden var pwrDecrease = 0;
-  (:trail) hidden var decreaseTime = 0;
-  (:trail) hidden var grade = 0;
-  (:trail) hidden var graphCounter = 1;
-  (:trail) hidden var graphAgg = 10;
-  (:trail) hidden var trailMode;
-  (:trail) hidden var runZones;
-  hidden var alertModes = [0,0];
 
   function initialize(strydsensor) {
 
@@ -178,6 +180,8 @@ class RaceWithPowerView extends WatchUi.DataField {
     
     tte = Utils.replaceNull(Application.getApp().getProperty("EE"), 50);
     riegel = (Utils.replaceNull(Application.getApp().getProperty("DD"), 11) / 100.0);
+
+    altInsteadLap = Utils.replaceNull(Application.getApp().getProperty("GG"), false);
 
     if(trailMode && Utils.replaceNull(Application.getApp().getProperty("FF"), false)){
       targetPower = FTP * Math.pow((targetTime / 60.0) / tte, -1 * riegel);
@@ -312,11 +316,17 @@ class RaceWithPowerView extends WatchUi.DataField {
           totalAscent = info.totalAscent == null ? 0 : info.totalAscent;
         }
 
+        if(info has :altitude){
+          altitude = info.altitude;
+        }
+
         if (info has :currentCadence) {
           cadence = info.currentCadence == null ? 0 : info.currentCadence;
         }
 
         if (info has :altitude && info.elapsedDistance != null){
+
+          altitude = info.altitude;
 
           for (var i = 14; i > 0; --i) {
             gradeArr[i] = gradeArr[i - 1];
@@ -418,8 +428,6 @@ class RaceWithPowerView extends WatchUi.DataField {
             }
             currentPowerAverage[0] = currentPower;
           }
-
-          System.println(currentPowerAverage);
 
           if (lapPower == null) {
             lapPower = currentPower;
@@ -723,9 +731,15 @@ class RaceWithPowerView extends WatchUi.DataField {
     }
     if(showLapData){
       drawMetric(dc,2,geometry[8],geometry[3],geometry[1],geometry[4],1,bgColor,fgColor);
-      drawMetric(dc,8,0,geometry[5],geometry[9],geometry[3],0,bgColor,fgColor);
-      drawMetric(dc,9,geometry[9],geometry[5],geometry[9],geometry[3],1,bgColor,fgColor);
-      drawMetric(dc,10,geometry[10],geometry[5],geometry[9],geometry[3],2,bgColor,fgColor);
+      if(altInsteadLap){
+        drawMetric(dc,12,0,geometry[5],geometry[9],geometry[3],0,bgColor,fgColor);
+        drawMetric(dc,13,geometry[9],geometry[5],geometry[9],geometry[3],1,bgColor,fgColor);
+        drawMetric(dc,14,geometry[10],geometry[5],geometry[9],geometry[3],2,bgColor,fgColor);
+      } else {
+        drawMetric(dc,8,0,geometry[5],geometry[9],geometry[3],0,bgColor,fgColor);
+        drawMetric(dc,9,geometry[9],geometry[5],geometry[9],geometry[3],1,bgColor,fgColor);
+        drawMetric(dc,10,geometry[10],geometry[5],geometry[9],geometry[3],2,bgColor,fgColor);
+      }
       drawMetric(dc,3,0,geometry[4],geometry[8],geometry[3],0,bgColor,fgColor);
       drawMetric(dc,0,0,geometry[3],geometry[8],geometry[3],0,bgColor,fgColor);
       drawMetric(dc,11,0,geometry[7],width,geometry[3],1,bgColor,fgColor);
@@ -956,7 +970,18 @@ class RaceWithPowerView extends WatchUi.DataField {
         label = showEta ? "ETA POWER" : "FINISH TIME POWER";
         value = Utils.format_duration(etaPower[1]);
       }
-    }
+    } else if (type == 12) {
+      var distance = Utils.format_distance(altitude, useMetric);
+      label = "ALT "+distance[1];
+      value = distance[0];
+    } else if (type == 13) {
+      label = "GRADE";
+      value = grade+"%";
+    } else if (type == 14) {
+      var distance = Utils.format_distance(totalAscent == null ? 0 : totalAscent, useMetric);
+      label = "TOT ASC "+distance[1];
+      value = distance[0];
+    } 
 
     dc.drawText(labelx, y + labelOffset, labelFont, label, align);
 

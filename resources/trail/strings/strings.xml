@@ -7,4 +7,5 @@
     <string id="TTE">Time to exhaustion (in minutes)</string>
     <string id="RIEGEL">Riegel exponent (fatigue factor). Only the decimal part.</string>
     <string id="AUTO_TRAIL_CP">Auto-calculate trail race power</string>
+    <string id="SHOW_ALTITUDE_DATA">Show altitude data instead of lap.</string>
 </strings>
