@@ -350,7 +350,7 @@ class RaceWithPowerView extends WatchUi.DataField {
             }
           }
           var dist = distArr[0] - distArr[entries - 1];
-          grade = dist == 0 ? 0 : (((tempAverage * 1.0) / dist) + 0.5).toNumber();
+          grade = dist == 0 ? 0 : (((tempAverage * 1.0) / dist) * 100).toNumber();
         }
 
         timer = info.elapsedTime / 1000;
@@ -468,7 +468,7 @@ class RaceWithPowerView extends WatchUi.DataField {
       idealPace[0] = (((elapsedDistance + correction[0]) * 1.0) / targetPace).toNumber();
       idealPace[1] = ((targetDistance * 1.0 - (elapsedDistance + correction[0]) * 1.0) / targetPace).toNumber();
     }
-    if(elapsedDistance != null && elapsedDistance > 0 && lapPower != 0 && weight != 0 && targetDistance != 0 && avgPower != 0){
+    if(elapsedDistance != null && elapsedDistance > 0 && lapPower != 0 && weight != 0 && targetDistance != 0 && avgPower != 0 && avgPower != null){
       var remElevation = targetElevation - totalAscent;
       var remDistance = targetDistance - (elapsedDistance + correction[0]);
       if (remElevation > 0 && remDistance > 0){
@@ -1029,7 +1029,7 @@ class RaceWithPowerView extends WatchUi.DataField {
         var targets = "TGT "+(usePercentage ? ((targetLow / FTP) * 100).format("%0.1f") : (targetLow + 0.5).toNumber()) + "-" + (usePercentage ? ((targetHigh / FTP) * 100).format("%0.1f") : (targetHigh + 0.5).toNumber());
         var text = targets;
         if(fontOffset == -4){
-          targets = grade.toNumber()+"  "+targets;
+          targets = grade+"  "+targets;
           text = "FLAT "+targets;
           if(alertModes[0] == 3){
             text = "HIKE "+targets;
