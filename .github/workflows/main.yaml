@@ -1,4 +1,8 @@
 name: "main job"
+permissions:
+  id-token: write
+  contents: read # This is required for actions/checkout
+
 on:
   pull_request:
     branches:
@@ -32,10 +36,17 @@ jobs:
           path: ~/.Garmin/ConnectIQ
           key: devices-${{ hashFiles('manifest.xml') }}
 
+      - name: configure aws credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          role-to-assume: ${{ secrets.AWS_ROLE_ARN }}
+          role-session-name: githubactionsrpw
+          aws-region: ${{ secrets.AWS_REGION }}
+
       - run: |
           sudo apt-get install --reinstall unzip wget git ssh tar gzip ca-certificates
           cd /opt;
-          wget -q https://developer.garmin.com/downloads/connect-iq/sdks/connectiq-sdk-lin-4.0.3-2021-06-01-b7cc78017.zip -O ciq.zip;
+          wget -q https://developer.garmin.com/downloads/connect-iq/sdks/connectiq-sdk-lin-4.1.4-Compiler2Beta-2022-06-16-b480ff083.zip -O ciq.zip;
           unzip ciq.zip -d ciq;
           rm -f ciq.zip;
         if: steps.ciq.outputs.cache-hit != 'true'
