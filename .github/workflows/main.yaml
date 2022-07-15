@@ -1,7 +1,7 @@
 name: "main job"
 permissions:
   id-token: write
-  contents: read # This is required for actions/checkout
+  contents: write
 
 on:
   pull_request:
