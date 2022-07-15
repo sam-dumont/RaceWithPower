@@ -115,7 +115,7 @@ jobs:
               export SDK=4.0.0
             elif [[ "$i" =~ ^(approachs60)$ ]]; then
               export SDK=2.4.0
-            elif [[ "$i" =~ ^(vivoactive4|fenix6|fr245|fr745|fr945|fr945lte|marq)$ ]]; then
+            elif [[ "$i" =~ ^(vivoactive4|vivoactive4s|fenix6|fr245|fr745|fr945|fr945lte|marq)$ ]]; then
               export SDK=3.3.0
             elif [[ "$i" =~ ^(approachs62|d2charlie|descentmk1|vivoactive3d)$ ]]; then
               export SDK=3.0.0
