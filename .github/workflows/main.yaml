@@ -54,11 +54,12 @@ jobs:
 
       - run: |
           pip install -r cicd/requirements.txt
-          python cicd/get_garmin_devices.py
+          python cicd/get_garmin_devices_v2.py
         if: steps.devices.outputs.cache-hit != 'true'
         name: Install ConnectIQ Devices
         env:
-          GARMIN_ACCESS_TOKEN: ${{ secrets.GARMIN_ACCESS_TOKEN }}
+          GARMIN_USERNAME: ${{ secrets.GARMIN_USERNAME }}
+          GARMIN_PASSWORD: ${{ secrets.GARMIN_PASSWORD }}
           PYTHONUNBUFFERED: 1
 
   build-ciq:
