@@ -286,7 +286,7 @@ class RaceWithPowerView extends WatchUi.DataField {
         Utils.replaceNull(Application.getApp().getProperty("Z"), 1);
   }
 
-  function onLayout(dc) { return true; }
+  function onLayout(dc) {}
 
   (:trail)
   function compute(info) {

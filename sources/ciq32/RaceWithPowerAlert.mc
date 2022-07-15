@@ -27,7 +27,7 @@ class RaceWithPowerAlertView extends WatchUi.DataFieldAlert {
     usePercentage = perc;
   }
 
-  function onLayout(dc) { return true; }
+  function onLayout(dc) {}
 
   function onUpdate(dc) {
     View.onUpdate(dc);
