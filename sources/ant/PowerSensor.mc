@@ -20,13 +20,12 @@ class PowerSensor extends Ant.GenericChannel {
     	deviceNumber = devNumber;
 
         var chanAssign = new Ant.ChannelAssignment(
-            0 /*Ant.CHANNEL_TYPE_RX_NOT_TX*/,
-            1 /*Ant.NETWORK_PLUS*/);
+            Ant.CHANNEL_TYPE_RX_NOT_TX /*Ant.CHANNEL_TYPE_RX_NOT_TX*/,
+            Ant.NETWORK_PLUS /*Ant.NETWORK_PLUS*/);
 
         try {
             GenericChannel.initialize(method(:onMessage), chanAssign);
         } catch(e instanceof Ant.UnableToAcquireChannelException) {
-            System.println(e.getErrorMessage());
             failedInit = true;
             return;
         }
@@ -48,9 +47,10 @@ class PowerSensor extends Ant.GenericChannel {
         GenericChannel.open();
         currentPower = 0;
         searching = true;
+        return true;
     }
 
-    function onMessage(msg) {
+    function onMessage(msg as Ant.Message) as Void{
         // Parse the payload
         var payload = msg.getPayload();
         var payload0 = payload[0];
