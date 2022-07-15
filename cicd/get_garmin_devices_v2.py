@@ -12,8 +12,8 @@ from io import BytesIO
 import zipfile
 
 
-GARMIN_USERNAME = os.getenv("GARMIN_USERNAME", "samuel+garmin@dumont.info")
-GARMIN_PASSWORD = os.getenv("GARMIN_PASSWORD", "oNFHspm9G^zM9&")
+GARMIN_USERNAME = os.getenv("GARMIN_USERNAME") 
+GARMIN_PASSWORD = os.getenv("GARMIN_PASSWORD")
 
 if GARMIN_USERNAME is None or GARMIN_PASSWORD is None:
     print("Issue getting Garmin credentials")
